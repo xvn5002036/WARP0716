@@ -28,25 +28,25 @@
 
 
 CustomSound:
-    title : SOUND CUSTOMIZATION
+    title : "聲音客製"
     mutex : false
     
     patches:
         - Enable44kHzAudio:
-            title : Enable 44.1 kHz audio sampling frequency
+            title : "啟用 44.1 kHz 音訊取樣頻率"
             recommend : no
             author : CH.C (jchcc)
-            desc : Upgrades the audio sampling rate from the default (22 kHz) to 44.1 kHz (CD quality). Improves sound effect and BGM clarity at a slight increase in memory usage.
+            desc : "將音訊取樣率從預設 (22 kHz) 升級到 44.1 kHz (CD quality) 。在記憶體使用量略有增加的情況下改善音效和 BGM 清晰度。"
         
         - AutoMute:
-            title : Auto mute audio [Experimental]
+            title : "自動靜音音訊[實驗]"
             recommend : no
             author : CH.C (jchcc)
-            desc : Automatically mutes all game audio when the client window loses focus (e.g., when alt-tabbed). Audio resumes when the window is active again. Experimental -- may not work with all sound configurations.
+            desc : "當用戶端視窗失去焦點時自動靜音所有遊戲音訊 (e.g., when alt-tabbed) 。當視窗再次處於活動狀態時，音訊將還原。實驗性的－可能不適用於所有聲音設定。"
         
         - NoBGMAudio:
-            title : Disable BGM audio
+            title : "停用 BGM 音訊"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Disables background music loading from mp3NameTable.txt, preventing BGM from playing on any map. Use if you want a completely silent game or handle music through external means.
+            desc : "停用從 mp3NameTable.txt 載入背景音樂，防止 BGM 在任何地圖上播放。如果您想要完全靜音的遊戲或透過外部方式處理音樂，請使用。"
 

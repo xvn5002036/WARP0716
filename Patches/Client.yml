@@ -27,301 +27,301 @@
 ############################################################################
 
 ResizeHealthBar:
-    title : RESIZE HP BAR
+    title : "調整 HP 欄位的大小"
     mutex : false
     
     patches:
         - ResizePlayerBar:
-            title : Resize Player HP/SP bar
+            title : "調整播放器 HP/SP 條的大小"
             recommend : no
             author : CH.C (jchcc) , Neo-Mind
-            desc : Changes the width of your own character's HP and SP bars to a custom size. Useful for making health bars easier to read at a glance.
+            desc : "將自己角色的 HP 和 SP 條的寬度變更為自訂尺寸。有助於使健康欄更易於一目了然。"
         
         - ResizeNormalBar:
-            title : Resize Normal mob HP bar
+            title : "調整普通生物 HP 欄位的大小"
             recommend : no
             author : CH.C (jchcc) , Neo-Mind
-            desc : Changes the width of the HP bar displayed above regular monsters to a custom size.
+            desc : "將普通怪物上方顯示的 HP 條的寬度變更為自訂尺寸。"
         
         - ResizeMiniBossBar:
-            title : Resize Mini-Boss mob HP bar
+            title : "調整 Mini-Boss 生物 HP 欄的大小"
             recommend : no
             author : CH.C (jchcc) , Neo-Mind
-            desc : Changes the width of the HP bar displayed above Mini-Boss monsters to a custom size. Helpful for distinguishing Mini-Bosses from regular mobs.
+            desc : "將 Mini-Boss 怪物上方顯示的 HP 條寬度變更為自訂尺寸。有助於區分小首領和普通怪物。"
         
         - ResizeBossBar:
-            title : Resize Boss mob HP bar
+            title : "調整 Boss 生物 HP 欄位的大小"
             recommend : no
             author : CH.C (jchcc) , Neo-Mind
-            desc : Changes the width of the HP bar displayed above Boss (MVP) monsters to a custom size. Helpful for distinguishing Bosses from regular mobs.
+            desc : "將 Boss (MVP) 怪物上方顯示的 HP 條寬度變更為自訂尺寸。有助於區分 Boss 和普通怪物。"
 
         - AllianceChatHotkeySelector:
-            title : Alliance Chat Hotkey Selector
+            title : "聯盟聊天熱鍵選取器"
             recommend : no
             author : AcidMarco,Skylove
-            desc : Allows you to choose a custom symbol to trigger Alliance Chat instead of the default '#'. This is useful to avoid conflicts with GM command symbols such as @ or !.
+            desc : "允許您選取自訂符號來觸發聯盟聊天，而不是預設的 '#' 。這對於避免與 GM 命令符號（例如 @ 或!）發生衝突很有用。"
 
 DisableEffect:
-    title : DISABLE EFFECT
+    title : "停用效果"
     mutex : false
     
     patches:
         - NoEarthQuake:
-            title : Disable Quake skill effect
+            title : "停用地震技能效果"
             recommend : no
             author : Ai4rei/AN , CrazyBebop
-            desc : Disables the screen-shaking Earthquake skill effect. Prevents motion sickness and visual discomfort caused by this skill.
+            desc : "關閉震屏地震技能效果。防止該技能引起的暈車和視覺不適。"
         
         - NoBlindness:
-            title : Disable Blind skills effect
+            title : "解除致盲技能效果"
             recommend : no
             author : X-EcutiOnner
-            desc : Disables the Blind status effect that darkens the entire screen. Prevents the disorienting black-screen visual when blinded.
+            desc : "停用使整個螢幕變暗的盲狀態效果。防止失明時出現令人困惑的黑屏視覺效果。"
 
         - RestoreSongsEffect:
-            title : Restore Bard/Dancer Song Effects (Old Song Patch)
+            title : "還原吟遊詩人 /Dancer 歌曲效果 (Old Song Patch)"
             recommend : no
             author : CH.C (jchcc)
-            desc : Restores the visual ground effects for Bard and Dancer song skills. Otherwise known as the Restore Old Song patch. These effects were removed in newer clients but this patch reconstructs them using LandProtector's rendering code.
+            desc : "還原吟遊詩人和舞者歌曲技能的視覺地面效果。也稱為還原老歌修補。這些效果在較新的用戶端中已被刪除，但此修補使用 LandProtector 的渲染程式碼重建它們。"
 
 EnableSlashCmd:
-    title : SLASH COMMANDS
+    title : "斜線指令"
     mutex : false
     
     patches:
         - EnableWho:
-            title : Always enable '/who' command
+            title : "始終啟用“/who”命令"
             recommend : yes
             author : Neo-Mind
-            desc : Enables the <b>/w</b> and <b>/who</b> commands on all langtypes to show the current number of online players. Normally restricted to certain service regions.
+            desc : "在所有 langtypes 上啟用 <b>/w</b> 和 <b>/who</b> 指令以顯示目前線上玩家數量。通常僅限於某些服務區域。"
         
         - EnableShowName:
-            title : Always enable '/showname' command
+            title : "始終啟用“/showname”命令"
             recommend : yes
             author : Neo-Mind
-            desc : Enables the <b>/showname</b> command on all langtypes, allowing players to toggle the display of character names, party names, and guild names above sprites.
+            desc : "在所有 langtypes 上啟用 <b>/showname</b> 指令，讓玩家切換角色名稱、隊伍名稱和精靈上方的公會名稱的顯示。"
         
         - EnableUnknCmds:
-            title : Allow unknown '/command's [Experimental]
+            title : "允許未知的“/命令”[實驗]"
             recommend : no
             author : Ai4rei/AN
-            desc : Sends unrecognized '<b>/command</b>' inputs to the server instead of showing "Invalid command". Allows server-side slash commands (like custom scripts) to work through the chat box.
+            desc : "將無法辨識的 <b>/command</b> 輸入傳送到伺服器，而不是顯示 \"Invalid command\"。允許伺服器端斜線指令（例如自訂腳本）透過聊天框運作。"
 
 NoSkillChatter:
-    title : SKILL CHATTER REMOVAL
+    title : "技能顫振消除"
     mutex : false
     
     patches:
         - NoDancerScream:
-            title : Remove Dancer's Scream chatter
+            title : "刪除舞者的尖叫隨機語音"
             recommend : no
             author : Neo-Mind
-            desc : Removes the random chat messages that appear when the Dancer's Scream skill is used (loaded from dc_scream.txt). Reduces chat spam in busy areas.
+            desc : "刪除使用舞者尖叫技巧 (loaded from dc_scream.txt) 時出現的隨機聊天訊息。減少繁忙區域的聊天洗頻。"
         
         - NoBardFrostJoke:
-            title : Remove Bard's Frost Joke chatter
+            title : "刪除吟遊詩人的冰霜笑話隨機語音"
             recommend : no
             author : Neo-Mind
-            desc : Removes the random chat messages that appear when the Bard's Frost Joke skill is used (loaded from ba_frostjoke.txt). Reduces chat spam in busy areas.
+            desc : "刪除使用吟遊詩人的冰霜笑話技能 (loaded from ba_frostjoke.txt) 時出現的隨機聊天訊息。減少繁忙區域的聊天洗頻。"
 
 ResizeBox:
-    title : RESIZE BOX
+    title : "調整框大小"
     mutex : false
     
     patches:
         - ResizeChatBox:
-            title : Resize Chat Box
+            title : "調整聊天框大小"
             recommend : no
             author : Shinryo
-            desc : Increases the character limit in the Main/Battle chat input box from <b>70</b> to a custom value. Most servers use 234 to allow longer messages.
+            desc : "將主 /Battle 聊天輸入框中的字元限制從 <b>70</b> 增加到自訂值。大多數伺服器使用 234 來允許更長的訊息。"
         
         - ResizeChatRoomBox:
-            title : Resize Chat Room Box
+            title : "調整聊天室框的大小"
             recommend : no
             author : Shinryo
-            desc : Increases the character limit in chat room input boxes from <b>70</b> to a custom value. Most servers use 234 to allow longer messages.
+            desc : "將聊天室輸入框中的字元限制從 <b>70</b> 增加到自訂值。大多數伺服器使用 234 來允許更長的訊息。"
         
         - ResizePMBox:
-            title : Resize PM Box
+            title : "調整 PM 框大小"
             recommend : no
             author : Shinryo
-            desc : Increases the character limit in the PM (whisper) input box from <b>70</b> to a custom value. Most servers use 234 to allow longer private messages.
+            desc : "將 PM (whisper) 輸入框中的字元限制從 <b>70</b> 增加到自訂值。大多數伺服器使用 234 來允許更長的私人訊息。"
         
         - ResizeNpcBox:
-            title : Resize NPC Dialog Box
+            title : "調整 NPC 對話大小"
             recommend : no
             author : Ai4rei/AN
-            desc : Increases the maximum character limit for NPC dialog input fields to a custom value (between 2052 and 4096). Useful for servers with NPCs that accept longer text input.
+            desc : "將 NPC 對話輸入欄位的最大字元限制增加到自訂值 (between 2052 and 4096) 。對於具有接受較長文字輸入的 NPC 的伺服器很有用。"
 
 RouletteVis:
-    title : ROULETTE VISIBILITY
+    title : "輪盤可見性"
     mutex : true
     color : darkorange
     
     patches:
         - HideRoulette:
-            title : Hide Roulette icon
+            title : "隱藏輪盤圖示"
             recommend : no
             author : Neo-Mind
-            desc : Hides the Roulette icon from the game interface. Useful for servers that do not use Gravity's Roulette system.
+            desc : "在遊戲介面中隱藏輪盤圖示。對於不使用 Gravity 輪盤系統的伺服器很有用。"
         
         - ShowRoulette:
-            title : Show Roulette icon
+            title : "顯示輪盤圖示"
             recommend : no
             author : Neo-Mind
-            desc : Restores the Roulette icon that Gravity removed in newer clients. Use this if your server has Roulette functionality enabled.
+            desc : "還原 Gravity 在較新用戶端中刪除的輪盤圖示。如果您的伺服器啟用了輪盤功能，請使用此選項。"
 
 CashShop:
-    title : CASH SHOP CUSTOMIZATION
+    title : "現金店客製化"
     mutex : false
     
     patches:
         - MoveShopIcon:
-            title : Move Cash Shop icon
+            title : "行動現金店圖示"
             recommend : no
             author : Neo-Mind
-            desc : Repositions the Cash Shop icon to custom screen coordinates. Positive values offset from the top-left corner; negative values offset from the bottom-right corner.
+            desc : "將 Cash 商店圖示重新定位到自訂螢幕座標。正值從左上角偏移；負值從右下角偏移。"
         
         - ZeroCinShop:
-            title : Enforce 0 C in Cash Shop
+            title : "在商城中實施 0C"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Forces the <b>C</b> (cash point) field to display 0 instead of random garbage values in the Cash Shop. Fixes a display bug on servers that do not use Gravity's cash point system.
+            desc : "強制 <b>C</b> (cash point) 欄位顯示 0 而不是 Cash 商店中的隨機垃圾值。修正了不使用 Gravity 現金點系統的伺服器上的顯示錯誤。"
         
         - DefShopBrowser:
-            title : Use default web browser in Cash Shop
+            title : "在商城中使用預設網頁瀏覽器"
             recommend : no
             author : CH.C (jchcc)
-            desc : Opens Cash Shop URLs in your default web browser instead of the hardcoded Internet Explorer. Essential since IE is deprecated on modern Windows.
+            desc : "在預設 Web 瀏覽器而不是硬編碼的 Internet Explorer 中開啟 Cash 商店 URL。由於 IE 在現代 Windows 上已被棄用，因此至關重要。"
 
 EquipPreview:
-    title : SHOP EQ PREVIEW
+    title : "商店均衡器預覽"
     mutex : false
     
     patches:
         - PreviewInShop:
-            title : Enable equipment preview in Cash Shop
+            title : "在商城中啟用裝備預覽"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind,Skylove
-            desc: Adds an equipment preview button in the Cash Shop (right-click items to see it). Lets players see how gear looks before buying. Requires server-side support to be enabled as well.
+            desc: "在 Cash 商店 (right-click items to see it) 中新增裝備預覽按鈕。讓玩家在購買前查看裝備的外觀。還需要啟用伺服器端支援。"
         
         - PreviewInTrader:
-            title : Enable equipment preview in Trader Shop
+            title : "在交易商店中啟用裝備預覽"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind, CrazyBebop
-            desc: Adds an equipment preview button in the older-style Trader Shop (right-click items to see it). Requires server-side support to be enabled as well.
+            desc: "在舊式交易商店 (right-click items to see it) 中新增裝備預覽按鈕。還需要啟用伺服器端支援。"
 
         - HideCashShop:
-            title : Hide Cash Shop icon
+            title : "隱藏商城圖示"
             recommend : no
             author : Neo-Mind
-            desc : Hides the Cash Shop icon from the game interface. Useful for servers that do not use a Cash Shop or want a cleaner UI.
+            desc : "在遊戲介面中隱藏 Cash 商店圖示。對於不使用 Cash 商店或想要更清晰的 UI 的伺服器很有用。"
 
 IncrCamAngle:
-    title : CAMERA ANGLES
+    title : "相機角度"
     mutex : true
     
     patches:
         - LowCamAngle:
-            title : Increase Camera Angles (LOW)
+            title : "增加相機角度（低）"
             recommend : no
             author : Shinryo , CrazyBebop
-            desc : Expands the allowed camera tilt range to about <b>30 degrees</b>, letting you angle the view slightly lower than default. A subtle improvement for general gameplay.
+            desc : "將允許的相機傾斜範圍擴大到大約 <b>30 度</b> ，讓您的視圖角度略低於預設值。對一般遊戲玩法的微妙改進。"
         
         - MediumCamAngle:
-            title : Increase Camera Angles (MEDIUM)
+            title : "增加相機角度（中）"
             recommend : yes
             author : Shinryo , CrazyBebop
-            desc : Expands the allowed camera tilt range to about <b>42 degrees</b>, providing a good balance between visibility and immersion. Recommended for most players.
+            desc : "將允許的相機傾斜範圍擴大到約 <b>42 度</b> ，在可視性和沈浸感之間提供良好的平衡。建議給大多數玩家。"
         
         - HighCamAngle:
-            title : Increase Camera Angles (HIGH)
+            title : "增加相機角度（高）"
             recommend : no
             author : Shinryo , CrazyBebop
-            desc : Expands the allowed camera tilt range to about <b>65 degrees</b>, enabling a near ground-level view. Great for screenshots, but may cause visual glitches on some maps.
+            desc : "將允許的相機傾斜範圍擴大到大約 <b>65 度</b> ，從而實現接近地面的視圖。非常適合螢幕截圖，但可能會導致某些地圖上出現視覺異常。"
 
 IncrZoom:
-    title : ZOOM OUT
+    title : "縮小"
     mutex : true
 
     patches:
         - Zoom25Percent:
-            title : Decrease Zoom Out (to 25%)
+            title : "減少縮小（至 25%）"
             recommend : no
             author : Shinryo , Andrei Karas (4144)
-            desc : Restricts the zoom-out range to about 25% of the maximum, bringing the camera closer than default. For a more zoomed-in gameplay experience.
+            desc : "縮小範圍限制為最大值的 25 % 左右，使相機比預設值更近。獲得更放大的遊戲體驗。"
         
         - Zoom50Percent:
-            title : Increase Zoom Out (to 50%)
+            title : "增加縮小（至 50%）"
             recommend : no
             author : Shinryo , Andrei Karas (4144)
-            desc : Extends the zoom-out range to about 50% of the maximum, letting you see more of the map around your character.
+            desc : "將縮小範圍擴充到最大值的 50 % 左右，讓您可以看到角色周圍地圖的更多部分。"
         
         - Zoom75Percent:
-            title : Increase Zoom Out (to 75%)
+            title : "增加縮小（至 75%）"
             recommend : no
             author : Shinryo , Andrei Karas (4144) , Functor
-            desc : Extends the zoom-out range to about 75% of the maximum. Provides a wide field of view useful for WoE, PvP, and large-scale fights.
+            desc : "將縮小範圍擴充至最大值的約 75 %。提供廣闊的視野，對於 WoE 、PvP 和大規模戰鬥很有用。"
         
         - ZoomMax:
-            title : Increase Zoom Out (to Max)
+            title : "增加縮小（至最大）"
             recommend : no
             author : Shinryo , Andrei Karas (4144)
-            desc : Unlocks the full zoom-out range, allowing the camera to pull back as far as possible. Maximum visibility, but sprites may appear very small.
+            desc : "解鎖整個變焦範圍，使相機能夠盡可能拉遠。最大可見度，但精靈可能看起來非常小。"
 
 LoginMode:
-    title : LOGIN MODE
+    title : "登入方式"
     mutex : true
     
     patches:
         - RestoreLoginWindow:
-            title : Restore Login Window
+            title : "還原登入視窗"
             recommend : no
             author : Shinryo , Neo-Mind
-            desc : Bypasses Gravity's token-based login system and restores the classic username/password login window. Required for most servers that do not use a web-based launcher.
+            desc : "繞過 Gravity 基於令牌的登入系統並還原經典使用者名稱 /password 登入視窗。對於大多數不使用基於 Web 的啟動器的伺服器來說是必要的。"
         
         - UseSSOLogin:
-            title : Use SSO Login Packet
+            title : "使用SSO登入封包"
             recommend : no
             author : Ai4rei/AN
-            desc : Forces all langtypes to use the SSO login packet (0x825) instead of the old login packet (0x64). Required when using a patcher/launcher that passes credentials via command-line token. <b>WARNING:</b> Incompatible with 'Disable Login password encryption' (NoPassEncr).
+            desc : "強制所有 langtypes 使用 SSO 登入封包 (0x825)，而不是舊的登入封包 (0x64)。使用透過命令列 token 傳遞憑證的修補器/啟動器時需要。<b>警告：</b>與「停用登入密碼加密」(NoPassEncr) 不相容。"
         
         - UseOldLogin:
-            title : Use Old Login Packet
+            title : "使用舊的登入封包"
             recommend : yes
             author : Ai4rei/AN , Andrei Karas (4144)
-            desc : Forces the client to use the old login packet (0x64) for authentication. Required for newer clients where 'Restore Login Window' no longer works. The standard choice for most servers with direct username/password login.
+            desc : "強制用戶端使用舊的登入封包 (0x64) 進行驗證。對於「還原登入視窗」不再有效的新用戶端是必要的。這是多數直接使用帳號/密碼登入伺服器的標準選項。"
 
 ChatRepeat:
-    title : CHAT REPEAT
+    title : "聊天重複"
     mutex : true
     
     patches:
         - UnlimitedChatRepeat:
-            title : Allow unlimited chat repeat
+            title : "允許無限制的聊天重複"
             recommend : no
             author : Neo-Mind
-            desc : Removes the client-side limit on repeating the same chat message. By default, the client blocks you from sending the same message more than a few times in a row.
+            desc : "消除了用戶端對重複相同聊天訊息的限制。預設情況下，用戶端會阻止您連續多次傳送相同訊息。"
         
         - LimitedChatRepeat:
-            title : Customize chat repeat limit
+            title : "自訂聊天重複限制"
             recommend : no
             author : Shinryo
-            desc : Changes the maximum number of identical consecutive chat messages allowed from the default of 2 to a custom value. Provides more control than fully removing the limit.
+            desc : "將允許的相同連續聊天訊息的最大數量從預設值 2 變更為自訂值。提供比完全消除限制更多的控制。"
 
 CustomSleep:
-    title : SLEEP DELAY CUSTOMIZATION
+    title : "睡眠延遲客製"
     mutex : false
     
     patches:
         - AddInpDelay:
-            title : Add Input Delay
+            title : "新增輸入延遲"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Adds extra milliseconds to the client's input processing delay. Can be used to throttle input speed for testing or to reduce CPU usage on low-end machines.
+            desc : "為用戶端的輸入處理延遲增加額外的毫秒數。可用於限制測試輸入速度或減少低階機器上的 CPU 使用率。"
         
         - CustomGameLoopDelay:
-            title : Customize game loop delay
+            title : "自訂遊戲循環延遲"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the Sleep() delay in the main game loop to a custom value (in milliseconds). Lower values make the client more responsive but use more CPU; higher values save CPU at the cost of smoothness.
+            desc : "將主遊戲循環中的 Sleep() 延遲變更為自訂值 (in milliseconds) 。較低的值使用戶端反應更快，但使用更多的 CPU；較高的值可以節省 CPU，但會犧牲平滑度。"

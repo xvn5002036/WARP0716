@@ -27,428 +27,428 @@
 ############################################################################
 
 CustomUI:
-    title : UI CUSTOMIZATION
+    title : "UI 客製化"
     mutex : false
     color : orangered
     
     patches:
         - LoadGRFOnSlashCmd:
-            title : Load GRF via Slash Command
+            title : "透過斜線指令載入 GRF"
             recommend : no
             author : Demonbytes (NoxaraRO)
-            desc : Adds a configurable slash command (default /greyworld) that loads a specified GRF archive at runtime via CFileMgr::AddPak. Typing the command toggles the GRF on/off with chat feedback. The state persists across sessions via the registry. Assets become available on the next map change.
+            desc : "新增可設定的斜線指令（預設 /greyworld），在執行時透過 CFileMgr::AddPak 載入指定的 GRF 檔案。輸入該指令可透過聊天回饋開啟/關閉 GRF。狀態會透過登錄檔在工作階段之間保留；資源會在下一次換地圖時生效。"
 
         - AllowShortcutsInWine:
-            title : Allow shortcuts in WINE [Experimental]
+            title : "允許 Wine 中使用快捷鍵 [Experimental]"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Fixes keyboard shortcut handling when running the client under Wine (Linux/macOS). Experimental -- may not work on all Wine versions or configurations.
+            desc : "修正了在 Wine (Linux/macOS) 下執行用戶端時的鍵盤快速鍵處理。實驗性的－可能不適用於所有 Wine 版本或設定。"
         
         - CustomMissingLauncherMsg:
-            title : Customize missing launcher message
+            title : "自訂缺少啟動器時的訊息"
             recommend : no
             author : Neo-Mind
-            desc : Customizes the error message shown when the client is launched without a patcher. By default the message is blank -- use this to show a helpful message like "Please use the patcher to start the game."
+            desc : "自訂在沒有修補程式的情況下啟動用戶端時顯示的錯誤訊息。預設情況下，該訊息為空——使用它來顯示有用的訊息，例如 \"Please use the patcher to start the game.\""
 
         - TildeForMatk:
-            title : Use Tilde for Matk
+            title : "使用波浪號表示 Matk"
             recommend : no
             author : Neo-Mind
-            desc : Displays Matk as a range using the tilde <b>(~)</b> symbol (e.g., 100~150) instead of using the plus <b>(+)</b> sign (e.g., 100+50) in the Stats Window. Matches the display style many players are familiar with.
+            desc : "使用波浪號 <b>(~)</b> 將 Matk 顯示為範圍（例如 100~150），而不是在能力值視窗中使用加號 <b>(+)</b>（例如 100+50）。符合許多玩家熟悉的顯示方式。"
         
         - NoSwearFilter:
-            title : Disable Swear Filter
+            title : "停用髒話過濾器"
             recommend : no
             author : Shinryo
-            desc : Disables the client-side chat filter that censors words listed in <b>manner.txt</b>. Filtered words will display normally in chat instead of being replaced with asterisks.
+            desc : "停用用戶端聊天過濾器，該過濾器會遮蔽 <b>manner.txt</b> 中列出的文字。被過濾的文字會正常顯示在聊天中，而不是被星號取代。"
         
         - SkipServiceSelect:
-            title : Skip service selection screen
+            title : "跳過伺服器選擇畫面"
             recommend : no
             author : Shinryo, Skylove
-            desc : Skips the service selection screen and goes straight to the login window. Ideal for servers that only have one service and do not need the selection step.
+            desc : "跳過伺服器選擇畫面並直接進入登入視窗。非常適合僅具有一項服務並且不需要選取步驟的伺服器。"
         
         - OpenToServiceSelect:
-            title : Use 'Opening' for service selection
+            title : "使用「Opening」返回伺服器選擇"
             recommend : yes
             author : CH.C (jchcc)
-            desc : Makes the 'Opening' button on the new-style login screen return to the service selection screen. Useful if players need to switch between multiple services listed in clientinfo.xml.
+            desc : "讓新版登入畫面的「Opening」按鈕返回伺服器選擇畫面。若玩家需要在 clientinfo.xml 中列出的多個伺服器之間切換，會很有用。"
         
         - GuildBrackets:
-            title : Use normal guild brackets
+            title : "使用一般公會括號"
             recommend : yes
             author : Shinryo
-            desc : Replaces the Japanese-style guild name brackets used on langtype 0 with standard square brackets [ ]. Prevents display issues with guild names on English clients.
+            desc : "將 langtype 0 使用的日式公會名稱括號替換為標準方括號 [ ]，避免英文用戶端顯示公會名稱時出現問題。"
         
         - FixChatAt:
-            title : '@ Bug fix'
+            title : "@ 符號錯誤修正"
             recommend : yes
             author : Shinryo
-            desc : Fixes a client bug that prevents typing the @ symbol in the chat window. Essential for servers that use @ as the prefix for GM commands (e.g., @warp, @item).
+            desc : "修正了阻止在聊天視窗中輸入 @ 符號的用戶端錯誤。對於使用 @ 作為 GM 命令 (e.g., @warp, @item) 前綴的伺服器至關重要。"
         
         - AlwaysOfficialBG:
-            title : Use official login BG
+            title : "使用官方登入背景"
             recommend : no
             author : Shinryo
-            desc : Forces the official Gravity login background images to display on all langtypes. Without this, some langtypes show a blank or different background.
+            desc : "強制在所有 langtypes 上顯示官方 Gravity 登入背景圖片。如果沒有這個，一些 langtypes 顯示空白或不同的背景。"
         
         - NoHourly:
-            title : Remove Hourly announcement
+            title : "刪除每小時公告"
             recommend : yes
             author : Ai4rei/AN ,Skylove
-            desc : Removes the hourly popup announcements about game rating and play time reminders. These are Korean regulatory requirements that are irrelevant on servers.
+            desc : "刪除每小時關於遊戲評級和遊戲時間提醒的彈出公告。這些是韓國的監管要求，與伺服器無關。"
 
         - EnableFlagEmotes:
-            title : Enable flag emoticons
+            title : "啟用旗幟表情符號"
             recommend : no
             author : Neo-Mind
-            desc : Unlocks country flag emoticons for all langtypes. Requires a text file mapping flag constants to numbers 1-9 to define which flags are available.
+            desc : "為所有 langtypes 解鎖國旗表情符號。需要一個文字檔，將旗幟常數對應到 1-9 的數字，以定義可用旗幟。"
 
         - AllowSpaceInGName:
-            title : Allow blank space in guild name
+            title : "公會名稱中允許有空格"
             recommend : no
             author : Shakto
-            desc : Allows spaces in guild names when creating a guild with <b>/guild "Spaced Name"</b>. By default, the client blocks space characters in guild names.
+            desc : "使用 <b>/guild \"Spaced Name\"</b> 建立公會時允許在公會名稱中使用空格。預設情況下，用戶端會阻止公會名稱中的空格字元。"
 
         - CustomInventoryLimit:
-            title : Custom inventory limit
+            title : "自訂背包限制"
             recommend : no
             author : CH.C (jchcc) , Neo-Mind
-            desc : Changes the maximum number of items that can be displayed in the inventory window. Must match the server-side inventory limit (MAX_INVENTORY in rAthena) or items beyond the limit will not appear.
+            desc : "變更背包視窗可顯示的最大物品數。必須與伺服器端背包限制（rAthena 的 MAX_INVENTORY）一致，否則超出限制的物品不會顯示。"
 
         - CustomInventoryExpandingLimit:
-            title : Change limit for cash inventory expanding value
+            title : "變更商城背包擴充上限"
             recommend : no
             author : 4144,Skylove
-            desc : Raises the maximum number of items that can be added through cash inventory expansion from the default 100 up to 999,999. Server-side adjustment may be required to match.
+            desc : "將商城背包擴充可增加的最大物品數從預設 100 提高到 999,999。可能需要同步調整伺服器端設定。"
             
         - DeleteCharWithEmail:
-            title : Always use email for Char Deletion
+            title : "刪除角色時一律使用 email"
             recommend : no
             author : Neo-Mind
-            desc : Requires the account's email address as the confirmation password when deleting a character, on all langtypes. Adds an extra layer of protection against accidental or unauthorized character deletion.
+            desc : "在所有 langtypes 中，刪除角色時都要求使用帳號 email 地址作為確認密碼。增加一層保護，避免意外或未授權的角色刪除。"
         
         - CustomVendingLimit:
-            title : Customize vending limit
+            title : "自訂露天商店上限"
             recommend : no
             author : Neo-Mind
-            desc : Changes the maximum zeny price a player can set per item in a vending shop. Default is 1 billion zeny. Adjust to match your server's economy or zeny cap.
+            desc : "變更玩家在露天商店中每件物品可設定的最高 zeny 價格。預設為 10 億 zeny，可依伺服器經濟或 zeny 上限調整。"
         
         - NoHelpMsg:
-            title : No Help Message on Login
+            title : "登入時不顯示說明訊息"
             recommend : yes
             author : Neo-Mind
-            desc : Suppresses the help/tutorial popup that appears after logging in on certain langtypes. Reduces clutter for returning players who do not need the tutorial.
+            desc : "抑制某些 langtypes 登入後出現的說明/教學彈出視窗，減少不需要教學的回鍋玩家受到干擾。"
         
         - HideWorldView:
-            title : Hide World View Interface
+            title : "隱藏世界視圖介面"
             recommend: no
             author : Neo-Mind
-            desc : Hides the World View (full map overview) button normally shown at the top-right of the screen. Useful for servers that do not support the world map feature or want a cleaner UI.
+            desc : "隱藏通常顯示在螢幕右上角的世界視圖 (full map overview) 按鈕。對於不支援世界地圖功能或想要更清晰的 UI 的伺服器很有用。"
         
         - CloseCutinOnEsc:
-            title : Close cutin on Esc key
+            title : "按 Esc 關閉 cutin 圖像"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind
-            desc : Allows players to dismiss NPC cutin (portrait) images by pressing the ESC key. Without this, cutins can only be closed by the NPC script itself.
+            desc : "允許玩家按 ESC 鍵關閉 NPC cutin（立繪）圖像。若不套用此修補，cutin 只能由 NPC 腳本本身關閉。"
             
         - EnableNoticeMails:
-            title: Enable "Notice" email section
+            title: "啟用 \"Notice\" email部分"
             recommend : no
             author : Neo-Mind
-            desc : Enables the "Notice" tab in the Renewal mail window, allowing server administrators to send bulletin-style announcements that appear in players' mailboxes as special notices.
+            desc : "啟用續訂郵件視窗中的 \"Notice\" 分頁，允許伺服器管理員傳送公告式公告，這些公告作為特別通知出現在玩家的郵箱中。"
 
         - EnableNpcDialogueScrolling:
-            title     : NPC Dialog Scroll
+            title     : "NPC 對話捲動"
             recommend : no
             author    : Skylove
-            desc      : Allows scrolling through NPC dialog text even when a selection menu is displayed. Without this, the dialog locks when choices appear and players cannot review previous text.
+            desc      : "即使顯示選取選單，也允許捲動 NPC 對話文字。如果沒有這個，當選取出現時對話會鎖定，並且玩家無法查看先前的文字。"
 
         - MoveUpItemCount:
-            title : Move Item Count Upwards
+            title : "向上移動物品數量"
             recommend : no
             author : Neo-Mind
-            desc : Moves the item quantity number upwards in the Shortcut Window so it visually aligns with skill level numbers. A cosmetic fix for cleaner-looking shortcut bars.
+            desc : "將快捷列視窗中的物品數量數字向上移動，使其在視覺上與技能等級數字對齊。這是讓快捷列更整齊的外觀修正。"
         
         - CustomFadeDelay:
-            title : Customize fade in/out delay
+            title : "自訂淡入/淡出延遲"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind
-            desc : Changes the duration of the screen fade-in/fade-out effect when warping within the same map. Set to 0 for instant transitions, or increase for a smoother visual effect.
+            desc : "變更在同一張地圖內傳送時，畫面淡入/淡出效果的持續時間。設為 0 可立即切換，提高數值則可讓視覺效果更平滑。"
         
         - RemoveBookingJobs:
-            title : Remove Jobs from Booking Window
+            title : "從組隊招募視窗移除職業"
             recommend : no
             author : Neo-Mind
-            desc : Removes specific job classes from the Party Booking (recruitment) window's job filter list. Useful for hiding disabled or unreleased classes from the party finder UI.
+            desc : "從組隊招募視窗的職業篩選清單中移除特定職業。適合用來在組隊搜尋 UI 中隱藏停用或尚未開放的職業。"
             
         - RelativeDelay4CharDel:
-            title : Change Deletion time to relative 
+            title : "將刪除時間變更為相對時間"
             recommend : no
             author : Functor , Neo-Mind
-            desc : Shows character deletion wait time as a countdown (e.g., "23h 45m remaining") instead of an absolute date/time. More intuitive for players waiting to confirm a deletion.
+            desc : "將字元刪除等待時間顯示為倒數計時 (e.g., \"23h 45m remaining\") 而不是絕對日期 /time 。對於等待確認刪除的玩家來說更加直覺。"
         
         - RestoreChatFocus:
-            title : Restore chat focus
+            title : "還原聊天焦點"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Restores keyboard input focus to the chat box after clicking with the left mouse button. Fixes the issue where clicking in the game world causes the chat input to lose focus.
+            desc : "點擊滑鼠左鍵後將鍵盤輸入焦點還原到聊天框。修正了在遊戲世界中點擊導致聊天輸入失去焦點的問題。"
 
         - OpaqueChatBg:
-            title : Make chat window background opaque
+            title : "使聊天視窗背景不透明"
             recommend : no
             author : Stingor
-            desc : Removes the semi-transparency from the chat window background. By default the background is drawn at 40% alpha (0x66), letting the game world show through. This patch forces it to 100% opaque (0xFF), producing a solid black background.
+            desc : "刪除聊天視窗背景的半透明效果。預設情況下，背景繪製在 40% alpha (0x66) 處，讓遊戲世界清晰可見。此修補強制其 100% 不透明 (0xFF) ，產生純黑色背景。"
 
         - CustomChatBgOpacity:
-            title : Customize chat window background color and opacity
+            title : "自訂聊天視窗背景色彩與不透明度"
             recommend : no
             author : Stingor
-            desc : Changes the color and transparency of the chat window background. Opens a color picker (RGB) and a separate opacity slider (0 = fully transparent, 255 = fully opaque). The default background is pure black at 40% opacity (0x66).
+            desc : "變更聊天視窗背景的色彩和不透明度。開啟色彩選取器 (RGB) 和單獨的不透明度滑桿 (0 = fully transparent, 255 = fully opaque) 。預設背景為純黑色，不透明度為 40% (0x66) 。"
 
         - NoEquipPreview:
-            title : Disable equipment preview
+            title : "停用裝備預覽"
             recommend : no
             author : X-EcutiOnner
-            desc : Removes the equipment preview button from item description windows. Use if the preview feature causes issues or is not desired on your server.
+            desc : "從物品描述視窗中移除裝備預覽按鈕。若預覽功能造成問題，或伺服器不需要此功能，可使用此修補。"
         
         - HideZeroDateInGuildWin:
-            title : Hide Zero Date in Guild Window
+            title : "在公會視窗中隱藏零日期"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Hides the placeholder date "1969-01-01" shown for guild members whose join date is unknown or unset. Prevents confusing epoch dates from appearing in the guild member list.
+            desc : "隱藏為加入日期未知或未設定的公會成員顯示的佔位符日期 \"1969-01-01\"。防止公會成員清單中令人困惑的紀元日期。"
         
         - ShortcutForAll:
-            title : Allow all items in Shortcut
+            title : "允許所有物品放入快捷列"
             recommend : no
             author : CH.C (jchcc)
-            desc : Allows any item type to be placed on the shortcut bar, not just consumables and equipment. Makes it easy to quick-access items for trading, crafting, or other purposes.
+            desc : "允許任何物品類型放入快捷列，不限於消耗品和裝備。可更方便地快速取用交易、製作或其他用途的物品。"
         
         - HideGameWindows:
-            title : Hide in-game windows
+            title : "隱藏遊戲內視窗"
             recommend : no
             author : CH.C (jchcc)
-            desc : Hides specific in-game UI windows by their internal Window IDs, defined in a YAML configuration file. Useful for removing unused or unwanted UI elements like the navigation window or tip box.
+            desc : "透過在 YAML 設定檔中定義的內部 Window IDs 隱藏特定的遊戲內 UI 視窗。對於刪除未使用或不需要的 UI 元素（例如導覽視窗或提示框）非常有用。"
         
         - EnableFlagAnimation:
-            title : Enable WoE Flag Animation
+            title : "啟用 WoE 標誌動畫"
             recommend : no
             author : Sapito Sucio
-            desc : Restores the animated WoE (War of Emperium) guild flags that Gravity disabled in later client updates. Brings back the waving flag visuals on castle maps.
+            desc : "還原 Gravity 在以後的用戶端更新中停用的動畫 WoE (War of Emperium) 公會標誌。在城堡地圖上帶回飄揚的旗幟視覺效果。"
 
         - RestoreBattlegroundUI:
-            title : Restore Battleground UI
+            title : "還原 Battleground UI"
             recommend : no
             author : Skylove, Sprite Smith
-            desc : Restores the Battleground navigation button and Entry Queue UI that were hidden in newer clients. Required for servers that use the Battleground system.
+            desc : "還原新用戶端中隱藏的 Battleground 導覽按鈕和 Entry Queue UI。對於使用 Battleground 系統的伺服器是必要的。"
 
         - HideItemba:
-            title : Hide Item bar
+            title : "隱藏物品快捷列"
             recommend : no
             author : Skylove
-            desc : Hides the Shortcut Item Bar toggle buttons (Open/Close) from the game interface. Use for a cleaner UI if the shortcut bar controls are not needed.
+            desc : "從遊戲介面隱藏物品快捷列的開啟/關閉切換按鈕。若不需要快捷列控制項，可讓 UI 更乾淨。"
 
         - DisableDoram:
-            title: Disable Doram
+            title: "停用 Doram"
             recommend: no
             author: Skylove
-            desc: Removes the Doram race option from the character creation screen. Use on servers that do not support the Doram race to avoid confusion.
+            desc: "從角色建立畫面中刪除 Doram 種族選項。在不支援 Doram 種族的伺服器上使用以避免混淆。"
 
         - HideProbabilityUI:
-            title : Hide Probability UI
+            title : "隱藏機率 UI"
             recommend : no
             author : Skylove
-            desc: Hides the item probability/drop rate window from the UI. Use on servers that do not implement the official probability display system or prefer to keep drop rates hidden.
+            desc: "從 UI 中隱藏物品機率/掉落率視窗。在未實現官方機率顯示系統或喜歡隱藏掉落率的伺服器上使用。"
 
         - FixSelectMenuReset:
-            title : Fix NPC dialogue Select Menu Reset
+            title : "修正 NPC 對話選取選單重置"
             recommend : no
             author : Victor Hugo
-            desc: "Fixes a bug where the NPC dialogue select menu resets its scroll position unexpectedly. Keeps the menu at the player's current selection when the dialog updates."
+            desc: "修正了 NPC 對話選取選單意外重置其捲動位置的錯誤。當對話更新時，將選單保留為玩家目前的選取。"
 
         - FixSelectMenuWidthExpansion:
-            title : Fix NPC dialogue Select Menu Width Expansion
+            title : "修正 NPC 對話選取選單寬度擴充"
             recommend : no
             author : Victor Hugo
-            desc: "Fixes the NPC select menu becoming excessively wide when options contain color codes (^RRGGBB). Corrects the width calculation to ignore color tag characters."
+            desc: "修正了當選項包含色彩代碼 (^RRGGBB) 時 NPC 選取選單變得過寬的問題。更正寬度計算以忽略色彩標籤字元。"
 
         - FixSelectMenuHeightExpansion:
-            title : Restore Old NPC Select Menu Behavior
+            title : "還原舊的 NPC 選取選單行為"
             recommend : no
             author : Victor Hugo
-            desc: "Restores the classic NPC select menu behavior where a scrollbar appears when options exceed the visible area, instead of the newer behavior that expands the dialog window height to fit all options."
+            desc: "還原經典的 NPC 選取選單行為，即當選項超出可見區域時出現捲軸，而不是擴充對話視窗高度以適合所有選項的新行為。"
 
         - FixSkillbarReset:
-            title : Fix loading shortcuts / skill bar state
+            title : "修復載入快捷鍵/技能列狀態"
             recommend : yes
             author : Victor Hugo
-            desc : Fixes a bug where shortcut bar items and skill bar positions reset every time you log in or change maps. Ensures your hotkey layout is properly saved and restored.
+            desc : "修正了每次登入或變更地圖時快捷列物品和技能欄位置都會重設的錯誤。確保您的熱鍵佈局正確儲存和還原。"
 
         - ChangeGoldPCMaxPoints:
-            title : Change GoldPC Maximum Points Limit
+            title : "變更 GoldPC 最大點數限制"
             recommend : no
             author : Skylove
-            desc: "Changes the maximum Gold PC point cap from the hardcoded limit of 300 to a custom value (up to 99,999). Must be paired with a matching server-side change in rAthena's battle.cpp."
+            desc: "將 Gold PC 點數上限從硬編碼的 300 變更為自訂值（最高 99,999）。必須搭配 rAthena 的 battle.cpp 中對應的伺服器端變更。"
 
         - CustomBarterZenySep:
-            title : Format Barter Zeny with Commas
+            title : "以逗號格式化 Barter Zeny"
             recommend : no
             author : Victor Hugo
-            desc : Formats zeny amounts in the Barter shop window with thousand separators (e.g., 1,000,000 z instead of 1000000 z). Makes large prices much easier to read at a glance.
+            desc : "在 Barter 商店視窗中以千分位分隔符格式化 zeny 金額（例如 1,000,000 z，而不是 1000000 z），讓高額價格更容易閱讀。"
 
 CaseInsensitiveSearch:
-    title: CASE INSENSITIVE SEARCH
+    title: "不區分大小寫搜尋"
     mutex: false
     
     patches:
         - InsensitiveStorageSearch:
-            title : Case-Insensitive storage search
+            title : "不區分大小寫的倉庫搜尋"
             recommend : no
             author : CH.C (jchcc), Neo-Mind
-            desc : Makes the storage window search ignore uppercase/lowercase differences, so searching "blue gem" also finds "Blue Gem". Much more convenient for finding items.
+            desc : "使儲存視窗搜尋忽略大小寫 差異，因此搜尋 \"blue gem\" 也會找到 \"Blue Gem\" 。尋找物品更加方便。"
         
         - InsensitiveShopSearch:
-            title : Case-Insensitive cash shop search
+            title : "不區分大小寫的商城搜尋"
             recommend : no
             author : Neo-Mind
-            desc : Makes the Cash Shop search ignore uppercase/lowercase differences, so items can be found regardless of how you capitalize the search term.
+            desc : "讓商城搜尋忽略大小寫差異，因此無論搜尋字詞如何大小寫，都可以找到商品。"
         
 NoGravityImages:
-    title : GRAVITY IMAGE REMOVAL
+    title : "移除 Gravity 圖片"
     mutex : false
     
     patches:
         - NoGravityAds:
-            title : Remove gravity ads
+            title : "移除 Gravity 廣告"
             recommend : yes
             author : Shinryo
-            desc : Removes Gravity's promotional advertisement images from the login screen background. Keeps the login screen clean for your server.
+            desc : "從登入畫面背景移除 Gravity 的促銷廣告圖片，讓伺服器登入畫面更乾淨。"
         
         - NoGravityLogo:
-            title : Remove gravity logo
+            title : "移除 Gravity 標誌"
             recommend : yes
             author : Shinryo
-            desc : Removes the Gravity company logo from the login screen background. Useful for servers that want a custom-branded login experience.
+            desc : "從登入畫面背景移除 Gravity 公司標誌。對想要自訂品牌登入體驗的伺服器很有用。"
 
 CustomFont:
-    title : FONT CUSTOMIZATION
+    title : "字型客製化"
     mutex : false
     
     patches:
         - CustomFontName:
-            title : Customize Font name
+            title : "自訂字型名稱"
             recommend : no
             author : Ai4rei/AN
-            desc : Changes the game font to a custom font of your choice for all langtypes. If the chosen font does not support the required character set, Windows will fall back to a compatible font automatically.
+            desc : "將遊戲字型變更為您為所有 langtypes 選取的自訂字型。如果所選字型不支援所需的字元集，Windows 將自動改用相容字型。"
         
         - CustomFontHeight:
-            title : Customize Font height (Character)
+            title : "自訂字型高度(Character)"
             recommend : no
             author : Yommy , Neo-Mind
-            desc : Sets the height of all in-game fonts to a custom value measured in character height units. Use to make text larger or smaller across the entire UI.
+            desc : "將所有遊戲內字型的高度設定為以字元高度單位測量的自訂值。用於放大或縮小整個 UI 中的文字。"
 
         - CustomFontCellHeight:
-            title : Customize Font Height (Cell)
+            title : "自訂字型高度(Cell)"
             recommend : no
             author : Neo-Mind
-            desc : Sets the height of all in-game fonts to a custom value measured in cell height units. An alternative sizing method to Character Height for finer control.
+            desc : "將所有遊戲內字型的高度設定為以儲存格高度單位測量的自訂值。字元高度的替代尺寸調整方法，可實現更精細的控制。"
           
         - CustomFontHgtOffset:
-            title : Customize Font Height (Offset)
+            title : "自訂字型高度(Offset)"
             recommend : no
             author : Neo-Mind
-            desc : Adds a fixed offset to all font heights, making every font in the UI uniformly larger (positive values) or smaller (negative values) without overriding individual sizes.
+            desc : "為所有字型高度增加固定偏移量，使 UI 中每種字型統一變大（正值）或變小（負值），而不覆蓋個別尺寸。"
         
         - CustomFontHgtLimits:
-            title : Enable Font Height Limits
+            title : "啟用字型高度限制"
             recommend : no
             author : Neo-Mind
-            desc : Clamps all font heights to minimum and maximum values you specify. Prevents fonts from becoming too small to read or too large for the UI layout.
+            desc : "將所有字型高度限制為您指定的最小值和最大值。防止字型變得太小而無法閱讀或太大而無法適應 UI 佈局。"
         
         - CustomFontWeight:
-            title : Customize Font Weight (All)
+            title : "自訂字型粗細(All)"
             recommend : no
             author : Neo-Mind
-            desc : Changes the boldness (weight) of all fonts -- both normal and bold -- to a single custom value. Values range from 100 (thin) to 900 (heavy), with 400 being normal and 700 being bold.
+            desc : "將所有字型（一般與粗體）的粗細（weight）改為單一自訂值。數值範圍從 100（細）到 900（粗），其中 400 為一般、700 為粗體。"
         
         - CustomNormalFontWeight:
-            title : Customize Font Weight (Normal)
+            title : "自訂字型粗細(Normal)"
             recommend : no
             author : Neo-Mind
-            desc : Changes the boldness (weight) of normal-weight fonts only. Does not affect fonts already marked as bold. Use to make regular UI text thinner or thicker.
+            desc : "僅變更一般字重字型的粗細（weight），不影響已標記為粗體的字型。可讓一般 UI 文字變細或變粗。"
         
         - CustomBoldFontWeight:
-            title : Customize Font Weight (Bold)
+            title : "自訂字型粗細(Bold)"
             recommend : no
             author : Neo-Mind
-            desc : Changes the boldness (weight) of bold-weight fonts only. Does not affect normal-weight fonts. Use to make bold UI text heavier or lighter.
+            desc : "僅變更粗體字型的粗細（weight），不影響一般字重的字型。可讓粗體 UI 文字更粗或更細。"
         
         - CustomFontWgtOffset:
-            title : Customize Font Weight (Offset)
+            title : "自訂字型粗細(Offset)"
             recommend : no
             author : Neo-Mind
-            desc : Adds a fixed offset to all font weights, making every font uniformly bolder (positive values) or thinner (negative values) without overriding individual weight settings.
+            desc : "為所有字型粗細新增固定偏移量，使每種字型統一加粗（正值）或變細（負值），而不覆蓋個別粗細設定。"
         
         - CustomFontCharset:
-            title : Customize Font charset
+            title : "自訂字型字元集"
             recommend : no
             author : Neo-Mind
-            desc : Overrides the character set (charset) used for all fonts to a custom value. Use to force a specific encoding like ANSI (0), Baltic (186), or UTF-8 when the default charset causes display issues.
+            desc : "將所有字型使用的字元集 (charset) 覆蓋為自訂值。當預設字元集導致顯示問題時，用於強制使用特定編碼，例如 ANSI (0) 、 Baltic (186) 或 UTF-8 。"
 
 IgnoreErrors:
-    title : IGNORE ERRORS
+    title : "忽略錯誤"
     mutex : false
     
     patches:
         - IgnoreRsrcErr:
-            title : Ignore Resource errors
+            title : "忽略資源錯誤"
             recommend : no
             author : Shinryo, Andrei Karas (4144) , Ai4rei/AN
-            desc : Suppresses most error popups for missing resources (sprites, textures, models, etc.) and redirects them to the debug output instead. The client will try to continue running, but missing files may still cause visual glitches or crashes.
+            desc : "抑制大多數缺少資源 (sprites, textures, models, etc.) 的錯誤彈出視窗，並將它們重新導向到偵錯輸出。用戶端將嘗試繼續執行，但遺失的檔案仍可能導致視覺異常或當機。"
         
         - IgnorePalErr:
-            title : Ignore Palette errors
+            title : "忽略色盤錯誤"
             recommend : no
             author : Shinryo , Ai4rei/AN
-            desc : Suppresses error popups for missing palette (.pal) files and redirects them to debug output. Useful when using custom jobs or hairstyles where not all palette combinations exist yet.
+            desc : "抑制缺少色盤 (.pal) 檔案的錯誤彈出視窗，並將它們重新導向到偵錯輸出。當使用尚未存在所有色盤組合的自訂職業或髮型時非常有用。"
         
         - IgnoreLuaErr:
-            title : Ignore Lua errors
+            title : "忽略 Lua 錯誤"
             recommend : no
             author : Andrei Karas (4144), X-EcutiOnner
-            desc : Suppresses lua runtime error popups (e.g., "attempt to call nil value") and redirects them to debug output. Prevents the client from halting on non-critical lua errors in custom scripts.
+            desc : "抑制 Lua 執行時錯誤彈出視窗 (e.g., \"attempt to call nil value\") 並將其重新導向到偵錯輸出。防止用戶端因自訂腳本中的非關鍵 Lua 錯誤而停止。"
         
         - IgnoreQuestErr:
-            title : Ignore Quest errors
+            title : "忽略任務錯誤"
             recommend : no
             author : Andrei Karas (4144), X-EcutiOnner
-            desc : Suppresses quest-related error popups (e.g., "Not found Quest Info = XXXX") and redirects them to debug output. Useful when the server has quests that are not yet defined in the client's quest lua files.
+            desc : "抑制與任務相關的錯誤彈出視窗 (e.g., \"Not found Quest Info = XXXX\") 並將它們重新導向到偵錯輸出。當伺服器具有尚未在用戶端的任務 Lua 檔案中定義的任務時很有用。"
         
         - IgnoreEntryQueueErr:
-            title : Ignore Entry Queue errors
+            title : "忽略 Entry Queue 錯誤"
             recommend : no
             author : X-EcutiOnner , Skylove
-            desc : Suppresses Entry Queue error popups and redirects them to debug output. Useful if the Battleground or instance queue system triggers errors on your server configuration.
+            desc : "抑制 Entry Queue 錯誤彈出視窗並將其重新導向到偵錯輸出。如果 Battleground 或實例佇列系統在您的伺服器設定上觸發錯誤，則非常有用。"
 
 MessageBox:
-    title : MSGBOX CUSTOMIZATIONS
+    title : "MSGBOX 客製"
     mutex : true
     
     patches:
         - MsgBox2Beep:
-            title : Change MessageBox to Beep
+            title : "將 MessageBox 改為蜂鳴聲"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Replaces all error/warning message popups with a system beep sound instead. The client will not pause for user input -- it plays a sound and continues running.
+            desc : "將所有錯誤/警告訊息彈出視窗替換為系統蜂鳴聲。用戶端不會因使用者輸入而暫停——它會播放聲音並繼續執行。"
         
         - ShowMsgIcon:
-            title : Show icon in MessageBox
+            title : "在 MessageBox 中顯示圖示"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Adds an icon (error, warning, info, etc.) to message box popups that normally show only plain text. Makes it easier to distinguish between different types of client messages.
+            desc : "將圖示 (error, warning, info, etc.) 新增至通常只顯示純文字的 MessageBox 彈出視窗。可以更輕鬆地區分不同類型的用戶端訊息。"
         
         - NoMsgBox:
-            title : Disable MessageBoxes
+            title : "停用 MessageBox"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Completely disables all message box popups in the client. No error, warning, or info dialogs will appear. Use with caution -- errors will be silently ignored and may cause unexpected behavior.
+            desc : "完全停用用戶端中的所有 MessageBox 彈出視窗。不會出現錯誤、警告或資訊對話框。謹慎使用－錯誤將被默默地忽略，並可能導致意外的行為。"

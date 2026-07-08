@@ -28,206 +28,206 @@
 
             
 CustomChar:
-    title : CHARACTER CUSTOMIZATION
+    title : "角色自訂"
     mutex : false
     color : darkorchid
     
     patches:
         - OfficialPal:
-            title : Use official cloth palettes
+            title : "使用官方布料色盤"
             recommend : no
             author : Neo-Mind
-            desc : Forces the client to use Gravity's official cloth color palettes on all langtypes. <b>WARNING:</b> Incompatible with the 'Enable Custom Jobs' patch.
+            desc : "強制用戶端在所有 langtypes 使用 Gravity 官方服裝色盤。<b>警告：</b>與「啟用自訂職業」修補不相容。"
         
         - NoGMSprite:
-            title : Disable GM sprite
+            title : "停用 GM 精靈"
             recommend : no
             author : Neo-Mind
-            desc : Hides the special GM sprite (the yellow character) while keeping all GM functionality intact, including the yellow name color and admin right-click menu. GMs appear as their normal job class.
+            desc : "隱藏特殊的 GM 精靈 (the yellow character)，同時保持所有 GM 功能完整，包括黃色名稱色彩和管理右鍵選單。總經理似乎是他們的正常工作類別。"
         
         - ShowBGEmblem:
-            title : Enable Emblem hover for BG [Experimental]
+            title : "為 BG 啟用徽章懸停 [實驗]"
             recommend : no
             author : Neo-Mind
-            desc : Displays guild emblems above characters in Battleground maps, the same way they appear during Guild vs Guild (WoE). Helps identify team members in BG. Experimental -- may have visual quirks.
+            desc : "在 Battleground 地圖中的角色上方顯示公會徽章，與 Guild 與 Guild (WoE) 期間的顯示方式相同。協助識別 BG 中的團隊成員。實驗性的－可能有視覺上的怪癖。"
         
         - RestoreModelCulling:
-            title : Restore model culling
+            title : "還原模型剔除"
             recommend: no
             author : Curiosity , Neo-Mind
-            desc : Makes 3D models (buildings, walls, objects) that block your view of the player character turn transparent. Improves visibility in areas with large obstructing models.
+            desc : "讓遮蔽玩家角色視野的 3D 模型 (buildings, walls, objects) 變得透明。提高具有大型遮蔽模型的區域的可見度。"
         
         - Intravision:
-            title : Always see hidden/cloaked objects
+            title : "始終看到隱藏/隱藏的物體"
             recommend : no
             author : Secret, A.K.M. , Neo-Mind
-            desc : Makes hidden and cloaked characters/objects always visible as dark silhouettes, as if the player permanently has the Intravision buff. Useful for GMs or testing -- gives an unfair advantage in PvP.
+            desc : "讓隱藏和隱形的角色 /objects 始終以黑色輪廓可見，就好像玩家永久擁有 Intravision 增益一樣。對於 GM 或測試很有用——在 PvP 中提供不公平的優勢。"
         
         - CustomQSDelay:
-            title : Customize Quick Switch delay
+            title : "自訂快速切換延遲"
             recommend : no
             author : mrjnumber1
-            desc : Changes the cooldown delay (in ticks) for the quick equipment swap feature. Lower values allow faster gear switching; higher values enforce a longer wait between swaps.
+            desc : "變更快速裝備交換功能的冷卻延遲 (in ticks)。較低的值允許更快的檔位切換；較高的值會強制交換之間的等待時間更長。"
         
         - AllowPL2Leave:
-            title : Allow party leader to leave
+            title : "允許黨魁離開"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind
-            desc : Allows the party leader to leave the party when no other members are on the same map. By default, the client prevents the leader from leaving while the party still exists.
+            desc : "當同一張地圖上沒有其他成員時，允許隊伍領袖離開隊伍。預設情況下，當隊伍仍然存在時，用戶端會阻止領導者離開。"
         
         - AllowSkillSpam:
-            title : Allow spam skills by hotkey
+            title : "透過熱鍵允許洗頻技能"
             recommend : no
             author : Neo-Mind, Functor , Andrei Karas (4144) , CrazyBebop , Victor Hugo
-            desc : Allows rapid skill casting by holding down a hotkey instead of having to press it repeatedly. Removes the client-side cooldown between hotkey activations.
+            desc : "可以按住熱鍵來快速施放技能，而不必重複按下。消除熱鍵啟動之間的用戶端冷卻時間。"
         
         - AllowGuildInClan:
-            title : Allow guild activities in clan
+            title : "允許部落內進行公會活動"
             recommend : no
             author : Functor, Secret , Neo-Mind
-            desc : Removes the client-side restriction that blocks guild features (creating/joining guilds, GvG, etc.) while the player is a member of a clan. Allows both memberships to coexist.
+            desc : "刪除了當玩家是部落成員時阻止公會功能 (creating/joining guilds, GvG, etc.) 的用戶端限制。允許兩種成員資格共存。"
         
         - CustomAFStopDelay:
-            title : Customize auto follow stop delay
+            title : "自訂自動跟隨停止延遲"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the delay before auto-follow stops after the target moves out of range. Lower values make the character stop sooner; higher values keep following longer.
+            desc : "變更目標移出範圍後自動跟隨停止之前的延遲。較低的值使角色停止得更快；更高的價值會持續更長時間。"
         
         - ShowGvGDamage:
-            title : Show Damage for GvG
+            title : "顯示 GvG 的傷害"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Shows damage numbers on Guild vs Guild (WoE) maps. By default, the client hides all damage digits during GvG to reduce visual clutter, but this makes it hard to gauge effectiveness.
+            desc : "顯示 Guild 與 Guild (WoE) 地圖上的傷害數字。預設情況下，用戶端會在 GvG 期間隱藏所有傷害數字，以減少視覺混亂，但這使得很難衡量有效性。"
 
         - Allow65kHairs:
-            title     : Allow 65k Hair Styles
+            title     : "允許 65k 髮型"
             recommend : no
             author    : Ai4rei/AN, Neo-Mind, CrazyBebop
-            desc      : Removes the hard-coded hair style limit, allowing the client to load any hair sprite by number. Supports up to 65535 styles.
+            desc      : "刪除了硬編碼的髮型限制，允許用戶端按數量載入任何頭髮精靈。最多支援 65535 樣式。"
 
 CustomAutoFollow:
-    title : AUTO FOLLOW CUSTOMIZATION
+    title : "自動跟隨客製化"
     mutex : true
     
     patches:
         - NoAutoFollow:
-            title : Disable auto follow
+            title : "停用自動跟隨"
             recommend : no
             author : Functor , Neo-Mind
-            desc : Completely disables the Shift+Right-Click auto-follow feature. Use on servers where auto-follow is considered an exploit or is not desired.
+            desc : "完全停用 Shift+右鍵點擊自動跟隨功能。在自動關注被認為是一種利用或不需要的伺服器上使用。"
         
         - DecrAFDelay:
-            title : Decrease auto follow delay
+            title : "減少自動跟隨延遲"
             recommend : no
             author : CH.C (jchcc)
-            desc : Reduces the initial delay before auto-follow starts moving after Shift+Right-Click. Lower values make the character begin following sooner.
+            desc : "減少 Shift+右鍵後自動跟隨開始移動之前的初始延遲。較低的值使角色更快開始跟隨。"
 
 CustomAura:
-    title : AURA CUSTOMIZATION
+    title : "光環客製化"
     mutex : false
     
     patches:
         - CustomAuraSprites:
-            title : Customize Aura sprites
+            title : "自訂光環精靈"
             recommend : no
             author : Shinryo
-            desc : Separates aura sprites from warp portal effects by using dedicated files (aurafloat.tga and auraring.bmp in 'data\\texture\\effect'). Prevents high-level character auras from visually interfering with warp portals.
+            desc : "使用專用檔案 (aurafloat.tga and auraring.bmp in 'data\\\\texture\\\\effect') 將光環精靈與扭曲傳送門效果分開。防止高級角色光環在視覺上乾擾傳送門。"
         
         - CustomAuraLimits:
-            title : Customize Aura display limits
+            title : "自訂 Aura 顯示限制"
             recommend : no
             author : Neo-Mind
-            desc : Customizes which character classes and levels display the standard aura effect. Set minimum levels and allowed job classes for aura visibility to match your server's progression system.
+            desc : "自訂哪些角色類別和等級顯示標準光環效果。設定光環可見性的最低等級和允許的工作類別，以符合伺服器的進度系統。"
 
 CustomChatColor:
-    title : <font color="#9F00EF">CHA</font><font color="#5F00FF">T CO</font><font color="blue">LOR </font><font color="green">CUS</font><font color="yellow">TOM</font><font color="orange">IZA</font><font color="red">TION</font>
+    title : "<font color=\"#9F00EF\"> CHA </font> <font color=\"#5F00FF\"> T CO </font> <font color=\"blue\"> LOR </font> <font color=\"green\"> CUS </font> <font color=\"yellow\"> TOM </font> <font color=\"orange\"> IZA </font> 1K1K12__131K12__212__"
     mutex : false
     
     patches:
         - CustomGMColor:
-            title : Customize chat color (GM)
+            title : "自訂聊天色彩（GM）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of GM chat messages to a custom hex value. Default is ffff00 (yellow). Use to make GM announcements stand out in your preferred color.
+            desc : "将 GM 聊天消息的颜色變更为自定义十六进制值。預設為 ffff00 (yellow) 。用于使 GM 公告以您喜欢的颜色脱颖而出。"
     
         - CustomGuildColor:
-            title : Customize chat color (Guild)
+            title : "自訂聊天色彩（公會）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of guild chat messages to a custom hex value. Default is b4ffb4 (light green).
+            desc : "將公會聊天訊息的色彩變更為自訂十六進位值。預設為 b4ffb4 (light green) 。"
         
         - CustomPartyColor:
-            title : Customize chat color (Party - Others)
+            title : "自訂聊天色彩（派對-其他）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of party chat messages from other members to a custom hex value. Default is ffc8c8 (pinkish).
+            desc : "將其他成員的聚會聊天訊息的色彩變更為自訂十六進位值。預設為 ffc8c8 (pinkish) 。"
         
         - CustomPartyColorSelf:
-            title : Customize chat color (Party - Self)
+            title : "自訂聊天色彩（派對-自己）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of your own party chat messages to a custom hex value. Default is ffc800 (orange).
+            desc : "將您自己的派對聊天訊息的色彩變更為自訂十六進位值。預設為 ffc800 (orange) 。"
         
         - CustomPublicColor:
-            title : Customize chat color (Public - Others)
+            title : "自訂聊天色彩（公共-其他）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of public chat messages from other players to a custom hex value. Default is ffffff (white).
+            desc : "將其他玩家的公共聊天訊息的色彩變更為自訂十六進位值。預設為 ffffff (white) 。"
         
         - CustomPublicColorSelf:
-            title : Customize chat color (Public - Self)
+            title : "自訂聊天色彩（公共-自我）"
             recommend : no
             author : Ai4rei/AN , Shakto
-            desc : Changes the color of your own public chat messages to a custom hex value. Default is 00ff00 (green).
+            desc : "將您自己的公開聊天訊息的色彩變更為自訂十六進位值。預設值為 00ff00 (green) 。"
 
 SkipCheatCheck:
-    title : SKIP CHEATER CHECK
+    title : "跳過作弊檢查"
     mutex : false
     
     patches:
         - SkipInFriendList:
-            title : Skip Friend list cheat check
+            title : "跳過好友清單作弊檢查"
             recommend : no
             author : Ai4rei/AN
-            desc : Disables the "possible impersonation" warning when receiving a PM from someone whose name resembles a friend on your list. The warning is meant to detect name spoofing but causes false positives.
+            desc : "當收到姓名與您清單中的好友相似的人寄來的私訊時，請停用 \"possible impersonation\" 警告。該警告旨在偵測名稱欺騙，但會導致誤報。"
         
         - SkipInGuildList:
-            title : Skip Guild Member cheat check
+            title : "跳過公會成員作弊檢查"
             recommend : no
             author : Ai4rei/AN
-            desc : Disables the "possible impersonation" warning when receiving a PM from someone whose name resembles a guild member. Same as the friend list version but for guild members.
+            desc : "當收到名字與公會成員相似的人的私訊時，停用 \"possible impersonation\" 警告。與好友清單版本相同，但適用於公會成員。"
 
 WalkDelay:
-    title : WALK DELAY
+    title : "步行延遲"
     mutex : true
     
     patches:
         - NoWalkDelay:
-            title : Remove Walk Delay
+            title : "消除步行延遲"
             recommend : no
             author : MegaByte , X-EcutiOnner
-            desc : Removes the delay between walk-click inputs entirely, allowing immediate movement response. <b>Note:</b> May cause the client to send duplicate movement packets to the server.
+            desc : "完全消除步行點擊輸入之間的延遲，從而實現即時的移動響應。  <b>注意：</b> 可能會導致用戶端向伺服器傳送重複的行動封包。"
         
         - CustomWalkDelay:
-            title : Customize Walk Delay
+            title : "自訂步行延遲"
             recommend : no
             author : MegaByte , X-EcutiOnner
-            desc : Changes the delay between walk-click inputs to a custom value (in milliseconds). Lower values make movement more responsive. <b>Note:</b> Very low values may cause the client to send duplicate movement packets.
+            desc : "將步行點擊輸入之間的延遲變更為自訂值 (in milliseconds) 。較低的值使運動反應更加靈敏。  <b>注意：</b> 非常低的值可能會導致用戶端傳送重複的行動封包。"
 
 ResButtonVis:
-    title : RESURRECT BUTTON VISIBILITY
+    title : "復活按鈕可見性"
     mutex : true
     color : darkorange
     
     patches:
         - HideResButton:
-            title : Skip Resurrection button
+            title : "跳過復活按鈕"
             recommend : no
             author : Shinryo
-            desc : Hides the Token of Ziegfried resurrection button when the player dies, even if one is in inventory. Use on servers where self-resurrection is not desired or the token has been repurposed.
+            desc : "當玩家死亡時隱藏齊格飛復活按鈕，即使它在背包中。在不需要自我復活或代幣已被重新利用的伺服器上使用。"
         
         - ShowResButton:
-            title : Always show Resurrection button
+            title : "始終顯示復活按鈕"
             recommend : no
             author : Neo-Mind
-            desc : Always shows the Token of Ziegfried resurrection button on death regardless of the map type. By default, the button is hidden on certain map types like PvP or GvG maps.
+            desc : "無論地圖類型如何，死亡時始終顯示齊格飛復活按鈕。預設情況下，該按鈕在某些地圖類型（例如 PvP 或 GvG 地圖）上隱藏。"

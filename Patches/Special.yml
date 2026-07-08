@@ -27,68 +27,68 @@
 ############################################################################
 
 CustomSpecials:
-    title : SPECIAL CUSTOMIZATIONS
+    title : "特別客製化"
     mutex : false
     color : deeppink
     
     patches:
         - CustomShields:
-            title : Enable Custom Shields
+            title : "啟用自訂防護罩"
             recommend : no
             author : Neo-Mind , CrazyBebop
-            desc : Enables custom shield sprites beyond the default set by loading shield definitions from lua files (similar to the Xray system). Required for servers with custom shield graphics.
+            desc : "透過從 Lua 檔案 (similar to the Xray system) 載入遮蔽定義，啟用超出預設設定的自訂遮蔽精靈。對於具有自訂遮蔽圖形的伺服器是必需的。"
         
         - CustomJobs:
-            title : Enable Custom Jobs (Reforged)
+            title : "啟用自訂職業 (Reforged)"
             recommend : no
             author : CrazyBebop
-            desc : Adds support for custom job classes beyond the official set. Jobs are defined via lua files in the data folder. Required for servers with custom classes like Druid or other fan-made jobs.
+            desc : "新增對官方集合以外的自訂職業類別的支援。作業是透過資料資料夾中的 Lua 檔案定義的。對於具有自訂類別（如 Druid 或其他粉絲製作的作業）的伺服器是必需的。"
 
         - CustomHomuns:
-            title : Enable Custom Homunculi
+            title : "啟用自訂 Homunculi"
             recommend : no
             author : Neo-Mind
-            desc : Enables custom homunculus types beyond the official set using lua files. Uses the same <b>'ReqJobName'</b> function as custom jobs, so no extra configuration files are needed beyond the job lua.
+            desc : "使用 Lua 檔案啟用官方設定以外的自訂侏儒類型。使用與自訂職業相同的 <b>'ReqJobName'</b> 函式，因此除了作業 Lua 之外不需要額外的設定檔。"
 
         - AddLuaOverrides:
-            title : Add Chris' lua overrides [Experimental]
+            title : "新增 Chris 的 Lua 覆蓋 [實驗]"
             recommend : no
             author : llchrisll , Neo-Mind
-            desc : Loads additional lua override files by llchrisll that extend and patch the client's existing lua tables and functions. Adds quality-of-life improvements and fixes. See <a href="https://llchrisll.github.io/ROTPDocs/addons/cls/?h=lua">documentation</a> for the full list of changes. Experimental.
+            desc : "由 llchrisll 載入額外的 Lua 覆蓋檔案，這些檔案擴充和修補用戶端現有的 Lua 表和函式。增加生活品質的改進和修復。有關變更的完整列表，請參閱 <a href=\"https://llchrisll.github.io/ROTPDocs/addons/cls/%h=lua\"> 檔案 </a>。實驗性的。"
 
         - AllowAPBarforAllJobs:
-            title : Allow AP Bar for all Jobs
+            title : "允許所有作業使用 AP Bar"
             recommend : no
             author : Skylove, Singe-Horizontal
-            desc : Displays the AP (Activity Points) bar for all job classes, not just 4th jobs. Internally treats every class as a 4th job for the AP gauge check. Useful for servers that give AP to all classes.
+            desc : "顯示所有工作類別的 AP (Activity Points) 欄，而不僅僅是第 4 個工作。在內部將每個班級視為 AP 計量表檢查的第四項工作。對於為所有類別提供 AP 的伺服器很有用。"
 
         - RemoveMaxNumbersLimit:
-            title : Remove the limit of max number displayed in damage/heal
+            title : "取消傷害/heal中顯示的最大數量限制"
             recommend : no
             author : 4144
-            desc : Removes the cap on displayed damage, healing, and other floating numbers. Without this, very large numbers get clamped to a maximum display value. Required for high-rate servers with large damage output.
+            desc : "取消顯示傷害、治療和其他浮動數字的上限。如果沒有這個，非常大的數字會被限制在最大顯示值。對於具有大傷害輸出的高速率伺服器來說是必需的。"
 
 CustomSkills:
-    title : SKILL CUSTOMIZATIONS
+    title : "技能客製化"
     mutex : false
     color : deeppink
     
     patches:
         - CustomPlayerSkills:
-            title : Enable Custom Player skills [Experimental]
+            title : "啟用自訂玩家技能[實驗]"
             recommend : no
             author : Unknown
-            desc : Enables custom player skills beyond the official skill list by loading definitions from lua files. Required for servers that add new skills. Experimental -- may require careful lua configuration.
+            desc : "透過從 Lua 檔案載入定義，啟用官方技能清單以外的自訂玩家技能。對於新增新技能的伺服器來說是必要的。實驗性的－可能需要仔細的 Lua 設定。"
         
         - CustomHomunSkills:
-            title : Enable Custom Homunculus skills [Experimental]
+            title : "啟用自訂 Homunculus 技能 [實驗]"
             recommend : no
             author : Unknown
-            desc : Enables custom homunculus skills beyond the official list by loading definitions from lua files. Required for servers that add new homunculus abilities. Experimental.
+            desc : "透過從 Lua 檔案載入定義，啟用官方清單以外的自訂侏儒技能。新增侏儒能力的伺服器是必需的。實驗性的。"
         
         - CustomMerceSkills:
-            title : Enable Custom Mercenary skills [Experimental]
+            title : "啟用自訂 Mercenary 技能 [實驗]"
             recommend : no
             author : Unknown
-            desc : Enables custom mercenary skills beyond the official list by loading definitions from lua files. Required for servers that add new mercenary abilities. Experimental.
+            desc : "透過從 Lua 檔案載入定義，啟用官方清單以外的自訂僱傭兵技能。對於新增新僱傭兵能力的伺服器來說是必需的。實驗性的。"
 

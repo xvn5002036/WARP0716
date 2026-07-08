@@ -27,28 +27,28 @@
 ############################################################################
 
 CustomNW:
-    title : NETWORK CUSTOMIZATION
+    title : "網路客製化"
     mutex : false
-    color : peru	
+    color : peru    
     
     patches:
         - SendMD5Hash:
-            title : Send MD5 hash packet
+            title : "傳送 MD5 雜湊包"
             recommend : no
             author : GreenBox , Neo-Mind
-            desc : Makes the client send its own MD5 hash to the server on login for all langtypes. Used for integrity verification to detect modified client executables. Only enable if your server is configured to receive and check this packet.
+            desc : "使用戶端在登入時將其自己的 MD5 雜湊值傳送到所有 langtypes 的伺服器。用於完整性驗證以偵測修改的用戶端執行檔。僅當您的伺服器設定為接收和檢查此封包時才啟用。"
         
         - NoNagle:
-            title : Disable nagle algorithm
+            title : "停用 nagle 演算法"
             recommend : yes
             author : Shinryo
-            desc : Disables TCP Nagle buffering so packets are sent immediately. Reduces input lag and improves responsiveness at the cost of slightly more network traffic. Recommended for most servers.
+            desc : "停用 TCP Nagle 緩衝，以便立即傳送封包。減少輸入延遲並提高響應能力，但代價是稍微增加網路流量。建議用於大多數伺服器。"
         
         - EnableProxy:
-            title : Enable proxy support
+            title : "啟用代理支援"
             recommend : no
             author : Ai4rei/AN , Neo-Mind,Skylove
-            desc : Ignores the IP addresses sent by the server when transitioning between login, char, and map servers. Keeps the client connecting to the address from clientinfo.xml instead. Required when playing through a proxy, VPN, or when the server reports internal LAN addresses.
+            desc : "在登入、字元和地圖伺服器之間轉換時，忽略伺服器傳送的 IP 位址。相反，讓用戶端連線到 clientinfo.xml 的位址。透過代理、VPN 或伺服器報告內部 LAN 位址時需要。"
             
 #        - NoHardCodedAddr:
 #            title : Remove hardcoded address/port
@@ -57,71 +57,71 @@ CustomNW:
 #            desc : Remove hardcoded connection addresses and ports.
         
         - EnableHttpEmblem:
-            title : Fix HTTP emblem in client
+            title : "修復用戶端中的 HTTP 徽章"
             recommend : no
             author : CH.C (jchcc)
-            desc : Fixes guild emblem loading via HTTP on clients that have the cheat defender enabled. Requires an HTTP emblem service running on your server.
+            desc : "修正了在啟用了作弊防禦者的用戶端上透過 HTTP 載入公會徽章的問題。需要在您的伺服器上執行 HTTP 徽章服務。"
             
         - CustomMerchantURL:
-            title : Customize Merchant store URLs
+            title : "自訂商家商店 URL"
             recommend : no
             author : CH.C (jchcc)
-            desc : Changes the hardcoded URLs used for saving and loading Merchant Store (vending) data to custom ones. Requires an HTTP service on your server to handle merchant store requests.
+            desc : "將用於儲存和載入 Merchant Store (vending) 資料的硬編碼 URL 變更為自訂 URL。需要您的伺服器上有 HTTP 服務來處理商家商店請求。"
         
         - SendClientFlags :
-            title : Send client flags
+            title : "傳送用戶端標誌"
             recommend : yes
             author : Andrei Karas (4144)
-            desc : Sends the client's feature flags to the server during login, keeping client and server in sync about which features are supported. Prevents mismatches that can cause missing UI elements or broken functionality.
+            desc : "在登入期間將用戶端的功能標記傳送到伺服器，使用戶端和伺服器在支援哪些功能方面保持同步。防止可能導致 UI 元素遺失或功能損壞的不符。"
             
 
 
 CustomEncKeys:
-    title : ENCRYPTION KEY CUSTOMIZATION
+    title : "加密金鑰客製化"
     mutex : false
 
     patches:
         - CustomFirstKey:
-            title : Customize Packet Key (1st)
+            title : "自訂封包金鑰（第一）"
             recommend : no
             author : Shakto , Neo-Mind
-            desc : Sets a custom value for the 1st packet encryption key. Must match the key configured on your server. <b>WARNING:</b> Do not combine with 'Disable Map packet encryption' -- use one approach or the other.
+            desc : "為第一個封包加密金鑰設定自訂值。必須與伺服器上設定的金鑰相符。  <b>警告：</b> 不要與 'Disable Map packet encryption' 結合使用－使用一種方法或另一種方法。"
             needs : NoEncrForLC
         
         - CustomSecondKey:
-            title : Customize Packet Key (2nd)
+            title : "自訂封包金鑰（第二）"
             recommend : no
             author : Shakto , Neo-Mind
-            desc : Sets a custom value for the 2nd packet encryption key. Must match the key configured on your server. <b>WARNING:</b> Do not combine with 'Disable Map packet encryption' -- use one approach or the other.
+            desc : "為第二個封包加密金鑰設定自訂值。必須與伺服器上設定的金鑰相符。  <b>警告：</b> 不要與 'Disable Map packet encryption' 結合使用－使用一種方法或另一種方法。"
             needs : NoEncrForLC
         
         - CustomThirdKey:
-            title : Customize Packet Key (3rd)
+            title : "自訂封包金鑰（第三）"
             recommend : no
             author : Shakto , Neo-Mind
-            desc : Sets a custom value for the 3rd packet encryption key. Must match the key configured on your server. <b>WARNING:</b> Do not combine with 'Disable Map packet encryption' -- use one approach or the other.
+            desc : "為第三個封包加密金鑰設定自訂值。必須與伺服器上設定的金鑰相符。  <b>警告：</b> 不要與 'Disable Map packet encryption' 結合使用－使用一種方法或另一種方法。"
             needs : NoEncrForLC
 
 DisableEncr:
-    title : DISABLE ENCRYPTION
+    title : "停用加密"
     mutex : false
     
     patches:
         - NoPacketEncr:
-            title : Disable Map packet encryption
+            title : "停用地圖包加密"
             recommend : no
             author : Ai4rei/AN
-            desc : Disables packet obfuscation (encryption) for communication with the map server. Simplifies packet handling on servers that do not use encryption.<br> Also known as 'Skip Packet Obfuscation'.
+            desc : "停用與地圖伺服器通訊時使用的封包混淆（加密）。可簡化未使用加密伺服器的封包處理。<br>此修補也稱為「跳過封包混淆」。"
         
         - NoEncrForLC:
-            title : Disable Login/Char packet encryption
+            title : "停用登入/字元包加密"
             recommend : no
             author : Neo-Mind
-            desc : Disables packet encryption for communication with the login and character servers. Required by most server emulators that do not implement Gravity's encryption handshake.
+            desc : "停用與登入伺服器和字元伺服器通訊的封包加密。大多數不實作 Gravity 加密握手的伺服器模擬器都需要它。"
         
         - NoPassEncr:
-            title : Disable Login password encryption
+            title : "停用登入密碼加密"
             recommend : yes
             author : Andrei Karas (4144) , Jchcc
-            desc : Disables password encryption in the old login packet (0x64) for langtypes 4 and 7. Required for servers using plaintext or bcrypt password authentication with these langtypes. <b>WARNING:</b> Conflicts with 'Use SSO Login Packet' -- do not enable both.
+            desc : "停用舊登入封包 (0x64) 中 langtypes 4 和 7 的密碼加密。對於使用這些 langtypes 的明文或 bcrypt 密碼驗證的伺服器是必要的。  <b>警告：</b> 與 'Use SSO Login Packet' 衝突－請勿同時啟用兩者。"
             needs : UseOldLogin

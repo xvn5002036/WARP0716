@@ -27,439 +27,439 @@
 ############################################################################
 
 CustomData:
-    title : DATA CUSTOMIZATION
+    title : "資料客製化"
     mutex : false
     color : deepskyblue
     
     patches:
         - CustomMaxEmbFileSize:
-            title : Customize Max Emblem file size
+            title : "自訂最大徽章檔案大小"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the maximum allowed file size for guild emblems. Increase this if players are getting errors when uploading detailed or high-resolution guild emblems.
+            desc : "變更公會徽章允許的最大檔案大小。如果玩家在上傳詳細或高解析度的公會徽章時遇到錯誤，請增加此值。"
         
         - CustomRodexTax:
-            title : Customize Rodex tax
+            title : "客製化RoDEx 稅"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the tax percentage deducted when sending zeny through the RoDEx (mail) system. Set to 0 to remove the tax entirely, or adjust to your server's economy.
+            desc : "變更透過 RoDEx (mail) 系統傳送 zeny 時扣除的稅金百分比。設定為 0 以完全消除稅收，或根據伺服器的經濟狀況進行調整。"
         
         - CustomGuildExpLimit:
-            title : Customize guild exp limit
+            title : "自訂公會經驗限制"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the maximum percentage of experience a player can donate to their guild. Default is 50%. Adjust to match your server's guild configuration.
+            desc : "變更玩家可以捐贈給其公會的經驗的最大百分比。預設為 50 %。調整以符合您伺服器的公會設定。"
         
         - CustomAdvAgencyLimits:
-            title : Customize adventurer agency levels
+            title : "自訂冒險家機構等級"
             recommend : no
             author : Andrei Karas (4144), Asheraf
-            desc : Changes the minimum and maximum level range shown in the Adventurer Agency (party finder) window. Adjust to match your server's level cap and party requirements.
+            desc : "變更冒險家機構 (party finder) 視窗中顯示的最小和最大等級範圍。進行調整以配合伺服器的等級上限和隊伍要求。"
 
         - EnableCustomFonts:
-            title : Enable Official Custom Fonts (Reforged)
+            title : "啟用官方自訂字型 (Reforged)"
             recommend : no
             needs : FixFontsCharset
             author : CrazyBebop, Shinryo
-            desc : Loads custom .ttf fonts via AddFontResourceExA at init, bypassing the broken T2Embed API on modern Windows. Prompts to copy included .ttf fonts to your client folder on first apply. Requires FixFontsCharset (auto-enabled).
+            desc : "在 init 時透過 AddFontResourceExA 載入自訂.ttf 字型，繞過現代 Windows 上損壞的 T2Embed API。首次套用時提示將包含的.ttf 字型複製到用戶端資料夾。需要 FixFontsCharset (auto-enabled) 。"
 
         - FixFontsCharset:
-            title : Fix charset for Fonts
+            title : "修復字型的字元集"
             recommend : no
             author : CrazyBebop, CH.C (jchcc)
-            desc : Fixes the character encoding (charset) used for official custom fonts (EOT and OTF) so they render correctly on all langtypes. Prevents garbled text when using custom fonts on non-Korean service types. Fixed EDI register clobber for 07-16.
+            desc : "修正了用於官方自訂字型 (EOT and OTF) 的字元編碼 (charset) ，以便它們在所有 langtypes 上正確呈現。防止在非韓語服務類型上使用自訂字型時出現亂碼。修正了 07 - 16 的 EDI 暫存器破壞。"
         
         - AlwaysAscii:
-            title : Use Ascii on All
+            title : "全部使用 Ascii"
             recommend : yes
             author : Ai4rei/AN
-            desc : Forces ASCII text rendering regardless of the selected font or langtype. Ensures English characters always display correctly on all service types.
+            desc : "無論選取何種字型或 langtype ，都會強制 ASCII 文字渲染。確保英文字元在所有服務類型上始終正確顯示。"
         
         - CustomSSQuality:
-            title : Customize screenshot quality
+            title : "自訂螢幕截圖質量"
             recommend : no
             author : Ai4rei/AN
-            desc : Changes the JPEG compression quality for in-game screenshots (0-100). Higher values produce sharper images but larger files. Default quality is relatively low.
+            desc : "變更遊戲內螢幕截圖 (0-100) 的 JPEG 壓縮品質。數值越高，影像越清晰，但檔案越大。預設品質相對較低。"
         
         - CallKoreaClientInfo:
-            title : Always call SelectKoreaClientInfo()
+            title : "始終呼叫 SelectKoreaClientInfo()"
             recommend : yes
             author : Shinryo , Secret , CrazyBebop
-            desc : Ensures SelectKoreaClientInfo() is always called alongside SelectClientInfo(), unlocking features normally restricted to the Korean service type. Recommended for most servers to enable full client functionality.
+            desc : "確保 SelectKoreaClientInfo() 始終與 SelectClientInfo() 一起呼叫，解鎖通常僅限於韓國服務類型的功能。建議大多數伺服器啟用完整的用戶端功能。"
         
         
         - DataFolderFirst:
-            title : Read data folder first
-            recommend : yes
+            title : "先讀取data資料夾"
+            recommend : no
             author : Shinryo ,Skylove
-            desc : Loads loose files from the 'data' folder before checking GRF archives. Useful for development and testing custom sprites, textures, or lua files without repacking the GRF.
+            desc : "在檢查 GRF 檔案之前從 'data' 資料夾載入鬆散檔案。對於開發和測試自訂精靈、紋理或 Lua 檔案很有用，無需重新包裝 GRF 。"
         
         - PlainTextDesc:
-            title : Use plain text descriptions
+            title : "使用純文字描述"
             recommend : yes
             author : Shinryo , Neo-Mind
-            desc : Forces the client to read item and skill description .txt files as plain ASCII text instead of encoded Korean. Required for English-language description files to display correctly.
+            desc : "強制用戶端將物品和技能描述.txt 檔案讀取為純 ASCII 文本，而不是編碼的韓語。英文描述檔需要正確顯示。"
         
         - LoadKrExtSettings:
-            title : Always load korea ExternalSettings lua file
+            title : "始終載入韓國ExternalSettings lua檔案"
             recommend : yes
             author : Secret , Andrei Karas (4144) , X-EcutiOnner,Skylove
-            desc : Forces loading of the Korean ExternalSettings lua file on all langtypes. This file controls many client features and UI options that are otherwise unavailable outside the Korean service type.
+            desc : "強制在所有 langtypes 上載入韓文 ExternalSettings Lua 檔案。此檔案控制許多用戶端功能和 UI 選項，這些功能和 UI 選項在韓語服務類型之外不可用。"
         
         - IncrViewID:
-            title : Increase headgear viewID limit
+            title : "增加安全帽viewID限制"
             recommend : no
             author : Shinryo
-            desc : Raises the maximum headgear View ID limit from the default (1000-3000 depending on client version) up to 32000. Required for servers with large numbers of custom headgear sprites.
+            desc : "將最大頭飾 View ID 限制從預設 (1000-3000 depending on client version) 提高到 32000 。對於具有大量自訂頭飾精靈的伺服器來說是必需的。"
         
         - No3DBoneLimit:
-            title : Remove 3D bones limit
+            title : "刪除 3D 骨骼限制"
             recommend : no
             author : Ai4rei/AN , Neo-Mind
-            desc : Removes the hardcoded monster ID limit for 3D Granny models, allowing custom 3D monsters beyond the official range. Required for servers that add new 3D monster sprites.
+            desc : "刪除了 3D Granny 模型的硬編碼怪物 ID 限制，允許自訂 3D 怪物超出官方範圍。對於新增 3D 怪物精靈的伺服器來說是必需的。"
 
         - CustomQuestLua:
-            title : Load custom Quest Lua/Lub files
+            title : "載入自訂 Quest Lua/Lub 檔案"
             recommend : no
             author : Neo-Mind
-            desc : Enables loading of custom quest lua files specified through a YAML configuration. All listed files must be placed in the 'lua files\\quest' folder. Useful for servers with custom quests that need additional quest data files.
+            desc : "允許載入透過 YAML 設定指定的自訂任務 Lua 檔案。所有列出的檔案必須放置在 'lua files\\\\quest' 資料夾中。對於具有需要額外任務資料檔案的自訂任務的伺服器很有用。"
         
         - IncrMapQuality:
-            title : Increase map quality
+            title : "提高地圖品質"
             recommend : no
             author : Curiosity , Neo-Mind
-            desc : Upgrades map texture rendering from 16-bit to 32-bit color depth, resulting in smoother color gradients and reduced banding on ground textures. May slightly increase memory usage.
+            desc : "將地圖紋理渲染從 16 位元升級到 32 位元色彩深度，從而實現更平滑的色彩漸變並減少地面紋理上的條帶。可能會稍微增加記憶體使用量。"
         
         - EnableEffectTool:
-            title : Enable effect for all maps
+            title : "為所有地圖啟用效果"
             recommend : no
             author : Neo-Mind
-            desc : Makes the client load per-map effect files from the EffectTool folder on all maps, not just select ones. Allows custom map effects (weather, ambient particles, etc.) to work everywhere.
+            desc : "讓用戶端從所有地圖上的 EffectTool 資料夾中載入每個地圖效果檔案，而不僅僅是選定的地圖。允許自訂地圖效果 (weather, ambient particles, etc.) 在任何地方工作。"
         
         - ItemInfoPerServer:
-            title : Load iteminfo based on char server
+            title : "基於字元伺服器載入iteminfo"
             recommend : no
             author : Neo-Mind
-            desc : Loads the ItemInfo lua file and passes the selected character server name as an argument. Allows different item databases per server when hosting multiple char servers (e.g., Renewal vs Pre-Renewal).
+            desc : "載入 ItemInfo Lua 檔案並將選定的字元伺服器名稱作為參數傳遞。當託管多個字元伺服器 (e.g., Renewal vs Pre-Renewal) 時，允許每個伺服器使用不同的專案資料庫。"
         
         - UseStateLubIcon:
-            title : Use icons from stateiconimginfo.lub
+            title : "使用 stateiconimginfo.lub 中的圖示"
             recommend : no
             author : CH.C (jchcc)
-            desc : Disables hardcoded status effect icons and loads them exclusively from stateiconimginfo.lub instead. Allows full customization of buff/debuff icons through lua.
+            desc : "停用硬編碼狀態效果圖示並專門從 stateiconimginfo.lub 載入它們。允許透過 Lua 完全自訂 buff /debuff 圖示。"
         
         - CustomDLL:
-            title : Add custom DLLs
+            title : "新增自訂 DLL"
             recommend : no
             author : Neo-Mind
-            desc : Injects custom DLL loading into the client at startup. Specify the DLL filename and exported functions to call. Used for adding custom functionality like anticheat, custom rendering, or server-specific features.
+            desc : "在啟動時將自訂 DLL 載入註入用戶端。指定 DLL 檔案名稱和要呼叫的匯出函式。用於新增自訂功能，例如反作弊、自訂渲染或特定於伺服器的功能。"
         
         - HideBuildInfo:
-            title : Hide build info
+            title : "隱藏建置訊息"
             recommend : yes
             author : Andrei Karas (4144) , CrazyBebop
-            desc : Hides the client's build date, time, and version information by zeroing out all related strings. Prevents players from seeing which exact client version the server uses.
+            desc : "透過清除所有相關字串來隱藏用戶端的建置日期、時間和版本資訊。防止玩家看到伺服器使用的確切用戶端版本。"
          
         - NoCameraLock:
-            title : Disable camera lock
+            title : "停用相機鎖定"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Disables the per-map camera lock defined in ViewPointTable.txt, allowing free camera rotation on all maps. Useful for players who prefer manual camera control indoors and in dungeons.
+            desc : "停用 ViewPointTable.txt 中定義的每台地圖相機鎖定，允許在所有地圖上自由旋轉相機。對於喜歡在室內和地下城中手動控制攝影機的玩家很有用。"
         
         - NoMapInfo:
-            title : Disable map signs
+            title : "停用地圖示誌"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Disables the map name signs (location banners) that appear when entering a new map, controlled by mapInfo.lub. Removes visual clutter for players who find them distracting.
+            desc : "停用進入新地圖時出現的地圖名稱標誌 (location banners) ，由 mapInfo.lub 控制。消除那些分散注意力的玩家的視覺混亂。"
         
         - FixArrowsCharset:
-            title : Translate arrows to English
+            title : "將箭頭翻譯成英語"
             recommend : yes
             author : Andrei Karas (4144) , X-EcutiOnner , Neo-Mind
-            desc : Translates the arrow symbols and menu button labels in the hotkey settings UI from Korean to English. Fixes unreadable Korean text in the shortcut key configuration window.
+            desc : "將熱鍵設定 UI 中的箭頭符號和選單按鈕標籤從韓文翻譯為英文。修正了快捷鍵設定視窗中不可讀的韓文文字。"
         
         - BossDropIdentified:
-            title : Use 'identified' drops for Boss (MVP) mob
+            title : "對 Boss (MVP) 生物使用「已辨識」掉落物"
             recommend : no
             author : CH.C (jchcc)
-            desc : Forces items dropped by Boss (MVP) monsters to show their identified names in the drop announcement, so players can see exactly what dropped instead of 'Unknown Item'.
+            desc : "強制 Boss (MVP) 怪物掉落的物品在掉落公告中顯示其已識別的名稱，以便玩家可以準確地看到掉落的物品，而不是 'Unknown Item' 。"
         
         - TranslateClient:
-            title : Translate client
+            title : "翻譯客戶"
             recommend : yes
             author : Ai4rei/AN , Neo-Mind
-            desc : Replaces hardcoded Korean text strings in the client with translations from a mapping file (defaults to <b>Translations_EN.yml</b>). Covers system messages, UI labels, and other text that cannot be changed through lua or txt files.
+            desc : "使用映射檔案 (defaults to <b>Translations_EN.yml</b>) 的翻譯取代用戶端中硬編碼的韓文文字字串。涵蓋系統訊息、UI 標籤以及其他無法透過 Lua 或 txt 檔案變更的文字。"
         
         - CustomCaptchaDecomp:
-            title : Customize Captcha Decomp size
+            title : "自訂驗證碼分解大小"
             recommend : no
             author : Andrei Karas (4144), Asheraf
-            desc : Changes the maximum zlib decompression buffer size for captcha images. Increase this if captcha images fail to load due to exceeding the default size limit.
+            desc : "變更驗證碼影像的最大 zlib 解壓縮緩衝區大小。如果驗證碼圖像由於超出預設大小限製而無法載入，請增加此值。"
 
         - RestoreCpsDll:
-            title : Restore Cps Dll
+            title : "復原 Cps DLL"
             recommend : no
             author : Andrei Karas (4144), Skylove
-            desc : Restores the loading of Cps.dll (Gravity's protection DLL) which was removed in newer clients. Only enable if your server requires this DLL. <b>WARNING:</b> Requires the 'Add custom DLLs' patch to be active; may crash without it.
+            desc : "還原在新用戶端中刪除的 Cps.dll (Gravity's protection DLL) 的載入。僅當您的伺服器需要此 DLL 時才啟用。  <b>警告：</b> 需要 'Add custom DLLs' 修補處於活動狀態；沒有它可能會當機。"
 
 DisableProtect:
-    title : DISABLE PROTECTION
+    title : "停用保護"
     mutex : false
     
     patches:
         - NoGGuard:
-            title : Disable Game Guard
+            title : "停用遊戲衛士"
             recommend : yes
             author : Neo-Mind
-            desc : Disables nProtect GameGuard, Gravity's anti-cheat system built into Renewal clients. Required for servers since GameGuard expects Gravity's official servers and will block connections otherwise.
+            desc : "停用 Renewal 用戶端內建的 nProtect GameGuard（Gravity 的防作弊系統）。私服通常需要此修補，因為 GameGuard 會連向 Gravity 官方伺服器，否則可能阻止連線。"
         
 SkipLub:
-    title : SKIP LUB
+    title : "跳過潤滑"
     mutex : false
     
     patches:
         - SkipSignBoard:
-            title : Skip SignBoard lubs
+            title : "跳過招牌酒吧"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Skips loading of SignBoardList lub files. Useful if you do not use sign board features or want to avoid errors from missing files.
+            desc : "跳過 SignBoardList lub 檔案的載入。如果您不使用標誌板功能或想要避免因遺失檔案而導致的錯誤，則非常有用。"
         
         - SkipTownInfo:
-            title : Skip Towninfo lub
+            title : "跳過 Towninfo 俱樂部"
             recommend : no
             author : Andrei Karas (4144) , X-EcutiOnner
-            desc : Skips loading of Towninfo.lub file. Use this if you handle town information through other means or want to avoid errors from a missing file.
+            desc : "跳過 Towninfo.lub 檔案的載入。如果您透過其他方式處理城鎮資訊或想要避免因遺失檔案而導致的錯誤，請使用此選項。"
 
 ReadTxtFile:
-    title : READ .txt FILE
+    title : "讀取.txt 檔案"
     mutex : false
     
     patches:
         - MsgStrings:
-            title : Always read msgstringtable.txt
+            title : "一律閱讀 msgstringtable.txt"
             recommend : yes
             author : Shinryo
-            desc : Forces the client to load all UI messages from msgstringtable.txt on every langtype instead of using hardcoded Korean strings. Essential for English and other non-Korean servers.
+            desc : "強制用戶端在每個 langtype 上載入來自 msgstringtable.txt 的所有 UI 訊息，而不是使用硬編碼的韓語字串。對於英語和其他非韓語伺服器至關重要。"
         
         - QuestDisplay:
-            title : Always read questid2display.txt
+            title : "一律閱讀 questid2display.txt"
             recommend : yes
             author : Shinryo
-            desc : Forces loading of questid2display.txt on all langtypes instead of only langtype 0. Required for quest UI to display correct quest names and descriptions on non-Korean service types.
+            desc : "強制在所有 langtypes 上載入 questid2display.txt 而不是僅在 langtype 0 上。任務 UI 需要顯示正確的任務名稱和非韓國服務類型的描述。"
 
 CustomPath:
-    title : PATH CUSTOMIZATION
+    title : "路徑客製"
     mutex : false
     
     patches:
         - CustomDefaultBGM:
-            title : Customize Default BGM file
+            title : "自訂預設 BGM 檔案"
             recommend : no
             author : Jian
-            desc : Changes the default background music played on the login screen from <b>bgm\01.mp3</b> to a custom MP3 file of your choice.
+            desc : "將登入畫面上播放的預設背景音樂從 <b>bgm\\ 01.mp3</b> 變更為您選取的自訂 MP3 檔案。"
         
         - CustomItemInfoLub:
-            title : Customize Iteminfo lub
+            title : "自訂 Iteminfo lub"
             recommend : yes
             author : Neo-Mind
-            desc : Loads a custom lua file for item data instead of the default <b>Iteminfo*.lub</b>. Lets you use a renamed or restructured item database file.
+            desc : "載入專案資料的自訂 Lua 檔案，而不是預設的 <b>Iteminfo*.lub</b> 。允許您使用重新命名或重組的專案資料庫檔案。"
         
         - CustomAchieveLub:
-            title : Customize AchievementList lub
+            title : "自訂成就清單 lub"
             recommend : yes
             author : Jian
-            desc : Loads a custom lua file for achievement data instead of the default <b>AchievementList*.lub</b>. Useful for servers with custom achievement systems.
+            desc : "載入成就資料的自訂 Lua 檔案，而不是預設的 <b>AchievementList*.lub</b> 。對於具有自訂成就係統的伺服器很有用。"
         
         - CustomMonSizeEffLub:
-            title : Customize MonsterSizeEffect lub
+            title : "自訂 MonsterSizeEffect lub"
             recommend : no
             author : Jian
-            desc : Loads a custom lua file for monster size effects instead of the default <b>MonsterSizeEffect*.lub</b>. Controls which monsters display enlarged or reduced sprites.
+            desc : "載入用於怪物大小效果的自訂 Lua 檔案，而不是預設的 <b>MonsterSizeEffect*.lub</b> 。控制哪些怪物顯示放大或縮小的精靈。"
 
         - CustomTownInfoLub:
-            title : Customize Towninfo lub
+            title : "自訂Towninfo lub"
             recommend : yes
             author : Jian
-            desc : Loads a custom lua file for town/city data instead of the default <b>Towninfo*.lub</b>. Controls warp portal labels and town information displayed on the world map.
+            desc : "載入城鎮 /city 資料的自訂 Lua 檔案，而不是預設的 <b>Towninfo*.lub</b> 。控制世界地圖上顯示的傳送門標籤和城鎮資訊。"
 
         - CustomPetEvoClnLub:
-            title : Customize PetEvolutionCln lub
+            title : "客製化 PetEvolutionCln lub"
             recommend : no
             author : Jian
-            desc : Loads a custom lua file for pet evolution data instead of the default <b>PetEvolutionCln*.lub</b>. Use when adding custom pet evolution paths.
+            desc : "載入寵物進化資料的自訂 Lua 檔案，而不是預設的 <b>PetEvolutionCln*.lub</b> 。新增自訂寵物進化路徑時使用。"
         
         - CustomTipboxLub:
-            title : Customize Tipbox lub
+            title : "自訂 Tipbox lub"
             recommend : yes
             author : Jian
-            desc : Loads a custom lua file for the Tip Box (loading screen tips) instead of the default <b>Tipbox*.lub</b>. Allows custom loading tips for your server.
+            desc : "載入提示框（載入畫面提示）的自訂 Lua 檔案，而不是預設的 <b>Tipbox*.lub</b>。允許為伺服器自訂載入提示。"
         
         - CustomCheckAttLub:
-            title : Customize CheckAttendance lub
+            title : "自訂 CheckAttendance lub"
             recommend : no
             author : Jian
-            desc : Loads a custom lua file for the attendance check-in system instead of the default <b>CheckAttendance*.lub</b>. Use when customizing daily login reward data.
+            desc : "為考勤簽到系統載入自訂 Lua 檔案，而不是預設的 <b>CheckAttendance*.lub</b> 。自訂每日登入獎勵資料時使用。"
         
         - CustomPrivAirplaneLub:
-            title : Customize PrivateAirplane lub
+            title : "自訂 PrivateAirplane lub"
             recommend : no
             author : Jian
-            desc : Loads a custom lua file for the Private Airship system instead of the default <b>PrivateAirplane*.lub</b>. Use when customizing airship destinations or teleport data.
+            desc : "為私人飛艇系統載入自訂 Lua 檔案，而不是預設的 <b>PrivateAirplane*.lub</b> 。自訂飛艇目標或傳送資料時使用。"
         
         - CustomMapInfoLub:
-            title : Customize MapInfo lub
+            title : "自訂 MapInfo lub"
             recommend : yes
             author : X-EcutiOnner
-            desc : Loads a custom lua file for map information instead of the default <b>MapInfo*.lub</b>. Controls map name banners and location data shown when entering maps.
+            desc : "載入自訂 Lua 檔案以取得地圖資訊，而不是預設的 <b>MapInfo*.lub</b> 。控制輸入地圖時顯示的地圖名稱橫幅和位置資料。"
         
         - CustomOngQuestInfoLub:
-            title : Customize OngoingQuestInfoList lub
+            title : "自訂 OngoingQuestInfoList lub"
             recommend : yes
             author : Jian
-            desc : Loads a custom lua file for ongoing quest information instead of the default <b>OngoingQuestInfoList*.lub</b>. Use when customizing the quest tracker display.
+            desc : "載入自訂 Lua 檔案以取得正在進行的任務資訊，而不是預設的 <b>OngoingQuestInfoList*.lub</b> 。在自訂任務追蹤器顯示時使用。"
 
         - CustomRcmdQuestInfoLub:
-            title : Customize RecommendedQuestInfoList lub
+            title : "自訂RecommendedQuestInfoList lub"
             recommend : yes
             author : Jian
-            desc : Loads a custom lua file for recommended quest data instead of the default <b>RecommendedQuestInfoList*.lub</b>. Use when customizing suggested quests shown to players.
+            desc : "載入建議任務資料的自訂 Lua 檔案，而不是預設的 <b>RecommendedQuestInfoList*.lub</b> 。在自訂向玩家顯示的建議任務時使用。"
         - CustomspopupLub:
-            title : Customize spopup lub
+            title : "自訂 spopup lub"
             recommend : yes
             author : llchrisll,Skylove
-            desc : Loads a custom lua file for skill popup data instead of the default <b>spopup.lub</b>. Controls the popup text shown when hovering over skills.
+            desc : "載入技能彈出資料的自訂 Lua 檔案，而不是預設的 <b>spopup.lub</b> 。控制將滑鼠懸停在技能上時顯示的彈出文字。"
 
         - CustomChangeMatLub:
-            title : Customize ChangeMaterial lub
+            title : "自訂 ChangeMaterial lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for material change data instead of the default <b>ChangeMaterial.lub</b>. Controls the material/ingredient lists shown in crafting UIs.
+            desc : "載入材料變更資料的自訂 Lua 檔案，而不是預設的 <b>ChangeMaterial.lub</b> 。控制製作 UI 中顯示的材料/素材清單。"
 
         - CustomQuestQualiLub:
-            title : Customize QuestClassificationInfo lub
+            title : "自訂 QuestClassificationInfo lub"
             recommend : yes
             author : llchrisll,Skylove
-            desc : Loads a custom lua file for quest classification data instead of the default <b>QuestClassificationInfo.lub</b>. Controls quest category labels and sorting in the quest window.
+            desc : "載入任務分類資料的自訂 Lua 檔案，而不是預設的 <b>QuestClassificationInfo.lub</b> 。控制任務視窗中的任務類別標籤和排序。"
 
         - CustomRuneDescLub:
-            title : Customize Rune\rune_desc lub
+            title : "自訂 Rune\\rune_desc lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune descriptions instead of the default <b>Rune\rune_desc.lub</b>. Use when customizing rune tooltip text.
+            desc : "載入用於符文描述的自訂 Lua 檔案，而不是預設的 <b>Rune\\rune_desc.lub</b> 。自訂符文工具提示文字時使用。"
 
         - CustomRuneSetDescLub:
-            title : Customize Rune\runeset_desc lub
+            title : "自訂 Rune\\runeset_desc lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune set descriptions instead of the default <b>Rune\runeset_desc.lub</b>. Use when customizing rune set bonus tooltip text.
+            desc : "載入符文集描述的自訂 Lua 檔案，而不是預設的 <b>Rune\\runeset_desc.lub</b> 。在自訂符文集獎勵工具提示文字時使用。"
 
         - CustomitemDecomLub:
-            title : Customize Rune\itemDecom lub
+            title : "自訂 Rune\\itemDecom lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune item decomposition data instead of the default <b>Rune\itemDecom.lub</b>. Controls which items can be broken down in the rune system.
+            desc : "載入符文物品分解資料的自訂 Lua 檔案，而不是預設的 <b>Rune\\itemDecom.lub</b> 。控制符文系統中哪些物品可以分解。"
 
         - CustomRuneInfoLub:
-            title : Customize Rune\rune_info lub
+            title : "自訂 Rune\\rune_info lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune information instead of the default <b>Rune\rune_info.lub</b>. Controls rune stats and properties displayed in the UI.
+            desc : "載入自訂 Lua 檔案以取得符文訊息，而不是預設的 <b>Rune\\ rune_info.lub</b> 。控制 UI 中顯示的符文統計資訊和屬性。"
 
         - CustomRuneSetInfoLub:
-            title : Customize Rune\runeset_info lub
+            title : "自訂 Rune\\runeset_info lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune set information instead of the default <b>Rune\runeset_info.lub</b>. Controls rune set data and bonuses shown in the UI.
+            desc : "載入自訂 Lua 檔案以取得符文集訊息，而不是預設的 <b>Rune\\ runeset_info.lub</b> 。控制使用者介面中顯示的符文集資料和獎勵。"
 
         - CustomRuneSystemTableLub:
-            title : Customize Rune\runeSystem_table lub
+            title : "自訂 Rune\\runeSystem_table lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for the rune system table instead of the default <b>Rune\runeSystem_table.lub</b>. Controls the master rune system configuration data.
+            desc : "為 rune 系統表載入自訂 Lua 檔案，而不是預設的 <b>Rune\\ runeSystem_table.lub</b> 。控制主符文系統設定資料。"
 
         - CustomRuneSystemIdLub:
-            title : Customize Rune\runesystemid lub
+            title : "自訂 Rune\\runesystemid lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune system IDs instead of the default <b>Rune\runesystemid.lub</b>. Controls the mapping of rune IDs used by the system.
+            desc : "載入符文系統 ID 的自訂 Lua 檔案，而不是預設的 <b>Rune\\ runesystemid.lub</b> 。控制系統使用的符文 ID 的對應。"
 
         - CustomRuneSystemInfoLub:
-            title : Customize Rune\runesystemInfo lub
+            title : "自訂 Rune\\runesystemInfo lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune system display info instead of the default <b>Rune\runesystemInfo.lub</b>. Controls rune system UI labels and descriptions.
+            desc : "載入用於符文系統顯示資訊的自訂 Lua 檔案，而不是預設的 <b>Rune\\ runesystemInfo.lub</b> 。控制符文系統 UI 標籤和描述。"
 
         - CustomRuneRewardLub:
-            title : Customize Rune\runeset_reward lub
+            title : "自訂符文\\runeset_reward lub"
             recommend : no
             author : llchrisll
-            desc : Loads a custom lua file for rune set rewards instead of the default <b>Rune\runeset_reward.lub</b>. Controls rune set completion reward data.
+            desc : "載入符文集獎勵的自訂 Lua 檔案，而不是預設的 <b>Rune\\ runeset_reward.lub</b> 。控制符文組完成獎勵資料。"
 
         - CustomLicenseTxt:
-            title : Customize License File
+            title : "自訂授權檔案"
             recommend : no
             author : Neo-Mind
-            desc : Changes the EULA license file path from the default <b>..\licence.txt</b> to a custom filename. Path is relative to the Data folder. Use to display your own server rules or terms of service.
+            desc : "將 EULA 授權檔案路徑從預設 <b>..\\ licence.txt</b> 變更為自訂檔案名稱。路徑是相對於資料資料夾的。用於顯示您自己的伺服器規則或服務條款。"
 
         - CustomClientInfo:
-            title : Customize ClientInfo file
+            title : "自訂ClientInfo檔案"
             recommend : no
             author : Secret
-            desc : Changes the clientinfo XML filename from the default *clientinfo.xml to a custom name. Useful for maintaining multiple server configurations or using a non-standard filename.
+            desc : "將 clientinfo XML 檔案名稱從預設 * clientinfo.xml 變更為自訂名稱。對於維護多個伺服器設定或使用非標準檔案名稱很有用。"
 
         - AllowHomunSkills:
-            title : Unlock all valid skills for homunculus and mercenary AI
+            title : "解鎖侏儒和僱傭兵 AI 的所有有效技能"
             recommend : no
             author : 4144
-            desc : Removes the client-side restriction on which skills homunculus and mercenary AI can use, allowing all valid skills to be cast. Server-side skill availability still applies.
+            desc : "消除了用戶端對侏儒和傭兵 AI 可以使用哪些技能的限制，允許施展所有有效技能。伺服器端技能可用性仍然適用。"
 
 SharedBodyPal:
-    title : SHARED BODY PALETTES
+    title : "共享身體色盤"
     mutex : true
     
     patches:
         - BodyPalMF:
-            title : Enable shared body palettes - Male & Female
+            title : "啟用共享身體色盤 - 男性和女性"
             recommend : no
             author : Ai4rei/AN , Neo-Mind
-            desc : Uses one shared set of cloth/body palettes (body_%s_%d.pal) across all job classes while keeping male and female palettes separate. Greatly reduces the number of palette files needed.
+            desc : "在所有工作類別中使用一組共享的布料 /body 色盤 (body_%s_%d.pal)，同時將男性和女性色盤分開。大大減少了所需的色盤檔案的數量。"
         
         - BodyPalUnisex:
-            title : Enable shared body palettes - Unisex
+            title : "啟用共享身體色盤 - 男女皆宜"
             recommend : no
             author : Ai4rei/AN , Neo-Mind
-            desc : Uses one shared set of cloth/body palettes (body_%d.pal) for all job classes and both genders. The simplest option -- minimizes palette files to just one set.
+            desc : "對於所有工作類別和性別，使用一組共享的布料 /body 色盤 (body_%d.pal)。最簡單的選項－將色盤檔案最小化為一組。"
 
 SharedHeadPal:
-    title : SHARED HEAD PALETTES
+    title : "共享頭色盤"
     mutex : true
     
     patches:
         - HeadPalMF:
-            title : Enable shared head palettes - Male & Female
+            title : "啟用共享頭部色盤 - 男性和女性"
             recommend : no
             author : Ai4rei/AN , Neo-Mind
-            desc : Uses one shared set of hair palettes (head_%s_%d.pal) across all hairstyles while keeping male and female palettes separate. Reduces the number of hair palette files needed.
+            desc : "在所有髮型中使用一組共享的頭髮色盤 (head_%s_%d.pal)，同時將男性和女性色盤分開。減少所需的頭髮色盤檔案的數量。"
         
         - HeadPalUnisex:
-            title : Enable shared head palettes - Unisex
+            title : "啟用共享頭部色盤 - 男女皆宜"
             recommend : no
             author : Ai4rei/AN , Neo-Mind
-            desc : Uses one shared set of hair palettes (head_%d.pal) for all hairstyles and both genders. The simplest option -- minimizes hair palette files to just one set.
+            desc : "對所有髮型和性別使用一組共享的髮型色盤 (head_%d.pal)。最簡單的選項－將頭髮色盤檔案最小化為一組。"
 
 MultiGRFs:
-    title : MULTIPLE GRFS
+    title : "多重GRFS"
     mutex : true
     
     patches:
         - GRFsFromIni:
-            title : Enable Multiple GRFs ( INI )
+            title : "啟用多個 GRFs (INI)"
             recommend : yes
             author : Shinryo
-            desc : Allows loading up to 10 GRF files listed in an INI file (DATA.INI) in your client folder. GRFs are loaded in order, with earlier entries taking priority. The standard way to use multiple GRFs on servers.
+            desc : "允許載入用戶端資料夾中 INI 檔案 (DATA.INI) 中列出的最多 10 GRF 檔案。 GRF 按順序載入，較早的條目優先。在伺服器上使用多個 GRF 的標準方法。"
         
         - GRFsEmbedded:
-            title : Enable Multiple GRFs ( Embedded )
+            title : "啟用多個 GRFs（嵌入式）"
             recommend : no
             author : Neo-Mind
-            desc : Embeds GRF filenames directly into the client executable instead of reading from an external INI file. You provide the GRF list at patch time and it gets baked into the exe. No DATA.INI file needed in the client folder.
+            desc : "將 GRF 檔案名稱直接嵌入到用戶端執行檔中，而不是從外部 INI 檔案讀取。您在修補時提供 GRF 列表，它會烘焙到 exe 中。無資料。用戶端資料夾中需要 INI 檔案。"

@@ -27,222 +27,222 @@
 ############################################################################
 
 ButtonVis:
-    title : BASIC BUTTON VISIBILITY
+    title : "基本按鈕可見性"
     mutex : false
     color : orangered
     
     patches:
         - HideNewButtons:
-            title : Hide Buttons (New UI)
+            title : "隱藏按鈕（新 UI ）"
             recommend : no
             author : Neo-Mind,Skylove,Cremané
-            desc : Hides selected buttons below the HP/SP bars in the Basic Info Window (new UI style). Useful for removing buttons for features your server does not support.
+            desc : "隱藏基本資訊視窗 (new UI style) 中 HP /SP 欄下方的選取按鈕。對於刪除伺服器不支援的功能按鈕很有用。"
         
         - ShowNewButtons:
-            title : Show Buttons (New UI)
+            title : "顯示按鈕（新 UI ）"
             recommend : no
             author : Neo-Mind,Skylove,Cremané
-            desc : Restores selected hidden buttons below the HP/SP bars in the Basic Info Window (new UI style). Use to bring back buttons that were removed in newer client versions.
+            desc : "還原基本資訊視窗 (new UI style) 中 HP /SP 條下方選定的隱藏按鈕。用於還原在較新的用戶端版本中刪除的按鈕。"
 
 CharCreation:
-    title : CHARACTER CREATION
+    title : "角色建立"
     mutex : false
     
     patches:
         - CustomNewCharNameHeight:
-            title : Customize new Char Name field height
+            title : "自訂新的字元名稱欄位高度"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Changes the height of the character name input field in the new character creation dialog. Adjust if the default size clips text or looks misaligned with custom fonts.
+            desc : "變更新角色建立對話中角色名稱輸入欄位的高度。如果預設大小會裁切文字或看起來與自訂字型不對齊，請進行調整。"
         
         - IncrNewCharHairs:
-            title : Increase char create Hair limits
+            title : "增加角色建立髮型限制"
             recommend : no
             author : Neo-Mind, CrazyBebop
-            desc : Raises the maximum hairstyle and hair color options available during character creation to custom values. Required for servers with more hair options than the default client supports.
+            desc : "將角色建立期間可用的最大髮型和髮色選項提高到自訂值。對於頭髮選項多於預設用戶端支援的伺服器來說是必需的。"
         
         - CustomCharCreateId:
-            title : Customize job id in char create dialog
+            title : "在字元建立對話中自訂職業 ID"
             recommend : no
             author : Andrei Karas (4144)
-            desc : Overrides the default starting job ID sent in the character creation packet. Use when your server starts new characters as a different class than Novice (e.g., Super Novice or a custom job).
+            desc : "覆寫角色建立封包中傳送的預設起始職業 ID。當您的伺服器將新角色作為與新手 (e.g., Super Novice or a custom job) 不同的類別啟動時使用。"
         
         - FixLatestNCWin:
-            title : Fix latest new char window
+            title : "修復最新的新字元視窗"
             recommend : yes
             author : Neo-Mind
-            desc : Fixes visual issues in the latest character creation window, including a misaligned background image and off-center window positioning. Recommended for a clean character creation experience.
+            desc : "修正了最新角色建立視窗中的視覺問題，包括未對齊的背景圖像和偏離中心的視窗定位。建議用於乾淨的角色建立體驗。"
 
 DoramCharCreation:
-    title: CHARACTER CREATION (DORAM)
+    title: "角色建立（多拉姆）"
     mutex: true
     
     patches:
         - CustomCharCreateSecond:
-            title : Customize second job id in char create dialog
+            title : "在字元建立對話中自訂第二個職業 ID"
             recommend : no
             author : Andrei Karas (4144) , Neo-Mind
-            desc : Replaces the Doram race slot in the character creation window with a custom job ID of your choice. Use to offer an alternative race or class in the second creation slot.
+            desc : "將角色建立視窗中的 Doram 種族槽替換為您選取的自訂職業 ID。用於在第二個建立槽中提供替代種族或類別。"
         
         - NoDoramCreation:
-            title : Disable Doram character creation UI [Experimental]
+            title : "停用 Doram 角色建立 UI [實驗]"
             recommend : no
             author : Ai4rei/AN , Secret
-            desc : Removes the Doram race option from the character creation UI entirely. Server-side disabling is also recommended to prevent bypasses. Experimental -- may have visual quirks.
+            desc : "從角色建立 UI 中完全刪除 Doram 種族選項。還建議停用伺服器端以防止繞過。實驗性的－可能有視覺上的怪癖。"
 
 CustomFriendWin:
-    title : FRIEND/PARTY WINDOW CUSTOMIZATION
+    title : "朋友/聚會視窗客製化"
     mutex : false
     
     patches:
         - CustomPartyLimit:
-            title : Customize party limit
+            title : "自訂派對限制"
             recommend : no
             author : CH.C (jchcc)
-            desc : Changes the maximum number of party members shown in the party window (Alt+Z). Increase this if your server supports larger parties than the default limit.
+            desc : "變更隊伍視窗 (Alt+Z) 中顯示的最大隊伍成員數量。如果您的伺服器支援的聚會人數超過預設限制，請增加此值。"
         
         - NoAdvAgencyInParty:
-            title : Remove Adventurer Agency from Party
+            title : "從隊伍中移除冒險家代理商"
             recommend : no
             author : Andrei Karas (4144) ,  X-EcutiOnner
-            desc : Removes the Adventurer Agency (party recruitment) button from the party window. Use on servers that do not support or want the automated party matching system.
+            desc : "從隊伍視窗中移除冒險家機構 (party recruitment) 按鈕。在不支援或不需要自動派對匹配系統的伺服器上使用。"
             
 CustomEquipWin:
-    title : EQUIP WINDOW CUSTOMIZATION
+    title : "裝備視窗客製化"
     mutex : false
     
     patches:
         - NoEquipSwap:
-            title : Remove Eq Swap button
+            title : "刪除均衡器交換按鈕"
             recommend : no
             author : Functor , Andrei Karas (4144) ,  X-EcutiOnner
-            desc : Removes the equipment swap button from the equipment window. Use on servers that do not support the gear swap feature or want a simpler equipment UI.
+            desc : "從設備視窗中刪除設備交換按鈕。在不支援装备交换功能或想要更简单的设备 UI 的服务器上使用。"
         
         - NoEquipWinTitle:
-            title : Remove Eq Window title
+            title : "刪除 Eq 視窗標題"
             recommend : no
             author : CH.C (jchcc), Andrei Karas (4144) , X-EcutiOnner
-            desc : Removes the title bar text from the equipment window. A cosmetic change for a cleaner equipment window appearance.
+            desc : "從裝備視窗中刪除標題列文字。對更清潔的設備視窗外觀進行了外觀變更。"
 
         - DisableEquipAttrButton:
-            title : Disable Equipment Attribute Button
+            title : "停用裝備屬性按鈕"
             recommend : no
             author : Functor, CH.C (jchcc), Andrei (4144), X-EcutiOnner, CrazyBebop
-            desc : Disables the Equipment Attribute (Properties) button in the Equipment Window so clicking it does nothing. Use on servers where the Equipment Properties panel is not applicable.
+            desc : "停用設備視窗中的設備屬性 (Properties) 按鈕，因此按一下它不會執行任何操作。在設備屬性面板不適用的伺服器上使用。"
 
 CustomExpBars:
-    title : EXP BAR CUSTOMIZATION
+    title : "EXP吧客製化"
     mutex : false
     
     patches:
         - CustomBarLimits:
-            title : Customize Experience bar limits
+            title : "自訂經驗欄限制"
             recommend : no
             author : Neo-Mind
-            desc : Overrides the experience bar display limits for Base and Job levels using a custom configuration file. Required if your server has higher max levels than the client normally supports.
+            desc : "使用自訂設定檔覆寫基礎和工作層級的經驗欄顯示限制。如果您的伺服器的最大級別高於用戶端通常支援的級別，則為必需。"
         
         - ShowExpNumbers:
-            title : Show Experience numbers
+            title : "顯示經驗數字"
             recommend : no
             author : Neo-Mind
-            desc : Displays numeric Base and Job experience values directly on top of the EXP bars in the Basic Info Window. Shows exact numbers instead of just a progress bar.
+            desc : "直接在基本資訊視窗中的 EXP 欄頂部顯示數字基礎和工作經驗值。顯示精確的數字而不僅僅是進度條。"
 
 ReturnToLogin:
-    title : RETURN TO LOGIN
+    title : "返回登入"
     mutex : false
 
     patches:
         - DisConnToLogin:
-            title : Disconnect to Login Window
+            title : "中斷與登入視窗的連線"
             recommend : no
             author : Neo-Mind , Andrei Karas (4144)
-            desc : Returns to the login window instead of closing the client when disconnected from the server. Lets players reconnect without having to relaunch the game.
+            desc : "與伺服器中斷連線時返回登入視窗而不是關閉用戶端。讓玩家無需重新啟動遊戲即可重新連線。"
         
         - CancelToLogin:
-            title : Cancel to Login Window
+            title : "取消登入視窗"
             recommend : yes
             author : Neo-Mind , Andrei Karas (4144)
-            desc : Makes the Cancel button on the character selection screen go back to the login window instead of quitting the game entirely. Convenient for switching accounts without relaunching.
+            desc : "使角色選取畫面上的取消按鈕返回登入視窗，而不是完全退出遊戲。方便切換帳戶，無需重新啟動。"
             needs : RestoreLoginWindow
 
 ShowButton:
-    title : SHOW BUTTON
+    title : "顯示按鈕"
     mutex : false
     color : darkorange
     
     patches:
         - ShowReplayBtn:
-            title : Always show Replay button in Service Select
+            title : "始終在伺服器選擇中顯示重播按鈕"
             recommend : no
             author : Neo-Mind,Skylove
-            desc : Shows the Replay button on the Service Select screen, allowing players to browse and watch saved replay files. Normally hidden on most langtypes.
+            desc : "在伺服器選擇畫面上顯示 Replay 按鈕，讓玩家瀏覽和觀看已儲存的重播檔案。通常隱藏在大多數 langtypes 上。"
         
         - ShowCancelBtn:
-            title : Always show Cancel button in Login
+            title : "登入時始終顯示取消按鈕"
             recommend : no
             author : Neo-Mind
-            desc : Restores the Cancel button on the login screen, placed between the Login and Exit buttons. Allows players to go back to the Service Select screen to choose a different server.
+            desc : "還原登入畫面上的「取消」按鈕，該按鈕位於「登入」和「登出」按鈕之間。允許玩家返回伺服器選擇畫面以選取不同的伺服器。"
         
         - ShowRegisterBtn:
-            title : Always show Register button in Login
+            title : "始終在登入中顯示註冊按鈕"
             recommend : no
             author : Neo-Mind
-            desc : Shows a Register button on the login screen for all langtypes. Clicking it opens the registration URL defined in clientinfo.xml's &lt;registrationweb&gt; tag and closes the client. Useful for directing new players to your registration page.
+            desc : "在登录畫面上显示所有 langtypes 的注册按钮。单击它会打开 clientinfo.xml 的 <registrationweb> 中定义的注册 URL。標記並關閉用戶端。对于引导新玩家到您的注册页面很有用。"
 
 NoLetterLimit:
-    title : 4/6 LETTER LIMIT REMOVAL
+    title : "4/6 字母限制移除"
     mutex : false
     
     patches:
         - NoCharnameLimit:
-            title : Remove 4/6 letter Character Name limit
+            title : "刪除 4/6 個字母字元名稱限制"
             recommend : no
             author : Shinryo
-            desc : Removes the minimum 4-letter (or 6-letter on some langtypes) requirement for character names. Allows shorter names like "GM" or "Ace". Server-side limits may still apply.
+            desc : "刪除了角色名稱的最小 4 -字母 (or 6-letter on some langtypes) 要求。允許更短的名稱，例如 \"GM\" 或 \"Ace\" 。伺服器端限制可能仍然適用。"
         
         - NoUsernameLimit:
-            title : Remove 4/6 letter User Name limit
+            title : "刪除 4/6 個字母的使用者名稱限制"
             recommend : no
             author : Shinryo
-            desc : Removes the minimum 4-letter (or 6-letter on some langtypes) requirement for account usernames. Server-side limits may still apply.
+            desc : "刪除了帳戶使用者名稱的最小 4 -字母 (or 6-letter on some langtypes) 要求。伺服器端限制可能仍然適用。"
         
         - NoPasswordLimit:
-            title : Remove 4/6 letter Password limit
+            title : "刪除 4/6 個字母的密碼限制"
             recommend : no
             author : Shinryo
-            desc : Removes the minimum 4-letter (or 6-letter on some langtypes) requirement for passwords on the client side. Server-side limits may still apply.
+            desc : "刪除了用戶端密碼的最小 4 -字母 (or 6-letter on some langtypes) 要求。伺服器端限制可能仍然適用。"
 
 LicenseScreenVis:
-    title : LICENSE SCREEN VISIBILITY
+    title : "授權螢幕可見性"
     mutex : true
     color : darkorange
     
     patches:
         - HideLicense:
-            title : Always hide License Screen
+            title : "始終隱藏授權螢幕"
             recommend : no
             author : Shinryo , MS
-            desc : Skips the EULA/license agreement screen entirely on startup, going directly to the Service Select or login screen. Saves time for players on every launch.
+            desc : "啟動時完全跳過 EULA /license 協定畫面，直接進入伺服器選擇或登入畫面。為玩家每次發布節省時間。"
         
         - ShowLicense:
-            title : Always show License Screen
+            title : "始終顯示授權螢幕"
             recommend : no
             author : Neo-Mind
-            desc : Forces the EULA/license agreement screen to show on every startup for all langtypes. Use if your server requires players to accept terms of service before playing.
+            desc : "強制在所有 langtypes 每次啟動時顯示 EULA /license 協定畫面。如果您的伺服器要求玩家在玩遊戲前接受服務條款，請使用。"
 
 TraitStatusButton:
-    title: TRAIT STATUS BUTTON BEHAVIOR
+    title: "特徵狀態按鈕行為"
     mutex: false
     
     patches:
         - DisableTraitStatusButton:
-            title : Disable Trait Status Button
+            title : "停用特徵狀態按鈕"
             recommend : no
             author : Secret,Cremané
-            desc : Disables the Trait Status button in the Status Window so clicking it does nothing. Use on pre-4th job servers where the Trait Status panel is not applicable.
+            desc : "停用狀態視窗中的特徵狀態按鈕，因此按一下它不會執行任何操作。在「特徵狀態」面板不適用的第四個作業伺服器上使用。"
         
         - HideTraitStatusButton:
-            title : Hide Trait Status Button
+            title : "隱藏特徵狀態按鈕"
             recommend : no
             author : Secret,Skylove
-            desc : Completely hides the Trait Status expansion button from the Status Window. Use on pre-4th job servers to remove the button entirely rather than just disabling it.
+            desc : "在狀態視窗中完全隱藏特徵狀態擴充按鈕。在第四個之前的作業伺服器上使用以完全刪除該按鈕，而不僅僅是停用它。"
