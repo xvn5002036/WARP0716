@@ -27,34 +27,34 @@
 ############################################################################
 
 GetPacketKeys:
-    title : Get Packet Keys
-    tooltip : Retrieves the packet keys used in the loaded client for Obfuscation
+    title : 取得封包金鑰
+    tooltip : 擷取已載入用戶端用於混淆的封包金鑰
     author : Neo-Mind
     icon : Inputs/key.png
 
 ExtractTxtNames:
-    title : Extract txt file names
-    tooltip : Extracts embedded txt file names in the loaded client
+    title : 擷取 txt 檔案名稱
+    tooltip : 擷取已載入用戶端中嵌入的 txt 檔案名稱
     icon : Inputs/files.png
 
 ExtractMsgStrings:
-    title : Extract msgstringtable
-    tooltip : Extracts embedded msgstringtable from the loaded client
+    title : 擷取 msgstringtable
+    tooltip : 從已載入的用戶端擷取嵌入的 msgstringtable
     author : Neo-Mind
     icon : Inputs/files.png
 
 DumpImportTable:
-    title : Dump Import Table
-    tooltip : Dumps the Full Import table (dll names and imported functions) for the loaded client
+    title : 匯出 Import Table
+    tooltip : 匯出已載入用戶端的完整 Import Table（dll 名稱與匯入函式）
     author : Neo-Mind
     icon : Inputs/import.png
     
 GenMapEffectPlugin:
-    title : Generate MapEffect Plugin [Expt.]
-    tooltip : Generates Curiosity's mapeffect plugin for the loaded client (as rdll2_<filename>.asi which needs to be placed in your client area)
+    title : 產生 MapEffect 外掛 [Expt.]
+    tooltip : 為已載入的用戶端產生 Curiosity 的 mapeffect 外掛（輸出為 rdll2_<filename>.asi，需放在用戶端目錄）
     author : Neo-Mind
  
 # - Trial:
-    # title : Trial Extension
-    # tooltip : Just intended for some trials with Exe & Warp
+    # title : 測試擴充
+    # tooltip : 僅用於 Exe 與 WARP 的一些測試
     # author : Neo-Mind
