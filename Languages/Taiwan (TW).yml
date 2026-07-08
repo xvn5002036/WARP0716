@@ -1,0 +1,2246 @@
+############################################################################
+#                                                                          #
+#   Author(s)     : Gean (https://github.com/geanmm)                       #
+#   Created Date  : 2024-07-25                                             #
+#   Last Modified : 2024-07-27                                             #
+#                                                                          #
+############################################################################
+
+############################################
+# Brazilian Portuguese Translation (PT-br) #
+############################################
+
+#
+#
+##===================================#
+## Text orientation & other settings #
+##===================================#
+#
+RTL: no
+#
+##============================#
+## Tab names for TestBench UI #
+##============================#
+#
+tabs:
+    - 修補
+    - 擴充
+    - 測試
+    - 結果
+
+##========================#
+## File/Dir Dialog titles #
+##========================#
+
+dialogs:
+    dir: "選擇包含測試 exe 檔案的目錄"
+    src: "選擇來源 exe 檔案"
+    tgt: "選擇目標 exe 檔案"
+    loadS: "選擇要載入的工作階段檔案"
+    saveS: "選擇工作階段檔案的另存位置"
+
+actions:
+
+    #==============#
+    # Patches Page #
+    #==============#
+      
+    getPatches:
+        title:  取得<br>修補
+        tooltip: 使用所有已定義的修補項目填入修補清單
+    
+    selVisiblePatches:
+        title: 選取<br>可見項目
+        tooltip: 選取目前所有可見的修補項目
+    
+    clearSelPatches:
+        title: 清除<br>已選項目
+        tooltip: 清除所有已選取的修補項目
+    
+    #=================#
+    # Extensions Page #
+    #=================#
+    
+    getExtns:
+        title: 取得<br>擴充
+        tooltip: 使用所有已定義的擴充項目填入擴充清單
+
+    
+    selVisibleExtns:
+        title: 選取<br>可見項目
+        tooltip: 選取目前所有可見的擴充項目
+    
+    clearSelExtns:
+        title: 清除<br>已選項目
+        tooltip: 清除所有已選取的擴充項目
+    
+    #==============#
+    # Testers Page #
+    #==============#
+    
+    getExes: 
+        title: 取得執行檔
+        tooltip: 使用在測試目錄中找到的所有 .exe 檔案填入執行檔清單
+    
+    selVisibleExes:
+        title: 選取<br>可見項目
+        tooltip: 選取目前所有可見的執行檔
+    
+    clearSelExes:
+        title: 清除<br>已選項目
+        tooltip: 清除所有已選取的執行檔
+    
+    #==============#
+    # Results Page #
+    #==============#
+    
+    runTest: 
+        title: 執行測試
+        tooltip: 在已選取的執行檔清單中測試已選取的修補與擴充項目，並顯示在「結果」分頁
+    
+    #=======================#
+    # Script Window related #
+    #=======================#
+    
+    showScriptWin:
+        title: 顯示腳本視窗
+        tooltip: 顯示 (Alt+W) 腳本視窗，用於快速測試腳本
+    
+    #=========================#
+    # Remaining Quick Actions #
+    #=========================#
+    
+    loadSrcExe:
+        title: 載入<br>檔案
+        tooltip: 載入來源執行檔，並在尚未載入時一併載入腳本
+    
+    applyPatches: 
+        title: 套用<br>修補
+        tooltip: 將選取的修補套用到已載入的執行檔，並另存為輸出檔案
+    
+    selectPrev:
+        title: 選取<br>上次項目
+        tooltip: 選取上次套用的所有修補項目
+    
+    selectRcmd:
+        title: 選取<br>建議項目
+        tooltip: 選取所有標記為「建議」的修補項目
+    
+    loadChangedScripts:
+        title: 載入<br>腳本
+        tooltip: 載入/重新載入 (Alt+C) 自上次載入後已修改，且位於 'Scripts' 目錄內 'Patches'、'Support' 與 'Extensions' 子資料夾中的所有 .qjs 腳本檔案
+    
+    clearOutput:
+        title: 清除
+        tooltip: 清除「輸出」檢視
+    
+    evalScript: 
+        title: 評估
+        tooltip: 評估 (Ctrl+R) 編輯器中的腳本，並將結果輸出到「輸出」
+    
+    clearEditor: 
+        title: 清除
+        tooltip: 清除腳本編輯器
+    
+    #================#
+    # Filter Options #
+    #================#
+
+    rexBtn:
+        tooltip: 選擇要使用正規表示式或萬用字元比對
+    
+    csBtn:
+        tooltip: 選擇是否區分大小寫
+    
+    #============#
+    # Menu Items #
+    #============#
+    
+    loadPatchScripts:
+        title: 從 <b>'Patches'</b> 載入
+        tooltip: 載入/重新載入 (Alt+P) 'Scripts/Patchs' 目錄中的所有 .qjs 腳本檔案
+    
+    loadExtnScripts:
+        title: 從 <b>'Extensions'</b> 載入
+        tooltip: 載入/重新載入 (Alt+E) 'Scripts/Extensions' 目錄中的所有 .qjs 腳本檔案
+    
+    loadSuppScripts:
+        title: 從 <b>'Support'</b> 載入
+        tooltip: 載入/重新載入 (Alt+S) 'Scripts/Support' 目錄中的所有 .qjs 腳本檔案
+    
+    loadAllScripts:
+        title: 載入<b>所有</b>腳本
+        tooltip: 載入/重新載入 (Alt+A) 'Scripts' 目錄內 'Patches'、'Support' 與 'Extensions' 子資料夾中的所有 .qjs 腳本檔案
+    
+    loadSession:
+        title: 載入工作階段檔案
+        tooltip: 從指定的工作階段檔案載入所有修補選取項目與輸入
+    
+    saveSession:
+        title: 儲存工作階段檔案
+        tooltip: 將所有修補選取項目與輸入儲存到指定的工作階段檔案
+    
+    refreshLanguages:
+        title: 重新整理語言
+        tooltip: 載入 'Languages' 資料夾中 .yml 檔案提供的語言清單
+    
+    refreshStyles:
+        title: 重新整理樣式
+        tooltip: 載入 'Styles' 資料夾中 .yml 檔案提供的樣式清單
+    
+    loadExtns:
+        title: 載入擴充
+        tooltip: 使用所有已定義的擴充項目填入擴充抽屜
+    
+    pro2Session:
+        title: 將設定檔轉換為工作階段
+        tooltip: 將 NEMO 設定檔轉換為 WARP 使用的工作階段檔案
+
+    genSecFile:
+        title: 產生安全檔案
+        tooltip: 產生安全檔案，內含輸入檔案的多個雜湊值；該檔案可以是執行檔，也可以不是
+    #=========================#
+    # Settings Dialog related #
+    #=========================#
+    saveResolution:
+        title: 儲存解析度
+        tooltip: 將目前測試視窗的解析度儲存為預設值
+    
+    keepTestInputs:
+        title: 保留測試輸入
+        tooltip: 選項：為接下來的每個測試保留先前儲存的輸入
+    
+    stopAtError:
+        title: 發生錯誤時停止
+        tooltip: 選項：在發生第一個錯誤時停止執行測試
+
+    saveResolutions:
+        title: 儲存解析度
+        tooltip: 將目前主視窗與腳本視窗的解析度儲存為預設值
+
+    showVersion:
+        title: 顯示已載入版本
+        tooltip: 勾選以顯示已載入 .exe 的建置版本與日期
+        
+    enableEPI:
+        title: 啟用 EPI
+        tooltip: 啟用 EPI 檔案的產生與載入，並與對應的執行檔一起使用。請謹慎使用。
+    
+    genTgtSecure:
+        title: 產生 <目標>.secure.txt
+        tooltip: 啟用安全檔案 (.secure.txt) 的產生，並與目標執行檔一起使用
+
+    # repPatchMod:
+    #     title: 回報修補變更
+    #     tooltip: 選項：回報依修補項目暫存的變更，預設使用「記錄」機制
+    
+    genTgtSession:
+        title: "產生目標工作階段"
+        tooltip: 啟用工作階段檔案的產生，以便稍後與目標執行檔一起使用
+    
+    keepInputs:
+        title: 保留工作階段輸入
+        tooltip: 選項：載入工作階段檔案時保留已儲存的輸入，而不是逐一詢問
+
+messages:
+    
+    #====================#
+    # Regular Box titles #
+    #====================#
+    
+    success: "資訊"
+    query: "詢問"
+    warn: "警告"
+    error: "錯誤"
+    
+    #============================#
+    # Script specific Box titles #
+    #============================#
+    
+    errS: "腳本錯誤"
+   
+    #===========================#
+    # Patch specific Box titles #
+    #===========================#
+    
+    warnP: "修補警告 : <b>'%0'</b>"
+    errP: "修補錯誤 : <b>'%0'</b>"
+    
+    #===============================#
+    # Extension specific Box titles #
+    #===============================#
+    
+    infoE: "擴充資訊 : <b>'%0'</b>"
+    warnE: "擴充警告 : <b>'%0'</b>"
+    errE: "擴充錯誤 : <b>'%0'</b>"
+    
+    #===============#
+    # Button titles #
+    #===============#
+    
+    btnOK: "OK"
+    btnCANC: "取消"
+    btnYES: "是"
+    btnNO: "否"
+    btnLOAD: "載入"
+    btnSAVE: "儲存"
+    btnSEL: "選取目前項目"
+   
+    #===============#
+    # Error prompts #
+    #===============#
+    
+    noAccess: "<b>'%0'</b> 無法存取"
+    noWrite: "無法開啟 <b>'%0'</b> 進行寫入"
+    
+    wrongSig: "<b>'%0'</b> 簽章無效"
+    wrongPE: "在 <b>'%0'</b> 中找不到 PE 標頭"
+    need32: "只有 32 位元 exe 可作為 <b>'%0'</b> 使用"
+    
+    yamlErr: "YAML 檔案解析失敗 (%0) : <b>%1</b>"
+    evalErr: "%1 第 %0 行發生錯誤 : <b>%2</b>"
+    grpErr: "<b>'groups'</b> 必須以陣列/序列形式存在"
+    extErr: "擴充必須以陣列/序列形式提供"
+
+    loadFail: "載入項目 <b>'%0'</b> 失敗"
+    callFail: "<b>函式修補</b> 無法呼叫"
+    applyFail: "<b>修補</b> 無法套用"
+    tgtFail: "<b>目標 Exe</b> 無法寫入"
+    funcFail: "<b>%0 函式</b> 遺失或無法存取"
+    allocFail: "設定空間失敗"
+    dependFail: "無法選取相依項 '<b>%0</b>'"
+    
+    #=================#
+    # Warning prompts #
+    #=================#
+    
+    empty: "<b>'%0'</b> 是空的"
+    noneLoaded: "尚未載入任何 Exe"
+    skipWarn: "某些 <b>%0</b> 因多種原因被略過（缺少函式、語法錯誤等）"
+    retnFalse: "函式回傳 <b>false</b>"
+    noExes: "未選取任何 Exe 進行測試"
+    noPatExts: "未選取任何修補或擴充進行測試"
+    setNoSave: "設定 <b>'%0'</b> 無法儲存"
+    
+    #=================#
+    # Success prompts #
+    #=================#
+    
+    ready: "<b>'%0'</b> 已成功載入"
+    tgtReady: "<b>修補</b>已寫入 <b>目標 Exe</b>"
+    patSuccess: "修補成功"
+    extnSuccess: "擴充成功"
+    
+    #==============#
+    # Info prompts #
+    #==============#
+    
+    patInfo: "正在測試修補 : <b>%0</b>"
+    exeInfo: "正在處理 <b>'%0'</b>\n"
+    extnInfo: "正在測試擴充 : <b>%0</b>"
+    extnOutput: "<b>結果 => %0</b>"
+    patIgnored: "此修補已針對這個建置日期略過"
+    userInterrupt: "<b>測試已由使用者中斷</b>"
+    
+    #===============#
+    # Query prompts #
+    #===============#
+    srcQuery: "要更新目標 Exe 路徑嗎？"
+
+texts:
+    
+    #================#
+    # Header Prompts #
+    #================#
+    
+    selCount: "已選取修補"
+    extnSelCount: "已選取擴充"
+    exeSelCount: "已選取執行檔"
+    loadDate: "執行檔日期"
+    loadVersion: "& 版本"
+    
+    #===========================================#
+    # StringField titles (appears on the frame) #
+    #===========================================#
+    
+    srcEntry: "來源"
+    tgtEntry: "目標"
+    dirEntry: "測試目錄"
+    
+    #===============================#
+    # StringField placeholder texts #
+    #===============================#
+    
+    exePath: "執行檔目錄"
+    filter: "篩選表示式"
+    path: "路徑"
+    find: "搜尋表示式"
+    
+    #==============#
+    # Frame titles #
+    #==============#
+    
+    actionFrame: "快速動作"
+    patchFrame: "修補清單"
+    extnFrame: "擴充清單"
+    exeFrame: "執行檔清單"
+    fontFrame: "字型名稱"
+    demoFrame: "示範"
+    choiceFrame: "選項"
+    
+    #====================#
+    # Text Editor titles #
+    #====================#
+    
+    scriptEditor: "腳本編輯器"
+    outputView: "輸出"
+    
+    #======================#
+    # Context Menu prompts #
+    #======================#
+    
+    cutPrompt: "剪下"
+    copyPrompt: "複製"
+    pastePrompt: "貼上"
+    delPrompt: "刪除"
+    clrPrompt: "清除"
+    undoPrompt: "復原"
+    redoPrompt: "重做"
+    deselPrompt: "取消選取"
+    selAllPrompt: "全選"
+    
+    #===============#
+    # Other prompts #
+    #===============#
+    
+    fontSizePrompt: "字型大小 :"
+    fontNamePrompt: "字型名稱 :"
+    langPrompt: "語言 :"
+    stylePrompt: "樣式 :"
+
+##===========================================================#
+## All translations (including UI, Patches, Extensions etc.) #
+##===========================================================#
+
+translations:
+
+    #========================#
+    #             UI         #
+    #========================#
+    - find: Settings
+      replace: "設定"
+    
+    - find: Title
+      replace: "標題"
+    
+    - find: Group
+      replace: "團體"
+    
+    - find: Author
+      replace: "作者"
+    
+    - find: Description
+      replace: "描述"
+      
+    - find: Selected
+      replace: "已選擇"
+    
+    - find: Tooltip
+      replace: "工具提示"
+    
+    - find: FileName
+      replace: "檔案名稱"
+    
+    - find: Inbuilt
+      replace: "內建"
+    
+    - find: From Scripts
+      replace: "來自腳本"
+    
+    - find: Refresh
+      replace: "重新整理"
+    
+    - find: Session
+      replace: "會議"
+    
+    - find: Find
+      replace: "尋找"
+    
+    - find: Sort
+      replace: "種類"
+    
+    - find: by
+      replace: "經過"
+
+    - find: None
+      replace: "沒有任何"
+
+    - find: Options
+      replace: "選項"
+
+    - find: Actions
+      replace: "行動"
+
+    - find: Enter the target file path
+      replace: "輸入目標檔案路徑"
+
+    - find: Target File
+      replace: "目標檔案"
+
+  #==================================#
+  #             PATCHES              #
+  #==================================#
+
+  # SOUND
+    - find : SOUND CUSTOMIZATION
+      replace : "聲音客製"
+
+    - find : Enable 44.1 kHz audio sampling frequency
+      replace : "啟用 44.1 kHz 音訊取樣頻率"
+
+    - find : Boosts the audio sampling frequency to 44.1 kHz, improving the audio quality in the game.
+      replace : "將音訊取樣頻率提升至44.1kHz，提升遊戲音質。"
+
+    - find : Auto mute audio [Experimental]
+      replace : "自動靜音音訊[實驗]"
+
+    - find : Auto mute audio when game window is not active.
+      replace : "遊戲視窗未啟動時自動靜音。"
+   
+    - find : Disable BGM audio
+      replace : "停用 BGM 音訊"
+
+    - find : Disable the use of mp3NameTable.txt to pick & play audio files as BGM.
+      replace : "禁止使用 mp3NameTable.txt 來選取和播放音訊檔案作為 BGM 。"
+
+    - find : Restore songs effect
+      replace : "恢復歌曲效果"
+
+    - find : Restore ground effects of Bard/Dancer songs on latest clients.
+      replace : "在最新使用者端上恢復吟遊詩人/舞者歌曲的地面效果。"
+
+  # WINDOW
+    # [Basic Button Visibility]
+    - find : BASIC BUTTON VISIBILITY
+      replace : "基本按鈕可見性"
+    
+    - find : Hide Buttons (Old UI)
+      replace : "隱藏按鈕（舊 UI ）"
+
+    - find : Hide Buttons (New UI)
+      replace : "隱藏按鈕（新 UI ）"
+
+    - find : Hide the various buttons in the Basic Info Window under the HP/SP Bars.
+      replace : "隱藏 HP / SP 欄下基本資訊視窗中的各種按鈕。"
+
+    - find : Show Buttons (New UI)
+      replace : "顯示按鈕（新 UI ）"
+    
+    - find : Shows some of the various hidden buttons in the Basic Info Window under the HP/SP Bars.
+      replace : "顯示 HP / SP 欄下基本資訊視窗中的一些各種隱藏按鈕。"
+    
+    # [Char creation]
+    - find : CHARACTER CREATION
+      replace : "角色創建"
+    
+    - find : Customize new Char Name field height
+      replace : "自訂新的字元名稱欄位高度"
+
+    - find : Changes the height in input field of the new char creation dialog to user specified value.
+      replace : "將新字元建立對話方塊的輸入欄位的高度變更為使用者指定的值。"
+
+    - find : Increase char create Hair limits
+      replace : "增加 char create Hair 限制"
+
+    - find : Increase the Hair Style and Color limits used in Make Character Window to user specified values.
+      replace : "將「建立角色視窗」中使用的髮型和顏色限制增加到使用者指定的值。"
+
+    - find : Customize job id in char create dialog
+      replace : "在字元建立對話方塊中自訂作業 ID"
+
+    - find : Override selected job id in character creation packet with user specified value.
+      replace : "使用使用者指定的值覆寫角色建立資料包中選定的作業 ID。"
+
+    - find : Fix latest new char window
+      replace : "修復最新的新字元視窗"
+
+    - find : Fix the latest new character window (removes the misaligned background and centers the actual window)
+      replace: "修正最新的新字元視窗（刪除未對齊的背景並使實際視窗居中）"
+
+    # [Char creation (DORAM)]
+    - find : CHARACTER CREATION (DORAM)
+      replace : "角色創建（多拉姆）"
+    
+    - find : Customize second job id in char create dialog
+      replace : "在字元建立對話方塊中自訂第二個作業 ID"
+    
+    - find : Change doram to user specified job id in character creation window.
+      replace : "在角色建立視窗中將 doram 變更為使用者指定的作業 ID。"
+        
+    - find : Disable Doram character creation UI [Experimental]
+      replace : "停用 Doram 角色建立 UI [實驗]"
+    
+    - find : Disable Doram race in the character creation UI. Server-side disabling is also recommended.
+      replace : "在角色創建 UI 中停用 Doram 種族。也建議停用伺服器端。"
+    
+    # [FRIEND / PARTY]
+    - find : FRIEND/PARTY WINDOW CUSTOMIZATION
+      replace: "朋友/聚會視窗定制"
+
+    - find : Customize max friends
+      replace : "自訂好友上限"
+
+    - find : Change the maximum no of friends displayed on Alt+H to user specified value
+      replace : "將 Alt+H 上顯示的最大好友數量變更為使用者指定的值"
+
+    - find : Customize party limit
+      replace : "自訂派對限制"
+
+    - find : Change the maximum no of party members displayed on Alt+Z to user specified value.
+      replace : "將 Alt+Z 上顯示的最大隊伍成員數變更為使用者指定的值。"
+
+    - find : Remove Adventurer Agency from Party
+      replace : "從隊伍中移除冒險家代理商"
+
+    - find : Remove the Adventurer Agency button from the party window.
+      replace : "從隊伍視窗中刪除冒險家代理按鈕。"
+    
+    # [EQUIP WINDOW]
+    - find : EQUIP WINDOW CUSTOMIZATION
+      replace : "裝備視窗定制"
+
+    - find : Remove Eq Swap button
+      replace : "刪除均衡器交換按鈕"
+
+    - find : Remove equipment swap button on the equipment window.
+      replace : "刪除裝備視窗上的裝備交換按鈕。"
+    
+    - find : Remove Eq Window title
+      replace : "刪除 Eq 視窗標題"
+
+    - find : Remove equipment UI title on the equipment window.
+      replace : "刪除設備視窗上的設備 UI 標題。"
+    
+    # [EXP BAR]
+    - find : EXP BAR CUSTOMIZATION
+      replace : "EXP吧定制"
+
+    - find : Customize Experience bar limits
+      replace : "自訂經驗欄限制"
+
+    - find : Allows client to use custom limits for Base and Job experience bars as per user specified input file.
+      replace : "允許客戶根據使用者指定的輸入檔案對基礎和工作經驗欄使用自訂限制。"
+
+    - find : Show Experience numbers
+      replace : "顯示經驗數字"
+
+    - find : Show Base and Job Experience numbers on top of the respective exp bars in Basic Info Window.
+      replace : "在基本資訊視窗中各自的經驗欄頂部顯示基礎和工作經驗數字。"
+
+    # [LOGIN]
+    - find : RETURN TO LOGIN
+      replace : "返回登入"
+
+    - find : Disconnect to Login Window
+      replace : "中斷與登入視窗的連接"
+
+    - find : Make the client return to Login Window upon disconnection.
+      replace : "使使用者端在斷開連線時返回登入視窗。"
+
+    - find : Cancel to Login Window
+      replace : "取消登入視窗"
+
+    - find : Makes the Cancel button in Character selection window return to login window instead of Quitting.
+      replace : "使角色選擇視窗中的取消按鈕返回登入視窗而不是登出。"
+
+    # 
+    - find : SHOW BUTTON
+      replace : "顯示按鈕"
+
+    - find : Always show Replay button in Service Select
+      replace : "始終在服務選擇中顯示重播按鈕"
+
+    - find : Makes the client show Replay button on Service Select screen that opens the Replay File List window.
+      replace : "使使用者端在開啟「重播檔案清單」視窗的「服務選擇」畫面上顯示「重播」按鈕。"
+
+    - find : Always show Cancel button in Login
+      replace : "登入時始終顯示取消按鈕"
+
+    - find : Restores the Cancel button in Login Window for switching back to Service Select Window. The button will be placed in between Login and Exit buttons.
+      replace : "恢復登入視窗中的取消按鈕以切換回服務選擇視窗。此按鈕將放置在「登入」和「登出」按鈕之間。"
+
+    - find : Always show Register button in Login
+      replace : "始終在登入中顯示註冊按鈕"
+
+    - find : Makes the client always show register button on Login Window for all Langtypes. Clicking the button will open <registrationweb> from clientinfo and closes the client.
+      replace : "使使用者端始終在所有 Langtypes 的登入視窗上顯示註冊按鈕。按一下該按鈕將從 clientinfo 開啟 <registrationweb> 並關閉使用者端。"
+
+    - find : 4/6 LETTER LIMIT REMOVAL
+      replace : "4/6 字母限制移除"
+
+    - find : Remove 4/6 letter Character Name limit
+      replace : "刪除 4/6 個字母字元名稱限制"
+
+    - find : Will allow people to use character names shorter than 4 letters.
+      replace : "允許人們使用少於 4 個字母的角色名稱。"
+
+    - find : Remove 4/6 letter User Name limit
+      replace : "刪除 4/6 個字母的使用者名稱限制"
+
+    - find : Will allow people to use account names shorter than 4 letters.
+      replace : "允許人們使用少於 4 個字母的帳戶名稱。"
+
+    - find : Remove 4/6 letter Password limit
+      replace : "刪除 4/6 個字母的密碼限制"
+
+    - find : Will allow people to use passwords shorter than 4 letters.
+      replace : "允許人們使用少於 4 個字母的密碼。"
+
+    - find : LICENSE SCREEN VISIBILITY
+      replace : "授權螢幕可見性"
+
+    - find : Always hide License Screen
+      replace : "始終隱藏許可證螢幕"
+
+    - find : Make the client skip the license screen and go directly to the Service Select screen.
+      replace : "讓使用者端跳過許可證畫面並直接進入服務選擇畫面。"
+
+    - find : Always show License Screen
+      replace : "始終顯示許可證螢幕"
+
+    - find : Makes the client always show the license for all langtypes.
+      replace : "使使用者端始終顯示所有語言類型的許可證。"
+
+    - find : TRAIT STATUS BUTTON BEHAVIOR
+      replace : "特徵狀態按鈕行為"
+
+    - find : Disable Trait Status Button
+      replace : "停用特徵狀態按鈕"
+
+    - find : Make the Trait Status button do nothing.
+      replace : "使“特徵狀態”按鈕不執行任何操作。"
+
+    - find : Hide Trait Status Button
+      replace : "隱藏特徵狀態按鈕"
+
+    - find : Hide the Trait Status Expansion Button in the Status Window.
+      replace : "隱藏狀態視窗中的特徵狀態擴充按鈕。"
+
+  # UI
+    - find : UI CUSTOMIZATION
+      replace : "UI 定制"
+
+    - find : Allow shortcuts in WINE [Experimental]
+      replace : "允許 WINE 中的快捷方式 [實驗]"
+
+    - find : Allows usage of keyboard shortcuts in wine. Still experimental, so it may or may not work at this time.
+      replace : "允許在 wine 中使用鍵盤快速鍵。仍處於實驗階段，因此目前可能有效，也可能無效。"
+
+    - find : Customize missing launcher message
+      replace : "自訂缺少的啟動器訊息"
+
+    - find : Allows changing the blank message to user specified string when the client runs without a launcher.
+      replace : "當使用者端在沒有啟動器的情況下運行時，允許將空白訊息變更為使用者指定的字串。"
+
+    - find : Use Tilde for Matk
+      replace : "使用波浪號表示 Matk"
+
+    - find : Make the client use tilde <b>(~)</b> symbol for Matk in Stats Window instead of Plus <b>(+)</b>.
+      replace : "讓使用者端在​​統計視窗中使用波浪號 <b>(~)</b> 符號來表示 Matk，而不是 Plus <b>(+)</b> 。"
+
+    - find : Disable Swear Filter
+      replace : "停用髒話過濾器"
+
+    - find : Will allow people to chat using swear words ignoring the contents of <b>manner.txt</b>.
+      replace : "允許人們使用髒話聊天，忽略 <b>manner.txt</b> 的內容。"
+
+    - find : Skip service selection screen
+      replace : "跳過服務選擇畫面"
+
+    - find : Jumps directly to the login interface without asking to select a service.
+      replace : "直接跳到登入介面，無需選擇服務。"
+
+    - find : Use 'Opening' for service selection
+      replace : "使用“開放”進行服務選擇"
+
+    - find : Enables the 'Opening' button in the new login screen to open the service selection screen again.
+      replace : "啟用新登入畫面中的「開啟」按鈕以再次開啟服務選擇畫面。"
+
+    - find : Use normal guild brackets
+      replace : "使用普通的括號"
+
+    - find : On Langtype 0, instead of square-brackets, japanese style brackets are used, this option reverts that behaviour to the normal square brackets i.e. '[ ]'.
+      replace : "在 Langtype 0 上，使用日式括號而不是方括號，此選項將該行為恢復為正常的方括號，即「[ ]」。"
+
+    - find : '@ Bug fix'
+      replace : "@錯誤修復"
+
+    - find : Fixes the bug which prevents writing @ in chat window.
+      replace : "修正了阻止在聊天視窗中寫入@的錯誤。"
+
+    - find : Use official login BG
+      replace : "使用官方登入BG"
+
+    - find : Use Official login background for all Langtypes.
+      replace : "所有 Langtypes 使用官方登入背景。"
+
+    - find : Remove Hourly announcement
+      replace : "刪除每小時公告"
+
+    - find : Remove hourly game grade and hourly play time minder announcements.
+      replace : "刪除每小時遊戲成績和每小時遊戲時間提醒公告。"
+
+    - find : Enable flag emoticons
+      replace : "啟用標記表情符號"
+
+    - find : Enable Selected Flag Emoticons for all Langtypes. You need to specify a txt file as input with the flag constants assigned to 1-9.
+      replace : "為所有語言類型啟用選定的標誌表情符號。您需要指定一個 txt 檔案作為輸入，並將標誌常數指派給 1-9。"
+
+    - find : Remove serial display
+      replace : "刪除序列顯示"
+
+    - find : Removes the display of the client serial number in the login window (bottom right corner).
+      replace : "刪除登入視窗（右下角）中使用者端序號的顯示。"
+
+    - find : Allow blank space in guild name
+      replace : "公會名稱中允許有空格"
+
+    - find : Allow player to create a guild with space in the name (<b>/guild "Spaced Name"</b>).
+      replace : "允許玩家建立名稱中帶有空格的公會（ <b>/guild \"Spaced Name\"</b> ）。"
+
+    - find : Custom inventory limit
+      replace : "自訂庫存限制"
+
+    - find : Change the Maximum no of items displayed in inventory to user specified value (Need to be changed server-side as well).
+      replace : "將庫存中顯示的最大項目數變更為使用者指定的值（也需要在伺服器端變更）。"
+
+    - find : Always use email for Char Deletion
+      replace : "始終使用電子郵件進行字元刪除"
+
+    - find : Makes the Client use email as deletion password for all Langtypes.
+      replace : "使 Client 使用電子郵件作為所有 Langtypes 的刪除密碼。"
+
+    - find : Customize vending limit
+      replace : "自訂售貨限額"
+
+    - find : Change the Vending Limit of 1 Billion zeny to user specified value.
+      replace : "將 10 億澤尼的售賣限額改為使用者指定的值。"
+
+    - find : No Help Message on Login
+      replace : "登入時沒有幫助訊息"
+
+    - find : Prevents the Help Message being shown on Login for all Langtypes.
+      replace : "防止所有 Langtypes 的登入時顯示幫助訊息。"
+
+    - find : Hide World View Interface
+      replace : "隱藏世界視圖介面"
+
+    - find : Hide the World View (Full Map) Interface that is usually shown at the top right.
+      replace : "隱藏通常顯示在右上角的世界視圖（全地圖）介面。"
+
+    - find : Close cutin on Esc key
+      replace : "按 Esc 鍵關閉角質"
+
+    - find : Allow closing of cutin window by pressing ESC key.
+      replace : "按 ESC 鍵允許關閉剪切視窗。"
+
+    - find : Enable Mail Box access for All Langtypes
+      replace : "為所有語言類型啟用郵箱訪問"
+
+    - find : Enables the full use of Mail Boxes and @mail commands (write is disabled for few Langtypes by default in 2013 Clients).
+      replace : "啟用郵箱和 @mail 命令的完整使用（預設情況下，在 2013 使用者端中對少數 Langtypes 停用寫入）。"
+
+    - find : Enable "Notice" email section
+      replace : "啟用「通知」電子郵件部分"
+
+    - find : Enables the use of the "Notice' section in the new Mail Window for RE clients. This will allow for Admins to send specific e-mails (like bulletins) to users.
+      replace : "允許使用 RE 使用者端的新郵件視窗中的「通知」部分。這將允許管理員向使用者發送特定電子郵件（如公告）。"
+
+    - find : Move Item Count Upwards
+      replace : "向上移動項目計數"
+
+    - find : Move Item Count upwards in Shortcut Window so as to align with Skill Level display.
+      replace : "在快捷方式視窗中向上移動項目計數，以便與技能等級顯示對齊。"
+
+    - find : Increase Digit Display
+      replace : "增加數字顯示"
+
+    - find : Increases the limit of digits displayed while attacking from 6 to 10.
+      replace : "攻擊時顯示的數字限制從 6 增加到 10。"
+
+    - find : Customize fade in/out delay
+      replace : "自訂淡入/淡出延遲"
+
+    - find : Change fade in/out time in warps on same map.
+      replace : "變更同一地圖上扭曲的淡入/淡出時間。"
+
+    - find : Remove Jobs from Booking Window
+      replace : "從預訂視窗中刪除職位"
+
+    - find : Removes user specified set of Job Names from Party Booking Window.
+      replace : "從聚會預訂視窗中刪除使用者指定的一組作業名稱。"
+
+    - find : Change Deletion time to relative 
+      replace : "將刪除時間變更為相對時間"
+
+    - find :  Change character display deletion time from actual date & time to remaining time.
+      replace : "將字元顯示刪除時間從實際日期和時間變更為剩餘時間。"
+
+    - find : Restore chat focus
+      replace : "恢復聊天焦點"
+
+    - find : Restore input focus from left mouse click. 
+      replace : "透過點選滑鼠左鍵恢復輸入焦點。"
+
+    - find : Fix item description bug
+      replace : "修復物品描述錯誤"
+
+    - find : Fix item description '[' bug
+      replace : "修復項目描述“[”錯誤"
+
+    - find : Disable equipment preview
+      replace : "停用裝置預覽"
+
+    - find : Remove equipment preview button on the items description window
+      replace : "刪除物品描述視窗上的裝備預覽按鈕"
+
+    - find : Hide Zero Date in Guild Window
+      replace : "在公會視窗中隱藏零日期"
+
+    - find : Hide Zero Date (1969-01-01) in guild members window.
+      replace : "在公會成員視窗中隱藏零日期（1969-01-01）。"
+
+    - find : Customize skill slot highlight
+      replace : "自訂技能槽高亮"
+
+    - find : Allow all items in Shortcut
+      replace : "允許快捷方式中的所有項目"
+
+    - find : Allow players to put all type of items on the shortcut window (makes it easy to trace).
+      replace : "允許玩家將所有類型的物品放在快捷方式視窗上（以便於追蹤）。"
+
+    - find : Fix Achievement counters
+      replace : "修復成就計數器"
+
+    - find : Fix achievement counters for each type of achievement
+      replace : "修復每種成就類型的成就計數器"
+
+    - find : Hide in-game windows
+      replace : "隱藏遊戲內視窗"
+
+    - find : Allows user to hide specific in-game windows. User needs to provide a YAML file containing the list of Window IDs to be hidden.
+      replace : "允許使用者隱藏特定的遊戲視窗。使用者需要提供一個 YAML 檔案，其中包含要隱藏的視窗 ID 清單。"
+
+    - find : Fix homunculus attack AI
+      replace : "修復侏儒攻擊AI"
+
+    - find : Fix issue in homunculus AI which prevents automatic attacks (present in clients 20170920 clients and newer).
+      replace : "修正了 homunculus AI 中的問題，該問題可防止自動攻擊（存在於使用者端 20170920 使用者端及更新版本中）。"
+
+    - find : CASE INSENSITIVE SEARCH
+      replace : "不區分大小寫的搜索"
+
+    - find : Case-Insensitive storage search
+      replace : "不區分大小寫的儲存搜索"
+
+    - find : Make the search in Storage Window, case-insensitive.
+      replace : "在儲存視窗中進行搜索，不區分大小寫。"
+
+    - find : Case-Insensitive cash shop search
+      replace : "不區分大小寫的現金商店搜索"
+
+    - find : Make the search in Cash Shop Window, case-insensitive.
+      replace : "在“Cash Shop Window”中進行搜索，不區分大小寫。"
+
+    - find : LOGIN BACKGROUND
+      replace : "登入背景"
+    
+    - find : Use only first login BG
+      replace : "僅使用首次登入BG"
+
+    - find : Always display only the first login background.
+      replace : "始終僅顯示第一次登入背景。"
+
+    - find : Use only second login BG
+      replace : "僅使用第二個登入BG"
+
+    - find : Always display only the second login background.
+      replace : "始終僅顯示第二個登入背景。"
+
+    - find : GRAVITY IMAGE REMOVAL
+      replace : "重力影像去除"
+
+    - find : Remove gravity ads
+      replace : "去除重力廣告"
+
+    - find : Avoids displaying Gravity ads on the login background.
+      replace : "避免在登入背景上顯示重力廣告。"
+
+    - find : Remove gravity logo
+      replace : "去除重力標誌"
+
+    - find : Avoids displaying Gravity logo on the login background.
+      replace : "避免在登入背景上顯示重力徽標。"
+
+    - find : FONT CUSTOMIZATION
+      replace : "字型客製化"
+
+    - find : Customize Font name
+      replace : "自訂字型名稱"
+
+    - find : Makes the client use the user specified font for all Langtypes. The Langtype specific charset is still being enforced, so if the selected font does not support it, the system falls back to a font that does.
+      replace : "使使用者端對所有 Langtypes 使用使用者指定的字型。 Langtype 特定的字元集仍在強制執行，因此如果所選字型不支援它，系統將回退到支援的字型。"
+
+    - find : Customize Font height (Character)
+      replace : "自訂字型高度（字元）"
+
+    - find : Changes the height of all fonts used to the user specified value (expressed as character height).
+      replace : "將所有使用的字型的高度變更為使用者指定的值（表示為字元高度）。"
+
+    - find : Customize Font Height (Cell)
+      replace : "自訂字型高度（單元格）"
+
+    - find : Changes the height of all fonts used to the user specified value (expressed as cell height).
+      replace : "將所有使用的字型的高度變更為使用者指定的值（表示為儲存格高度）。"
+
+    - find : Customize Font Height (Offset)
+      replace : "自訂字型高度（偏移）"
+
+    - find : Adds the user specified value to all the font heights used.
+      replace : "將使用者指定的值加到所有使用的字型高度。"
+
+    - find : Enable Font Height Limits
+      replace : "啟用字型高度限制"
+
+    - find : Restricts the font heights used to user specified values.
+      replace : "將使用的字型高度限制為使用者指定的值。"
+
+    - find : Customize Font Weight (All)
+      replace : "自訂字型粗細（全部）"
+
+    - find : Changes the weight value (boldness) of all fonts used to the user specified value.
+      replace : "將所有使用的字型的粗細值（粗體）變更為使用者指定的值。"
+
+    - find : Customize Font Weight (Normal)
+      replace : "自訂字型粗細（正常）"
+
+    - find : Changes the weight value (boldness) of all normal fonts used to the user specified value.
+      replace : "將所有普通字型的粗細值（粗體）變更為使用者指定的值。"
+
+    - find : Customize Font Weight (Bold)
+      replace : "自訂字型粗細（粗體）"
+
+    - find : Changes the weight value (boldness) of all Bold fonts used to the user specified value.
+      replace : "將所有使用的粗體字型的粗細值（粗體）變更為使用者指定的值。"
+
+    - find : Customize Font Weight (Offset)
+      replace : "自訂字型粗細（偏移）"
+
+    - find : Adds the user specified value to all the weights used.
+      replace : "將使用者指定的值加到所有使用的權重中。"
+
+    - find : Customize Font charset
+      replace : "自訂字型字元集"
+
+    - find : Changes the charset used for all fonts to user specified one.
+      replace : "將所有字型使用的字元集變更為使用者指定的字元集。"
+
+    - find : IGNORE ERRORS
+      replace : "忽略錯誤"
+
+    - find : Ignore Resource errors
+      replace : "忽略資源錯誤"
+
+    - find : Prevents the client from displaying a variety of Error messages (but not all of them) including missing files. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of missing files.
+      replace : "防止使用者端顯示各種錯誤訊息（但不是全部），包括遺失檔案。訊息被發送到調試器。這並不能保證使用者端在檔案遺失的情況下仍能正常運作。"
+
+    - find : Ignore Palette errors
+      replace : "忽略調色板錯誤"
+
+    - find : Prevents the client from displaying error messages about missing palettes. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of missing files.
+      replace : "防止使用者端顯示缺少調色板的錯誤訊息。訊息被發送到調試器。這並不能保證使用者端在檔案遺失的情況下仍能正常運作。"
+
+    - find : Ignore Lua errors
+      replace : "忽略 Lua 錯誤"
+
+    - find : Prevents the client from displaying error messages from lua code like 'attempt to call nil value'. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : "防止使用者端顯示來自 lua 程式碼的錯誤訊息，例如「嘗試呼叫 nil 值」。訊息被發送到調試器。這並不能保證使用者端即使出現錯誤也能正常運作。"
+
+    - find : Ignore Quest errors
+      replace : "忽略任務錯誤"
+
+    - find : Prevents the client from displaying error messages like 'Not found Quest Info = XXXX'. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : "防止使用者端顯示「未找到任務資訊 = XXXX」等錯誤訊息。訊息被發送到調試器。這並不能保證使用者端即使出現錯誤也能正常運作。"
+
+    - find : Ignore Entry Queue errors
+      replace : "忽略進入隊列錯誤"
+
+    - find : Prevents the client from displaying error messages related to Entry Queue. Messages are sent to debugger instead. This does not guarantee the client will work in-spite of the errors.
+      replace : "防止使用者端顯示與 Entry Queue 相關的錯誤訊息。訊息被發送到調試器。這並不能保證使用者端即使出現錯誤也能正常運作。"
+
+    - find : MSGBOX CUSTOMIZATIONS
+      replace : "MSGBOX 客製"
+
+    - find : Change MessageBox to Beep
+      replace : "將訊息框變更為蜂鳴聲"
+
+    - find : Makes the client produce the user specified sound (using MessageBeep function) instead of showing a MessageBox.
+      replace : "使使用者端產生使用者指定的聲音（使用 MessageBeep 函式）而不是顯示 MessageBox。"
+
+    - find : Show icon in MessageBox
+      replace : "在訊息框中顯示圖示"
+
+    - find : Makes the client show the user specified icon inside MessageBoxes along with the message text.
+      replace : "使使用者端在 MessageBoxes 中顯示使用者指定的圖示以及訊息文字。"
+
+    - find : Disable MessageBoxes
+      replace : "停用訊息框"
+
+    - find : Disables all MessageBoxes from appearing to show any errors/warnings/informations etc.
+      replace : "禁止所有訊息框顯示任何錯誤/警告/訊息等。"
+
+  # CHARACTER
+    - find : CHARACTER CUSTOMIZATION
+      replace : "角色自訂"
+
+    - find : Use official cloth palettes
+      replace : "使用官方布料調色板"
+
+    - find : Use Official Cloth Palette on all Langtypes. Cannot use this if you are using the <b>Enable Custom Jobs</b> patch.
+      replace : "在所有 Langtypes 上使用官方布料調色板。如果您使用 <b>啟用自訂作業</b> 修補，則無法使用此功能。"
+
+    - find : Disable GM sprite
+      replace : "停用 GM 精靈"
+
+    - find : Disable GM sprites whilst keeping all the functionality intact like Yellow name and Admin right click menu.
+      replace : "停用 GM 精靈，同時保持所有功能完整，例如黃色名稱和管理員右鍵選單。"
+
+    - find : Enable Emblem hover for BG [Experimental]
+      replace : "為 BG 啟用徽章懸停 [實驗]"
+
+    - find : Makes the client show the Emblem on top of the character for Battleground mode as well along with GvG.
+      replace : "使使用者端在戰場模式以及 GvG 中在角色頂部顯示徽章。"
+
+    - find : Restore model culling
+      replace : "恢復模型剔除"
+
+    - find : Culls models in front of player by turning them transparent.
+      replace : "透過將模型變成透明來剔除玩家面前的模型。"
+
+    - find : Always see hidden/cloaked objects
+      replace : "始終看到隱藏/隱藏的物體"
+
+    - find : Always see black silhouette of hidden objects as if the player has intravision status.
+      replace : "始終看到隱藏物體的黑色輪廓，就好像玩家處於內視狀態一樣。"
+
+    - find : Customize Quick Switch delay
+      replace : "自訂快速切換延遲"
+
+    - find : Change quick item switch delay ticks with user specified value.
+      replace : "使用使用者指定的值變更快速項目切換延遲刻度。"
+
+    - find : Allow party leader to leave
+      replace : "允許黨魁離開"
+
+    - find : Allow leader to leave the party if no members are on map.
+      replace : "如果地圖上沒有成員，則允許領導者離開隊伍。"
+
+    - find : Allow spam skills by hotkey
+      replace : "透過熱鍵允許垃圾郵件技能"
+
+    - find : Allow spamming of skills by continuous press of hotkey.
+      replace : "允許透過連續按下熱鍵來發送技能垃圾郵件。"
+
+    - find : Allow guild activities in clan
+      replace : "允許部落內進行公會活動"
+
+    - find : Remove restriction of guild functionality while being a member of a clan.
+      replace : "消除作為氏族成員時對公會功能的限制。"
+
+    - find : Restore auto follow
+      replace : "恢復自動關注"
+
+    - find : Restore the auto follow functionality in RO-zero clients.
+      replace : "恢復 RO-zero 使用者端中的自動關注功能。"
+
+    - find : Customize auto follow stop delay
+      replace : "自訂自動跟隨停止延遲"
+
+    - find : Set the auto-follow stopping delay (not starting delay) to user specified value.
+      replace : "將自動跟隨停止延遲（不是啟動延遲）設定為使用者指定的值。"
+
+    - find : Draw Shield on top
+      replace : "在上面畫上盾牌"
+
+    - find : Moves the shield sprite closer to camera for drawing on top of other player sprites.
+      replace : "將盾牌精靈移近相機，以便在其他玩家精靈之上繪製。"
+
+    - find : Show Damage for GvG
+      replace : "顯示 GvG 的傷害"
+
+    - find : Enables the display of damage digits on GvG maps.
+      replace : "啟用在 GvG 地圖上顯示傷害數字。"
+
+    - find : INCREASE HAIRS
+      replace : "增加毛髮"
+
+    - find : Allow 65k hair styles
+      replace : "允許 65k 種髮型"
+
+    - find : Raises the maximum hairstyle limit to 65535 from the default value.
+      replace : "將最大髮型限制從預設值提高到 65535。"
+
+    - find : Increase hair styles
+      replace : "增加髮型"
+
+    - find : Raises the maximum hairstyle limit to user specified value (upto 65535).
+      replace : "將最大髮型限制提高到使用者指定的值（最多 65535）。"
+
+    - find : AUTO FOLLOW CUSTOMIZATION
+      replace : "自動跟隨定制"
+
+    - find : Disable auto follow
+      replace : "停用自動跟隨"
+
+    - find : Disables player auto follow on Shift + Right click.
+      replace : "停用玩家在 Shift + 右鍵單擊時自動跟隨。"
+
+    - find : Decrease auto follow delay
+      replace : "減少自動跟隨延遲"
+
+    - find : Decrease the auto follow delay to user specified value.
+      replace : "將自動跟隨延遲減少到使用者指定的值。"
+
+    - find : AURA CUSTOMIZATION
+      replace : "光環定制"
+
+    - find : Customize Aura sprites
+      replace : "自訂光環精靈"
+
+    - find : This option will make it so your warp portals will not be affected by your aura sprites. For this you will have to make aurafloat.tga and auraring.bmp and place them in your 'data\texture\effect' folder.
+      replace : "此選項將使您的扭曲門戶不會受到您的光環精靈的影響。為此，您必須製作 aurafloat.tga 和 auraring.bmp 並將它們放在「data\\texture\\effect」資料夾中。"
+
+    - find : Customize Aura display limits
+      replace : "自訂 Aura 顯示限制"
+
+    - find : Allows the client to display standard auras within user specified limits for Classes and Levels.
+      replace : "允許使用者端在使用者指定的類別和等級限制內顯示標準光環。"
+
+    - find : <font color="#9F00EF">CHA</font><font color="#5F00FF">T CO</font><font color="blue">LOR </font><font color="green">CUS</font><font color="yellow">TOM</font><font color="orange">IZA</font><font color="red">TION</font>
+      replace : "<font color=\"#9F00EF\"> CHA </font> <font color=\"#5F00FF\"> T CO </font> <font color=\"blue\"> LOR </font> <font color=\"green\"> CUS </font> <font color=\"yellow\"> TOM </font> <font color=\"orange\"> IZA </font> 1K1K12__131K12__212__"
+
+    - find : Customize chat color (GM)
+      replace : "自訂聊天顏色（GM）"
+
+    - find : Changes the GM Chat color to the specified value. Default value is ffff00 (Yellow).
+      replace : "將 GM 聊天顏色變更為指定值。預設值為 ffff00（黃色）。"
+
+    - find : Customize chat color (Guild)
+      replace : "自訂聊天顏色（公會）"
+
+    - find : Changes the Guild Chat color to the specified value. Default Value is b4ffb4 (Light Green).
+      replace : "將公會聊天顏色變更為指定值。預設值為 b4ffb4（淺綠色）。"
+
+    - find : Customize chat color (Party - Others)
+      replace : "自訂聊天顏色（派對-其他）"
+
+    - find : Changes the Party Chat color for other members to the specified value. Default value is ffc8c8 (Pinkish).
+      replace : "將其他成員的群組聊天顏色變更為指定值。預設值為 ffc8c8（粉紅色）。"
+
+    - find : Customize chat color (Party - Self)
+      replace : "自訂聊天顏色（派對-自己）"
+
+    - find : Changes the Party Chat color for the playing character to the specified value. Default value is ffc800 (Orange).
+      replace : "將遊戲角色的聚會聊天顏色變更為指定值。預設值為 ffc800（橘色）。"
+    
+    - find : Customize chat color (Public - Others)
+      replace : "自訂聊天顏色（公共-其他）"
+
+    - find : Changes the Public Chat color for other players to the specified value. Default value is ffffff (White).
+      replace : "將其他玩家的公共聊天顏色變更為指定值。預設值為 ffffff（白色）。"
+
+    - find : Customize chat color (Public - Self)
+      replace : "自訂聊天顏色（公共-自我）"
+
+    - find : Changes the Public Chat color for the playing character to the specified value. Default value is 00ff00 (Green).
+      replace : "將遊戲角色的公共聊天顏色變更為指定值。預設值為 00ff00（綠色）。"
+
+    - find : SKIP CHEATER CHECK
+      replace : "跳過作弊檢查"
+
+    - find : Skip Friend list cheat check
+      replace : "跳過好友清單作弊檢查"
+
+    - find : Prevents warnings during PM's when the sender has similar name to one of your friends.
+      replace : "當寄件者與您的一位朋友的姓名相似時，可以防止在私訊期間收到警告。"
+
+    - find : Skip Guild Member cheat check
+      replace : "跳過公會成員作弊檢查"
+
+    - find : Prevents warnings during PMs when the sender has similar name to one of your guild members.
+      replace : "當寄件者的姓名與您的公會成員之一相似時，可以防止在私訊期間收到警告。"
+
+    - find : WALK DELAY
+      replace : "步行延遲"
+
+    - find : Remove Walk Delay
+      replace : "消除步行延遲"
+
+    - find : Add no delay to walking clicks. But client may likely send more/duplicated packets.
+      replace : "行走時的點擊聲不會有任何延遲。但使用者端可能會發送更多/重複的資料包。"
+
+    - find : Customize Walk Delay
+      replace : "自訂步行延遲"
+
+    - find : Change the delay for walking clicks to user specified value. But client may likely send more/duplicated packets.
+      replace : "將步行點擊的延遲變更為使用者指定的值。但使用者端可能會發送更多/重複的資料包。"
+
+    - find : RESURRECT BUTTON VISIBILITY
+      replace : "復活按鈕可見性"
+
+    - find : Skip Resurrection button
+      replace : "跳過復活按鈕"
+
+    - find : Skip showing resurrection button when you die with Token of Ziegfried in inventory.
+      replace : "當您死亡且庫存中有齊格飛令牌時，跳過顯示復活按鈕。"
+
+    - find : Always show Resurrection button
+      replace : "始終顯示復活按鈕"
+
+    - find : Make the client always show Resurrection button with Token of Ziegfried in inventory irrespective of map type.
+      replace : "使使用者端始終在庫存中顯示帶有齊格飛令牌的復活按鈕，無論地圖類型如何。"
+
+  # CLIENT
+    - find : RESIZE HP BAR
+      replace : "調整 HP 欄位的大小"
+
+    - find : Resize Player HP/SP bar
+      replace : "調整播放器 HP / SP 條的大小"
+
+    - find : Resize the HP/SP bar drawn for playing character as per user specified value.
+      replace : "根據使用者指定的值調整為播放角色繪製的 HP / SP 條的大小。"
+
+    - find : Resize Normal mob HP bar
+      replace : "調整普通生物 HP 欄位的大小"
+
+    - find : Resize the HP bar drawn for regular monsters as per user specified value.
+      replace : "根據使用者指定的值調整為常規怪物繪製的 HP 欄的大小。"
+
+    - find : Resize Mini-Boss mob HP bar
+      replace : "調整 Mini-Boss 生物 HP 欄的大小"
+
+    - find : Resize the HP bar drawn for Mini-Boss monsters as per user specified value.
+      replace : "根據使用者指定的值調整為 Mini-Boss 怪物繪製的 HP 欄的大小。"
+
+    - find : Resize Boss mob HP bar
+      replace : "調整 Boss 生物 HP 欄位的大小"
+
+    - find : Resize the HP bar drawn for Boss monsters as per user specified value.
+      replace : "根據使用者指定的值調整為 Boss 怪物繪製的 HP 欄的大小。"
+
+    - find : DISABLE EFFECT
+      replace : "停用效果"
+
+    - find : Disable Quake skill effect
+      replace : "停用雷神之鎚技能效果"
+
+    - find :  Disables the Earthquake skill effect.
+      replace : "解除地震技能效果。"
+
+    - find : Disable Hallucination wavy screen
+      replace : "停用幻覺波浪屏"
+
+    - find : Disables the Hallucination effect (screen becomes wavy and lags the client), used by baphomet, horongs, and such.
+      replace : "停用由 baphomet、horongs 等所使用的幻覺效果（螢幕變成波浪狀並落後於使用者端）。"
+
+    - find : Disable Blind skills effect
+      replace : "解除致盲技能效果"
+
+    - find : Disables the Blind skill effect (screen becomes dark).
+      replace : "停用致盲技能效果（螢幕變暗）。"
+
+    - find : SLASH COMMANDS
+      replace : "斜線指令"
+
+    - find : Always enable '/who' command
+      replace : "始終啟用“/who”命令"
+
+    - find : Enable <b>/w</b> and <b>/who</b> command for all Langtypes.
+      replace : "為所有 Langtypes 啟用 <b>/w</b> 和 <b>/who</b> 指令。"
+
+    - find : Always enable '/showname' command
+      replace : "始終啟用“/showname”命令"
+
+    - find : Enables <b>/showname</b> command for all Langtypes
+      replace : "為所有 Langtypes 啟用 <b>/showname</b> 指令"
+
+    - find : Allow unknown '/command's [Experimental]
+      replace : "允許未知的“/命令”[實驗]"
+
+    - find : Sends all unknown '<b>/command</b>' sequences to server (for allowing server side '<b>/command</b>'s) instead of showing "Invalid command".
+      replace : "將所有未知的「 <b>/command</b> 」序列傳送到伺服器（以允許伺服器端「 <b>/command</b> 」）而不是顯示「無效命令」。"
+
+    - find : SKILL CHATTER REMOVAL
+      replace : "技能顫振消除"
+
+    - find : Remove Dancer's Scream chatter
+      replace : "刪除舞者的尖叫喋喋不休"
+
+    - find : Disable the random chat appearing due to Dancer's Scream skill from file dc_scream.txt .
+      replace : "停用由於檔案 dc_scream.txt 中舞者的尖叫技能而出現的隨機聊天。"
+
+    - find : Remove Bard's Frost Joke chatter
+      replace : "刪除吟遊詩人的冰霜笑話喋喋不休"
+
+    - find : Disable the random chat appearing due to Bard's Frost Joke skill from file ba_frostjoke.txt .
+      replace : "停用由於檔案 ba_frostjoke.txt 中巴德的冰霜笑話技能而出現的隨機聊天。"
+
+    - find : RESIZE BOX
+      replace : "調整框大小"
+
+    - find : Resize Chat Box
+      replace : "調整聊天框大小"
+
+    - find : Resize the Main/Battle chat box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : "將主/戰鬥聊天框最大輸入字元從 <b>70</b> 調整為使用者指定的值（通常使用 234）。"
+
+    - find : Resize Chat Room Box
+      replace : "調整聊天室框的大小"
+
+    - find : Resize the chat room box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : "將聊天室框最大輸入字元大小從 <b>70</b> 調整為使用者指定的值（通常使用 234）。"
+
+    - find : Resize PM Box
+      replace : "調整 PM 框大小"
+
+    - find : Resize the PM chat box max input chars from <b>70</b> to user specified value (234 is usually used).
+      replace : "將 PM 聊天框最大輸入字元數從 <b>70</b> 調整為使用者指定的值（通常使用 234）。"
+
+    - find : Resize NPC Dialog Box
+      replace : "調整 NPC 對話框大小"
+    
+    - find : Changes the Max input chars of NPC Dialog boxes to user specified value within (2052 - 4096).
+      replace : "將 NPC 對話方塊的最大輸入字元數變更為使用者指定的值（2052 - 4096）。"
+
+    - find : ROULETTE VISIBILITY
+      replace : "輪盤賭可見性"
+
+    - find : Hide Roulette icon
+      replace : "隱藏輪盤賭圖標"
+
+    - find : Hide Roulette Icon that is present in some clients.
+      replace : "隱藏某些使用者端中存在的輪盤圖示。"
+
+    - find : Show Roulette icon
+      replace : "顯示輪盤賭圖標"
+
+    - find : Restores the Roulette Icon that was removed in new clients.
+      replace : "恢復在新使用者端中刪除的輪盤圖示。"
+
+    - find : CASH SHOP CUSTOMIZATION
+      replace : "現金店定制"
+
+    - find : Move Cash Shop icon
+      replace : "行動現金店圖標"
+
+    - find : Move the Cash Shop icon to user specified co-ordinates. Positive values are relative to left and top, Negative values are relative to right and bottom.
+      replace : "將商城圖示移到使用者指定的座標。正值相對於左側和頂部，負值相對於右側和底部。"
+
+    - find : Enforce 0 C in Cash Shop
+      replace : "在商城中實施 0C"
+
+    - find : Enforce the <b>C</b> field to use 0 instead of random values in cash shop.
+      replace : "強制 <b>C</b> 欄位在現金商店中使用 0 而不是隨機值。"
+
+    - find : Use default web browser in Cash Shop
+      replace : "在商城中使用預設網頁瀏覽器"
+
+    - find : Open URL in the cashshop window with default web browser instead of IExplore.
+      replace : "使用預設 Web 瀏覽器而不是 IExplore 在現金商店視窗中開啟 URL。"
+
+    - find : SHOP EQ PREVIEW
+      replace : "商店均衡器預覽"
+
+    - find : Enable equipment preview in Cash Shop
+      replace : "在商城中啟用裝置預覽"
+
+    - find : Add support for preview button in cash shop (right click the items to see the button). Needs the switch enabled in server-side too.
+      replace : "新增對現金商店中預覽按鈕的支援（右鍵單擊商品以查看按鈕）。也需要在伺服器端啟用開關。"
+
+    - find : Enable equipment preview in Trader Shop
+      replace : "在交易商店中啟用裝備預覽"
+
+    - find : Add support for preview button in older style trader cash shops (right click the items to see the button). Needs the switch enabled in server-side too.
+      replace : "在舊式交易商現金商店中新增對預覽按鈕的支援（右鍵單擊項目以查看按鈕）。也需要在伺服器端啟用開關。"
+
+    - find : CASH SHOP VISIBILITY
+      replace : "現金商店可見度"
+
+    - find : Hide Cash Shop icon
+      replace : "隱藏商城圖標"
+
+    - find : Hide Cash Shop Icon in clients that already show them.
+      replace : "在已經顯示的使用者端中隱藏現金商店圖示。"
+
+    - find : Show Cash Shop icon
+      replace : "顯示商城圖標"
+
+    - find : Restores the Cash Shop Icon in clients that can have them. (Primarily RE clients hide them).
+      replace : "在可以擁有它們的使用者端中恢復商城圖示。 （主要是 RE 使用者端隱藏它們）。"
+
+    - find : CAMERA ANGLES
+      replace : "相機角度"
+
+    - find : Increase Camera Angles (LOW)
+      replace : "增加相機角度（低）"
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables a lower range of around <b>30 degrees</b>.
+      replace : "解鎖可能的攝影機角度，以提供更多的放置自由度。啟用 <b>30 度左右的較低範圍</b> 。"
+
+    - find : Increase Camera Angles (MEDIUM)
+      replace : "增加相機角度（中）"
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables a medium range of around <b>42 degrees</b>.
+      replace : "解鎖可能的攝影機角度，以提供更多的放置自由度。啟用約 <b>42 度</b> 的中等範圍。"
+
+    - find : Increase Camera Angles (HIGH)
+      replace : "增加相機角度（高）"
+
+    - find : Unlocks the possible camera angles to give more freedom of placement. Enables an almost ground-level camera of around <b>65 degrees</b>.
+      replace : "解鎖可能的攝影機角度，以提供更多的放置自由度。啟用大約 <b>65 度</b> 的幾乎地面水平的攝影機。"
+
+    - find : ZOOM OUT
+      replace : "縮小"
+
+    - find : Decrease Zoom Out (to 25%)
+      replace : "減少縮小（至 25%）"
+
+    - find : Decreases the zoom-out range to approx. 25% of maximum.
+      replace : "將縮小範圍減小到大約 100 倍。最大值的 25%。"
+
+    - find : Increase Zoom Out (to 50%)
+      replace : "增加縮小（至 50%）"
+
+    - find : Increases the zoom-out range to approx. 50% of Maximum.
+      replace : "將縮小範圍增加到大約。最大值的 50%。"
+
+    - find : Increase Zoom Out (to 75%)
+      replace : "增加縮小（至 75%）"
+
+    - find : Increases the zoom-out range to approx. 75% of Maximum.
+      replace : "將縮小範圍增加到大約。最大值的 75%。"
+
+    - find : Increase Zoom Out (to Max)
+      replace : "增加縮小（至最大）"
+
+    - find : Maximizes the zoom-out range.
+      replace : "最大化縮小範圍。"
+
+    - find : LOGIN MODE
+      replace : "登入方式"
+
+    - find : Restore Login Window
+      replace : "恢復登入視窗"
+
+    - find : Circumvents Gravity's new token-based login system and restores the normal login window.
+      replace : "規避 Gravity 新的基於令牌的登入系統並恢復正常的登入視窗。"
+
+    - find : Use SSO Login Packet
+      replace : "使用SSO登入資料包"
+
+    - find : Enable using SSO packet on all Langtype (to use login and pass with a launcher).
+      replace : "啟用在所有 Langtype 上使用 SSO 封包（透過啟動器使用登入和傳遞）。"
+
+    - find : Use Old Login Packet
+      replace : "使用舊的登入資料包"
+
+    - find : Enable the old login packet (0x64) used for Login Window. Intended for new clients which cannot restore the login window anymore.
+      replace : "啟用用於登入視窗的舊登入資料包 (0x64)。適用於無法再恢復登入視窗的新客戶。"
+
+    - find : CHAT REPEAT
+      replace : "聊天重複"
+
+    - find : Allow unlimited chat repeat
+      replace : "允許無限制的聊天重複"
+
+    - find : Remove the clientside limitation for maximum repeated lines.
+      replace : "刪除使用者端對最大重複行數的限制。"
+
+    - find : Customize chat repeat limit
+      replace : "自訂聊天重複限制"
+
+    - find : Change the clientside limit for maximum repeated lines in chat box from 2 to user specified value.
+      replace : "將聊天框中最大重複行數的使用者端限制從 2 變更為使用者指定的值。"
+
+    - find : SLEEP DELAY CUSTOMIZATION
+      replace : "睡眠延遲客製"
+
+    - find : Add Input Delay
+      replace : "新增輸入延遲"
+
+    - find : Adds the user specified value to input delay.
+      replace : "將使用者指定的值新增至輸入延遲。"
+
+    - find : Customize game loop delay
+      replace : "自訂遊戲循環延遲"
+
+    - find : Change the sleep delay inside of game loop to user specified value.
+      replace : "將遊戲循環內的睡眠延遲改為使用者指定的值。"
+  
+  # SPECIAL
+    - find : SPECIAL CUSTOMIZATIONS
+      replace : "特別客製化"
+
+    - find : Enable Custom Shields
+      replace : "啟用自訂防護罩"
+
+    - find : Enables the use of Custom Shield Types (using Lua Files similar to Xray).
+      replace : "允許使用自訂屏蔽類型（使用類似於 Xray 的 Lua 檔案）。"
+
+    - find : Enable Custom Jobs
+      replace : "啟用自訂作業"
+
+    - find : Enables the use of Custom Jobs (using Lua Files similar to Xray).
+      replace : "允許使用自訂作業（使用類似 Xray 的 Lua 檔案）。"
+
+    - find : Enable Custom Homunculi
+      replace : "啟用自訂 Homunculi"
+
+    - find : Enables the use of Custom Homunculus (using Lua Files). The <b>'ReqJobName'</b> function is used for homunculus as well, so no extra files needed.
+      replace : "允許使用自訂 Homunculus （使用 Lua 檔案）。 <b>'ReqJobName'</b> 函式也用於小人，因此不需要額外的檔案。"
+
+    - find : Add Chris' lua overrides [Experimental]
+      replace : "添加 Chris 的 lua 覆蓋 [實驗]"
+
+    - find : Adds the lua files provided by llchrisll to override the existing lua tables and functions. Please check this <a href="https://llchrisll.github.io/ROTPDocs/addons/#custom-lua-support">link</a> for more details.
+      replace : "新增llchrisll提供的lua檔案來覆寫現有的lua表和函式。請檢查此 <a href=\"https://llchrisll.github.io/ROTPDocs/addons/#custom-lua-support\"> 連結 </a> 以了解更多詳細資訊。"
+
+    - find : SKILL CUSTOMIZATIONS
+      replace : "技能定制"
+
+    - find : Enable Custom Player skills [Experimental]
+      replace : "啟用自訂玩家技能[實驗]"
+
+    - find : Enables the use of custom skills castable on players (using Lua Files).
+      replace : "允許使用可對玩家施放的自訂技能（使用 Lua 檔案）。"
+
+    - find : Enable Custom Homunculus skills [Experimental]
+      replace : "啟用自訂 Homunculus 技能 [實驗]"
+
+    - find : Enables the use of custom skills for Homunculus (using Lua Files).
+      replace : "允許使用 Homunculus 的自訂技能（使用 Lua 檔案）。"
+
+    - find : Enable Custom Mercenary skills [Experimental]
+      replace : "啟用自訂 Mercenary 技能 [實驗]"
+
+    - find : Enables the use of custom skills for Mercenaries (using Lua Files).
+      replace : "允許使用僱傭兵的自訂技能（使用 Lua 檔案）。"
+
+  # DATA
+    - find : DATA CUSTOMIZATION
+      replace : "數據客製化"
+
+    - find : Customize Max Emblem file size
+      replace : "自訂最大徽章檔案大小"
+
+    - find : Change the maximum limit used for guild emblem's file size.
+      replace : "變更公會徽章檔案大小的最大限制。"
+
+    - find : Customize Rodex tax
+      replace : "客製化Rodex稅"
+
+    - find : Change the tax deducted while sending items by rodex.
+      replace : "變更透過 rodex 發送物品時扣除的稅款。"
+
+    - find : Customize guild exp limit
+      replace : "自訂公會經驗限制"
+
+    - find : Change guild exp limit percent. Default value is 50%.
+      replace : "變更公會經驗限制百分比。預設值為 50%。"
+
+    - find : Customize adventurer agency levels
+      replace : "自訂冒險家機構等級"
+
+    - find : Changes the default level range on the Adventure Agency.
+      replace : "變更冒險機構的預設等級範圍。"
+
+    - find : Enable Official custom .eot Fonts
+      replace : "啟用官方自訂.eot 字型"
+
+    - find : This option enables use of Official Custom Fonts (EOT fonts in data folder) for all Langtypes.
+      replace : "此選項允許對所有 Langtypes 使用官方自訂字型（資料資料夾中的 EOT 字型）。"
+
+    - find : Fix charset for Fonts
+      replace : "修復字型的字元集"
+
+    - find : Make the client use correct charset for Official Custom Fonts (EOT & OTF fonts) on all Langtypes.
+      replace : "讓使用者端在​​所有 Langtypes 上使用正確的官方自訂字型（EOT 和 OTF 字型）字元集。"
+
+    - find : Use Ascii on All
+      replace : "全部使用 Ascii"
+
+    - find : Makes the client Enable ASCII irrespective of Font or Langtypes.
+      replace : "使使用者端啟用 ASCII，無論字型或語言類型為何。"
+
+    - find : Customize screenshot quality
+      replace : "自訂螢幕截圖質量"
+
+    - find : Changes the JPEG quality parameter for screenshots to user specified value.
+      replace : "將螢幕截圖的 JPEG 品質參數變更為使用者指定的值。"
+
+    - find : Always call SelectKoreaClientInfo()
+      replace : "始終呼叫 SelectKoreaClientInfo()"
+
+    - find : Ensures SelectKoreaClientInfo() is called along with SelectClientInfo() allowing you to use features that would be only visible on Korean Service Type.
+      replace : "確保 SelectKoreaClientInfo() 與 SelectClientInfo() 一起呼叫，允許您使用僅在韓語服務類型上可見的功能。"
+
+    - find : Read data folder first
+      replace : "先讀取data資料夾"
+
+    - find : Gives the 'data' directory contents priority over GRF contents.
+      replace : "使「資料」目錄內容優先於 GRF 內容。"
+
+    - find : Use plain text descriptions
+      replace : "使用純文字描述"
+
+    - find : Enforces client to treat txt file contents as ASCII, not encoded.
+      replace : "強制使用者端將 txt 檔案內容視為 ASCII，而不是編碼。"
+
+    - find : Always load korea ExternalSettings lua file
+      replace : "始終加載韓國ExternalSettings lua檔案"
+
+    - find : Makes the client load Korea server's ExternalSettings file for all langtypes.
+      replace : "使使用者端載入韓國伺服器的所有語言類型的ExternalSettings 檔案。"
+
+    - find : Increase headgear viewID limit
+      replace : "增加安全帽viewID限制"
+
+    - find : Changes the limit for the headgear ViewIDs from default (1000-3000 depending on client) to User Defined value (max 64000).
+      replace : "將頭帶 ViewID 的限制從預設值（1000-3000，取決於使用者端）變更為使用者定義值（最大 64000）。"
+
+    - find : Remove 3D bones limit
+      replace : "刪除 3D 骨骼限制"
+
+    - find : Enables the use of custom 3D monsters (Granny) by removing the Hard-coded ID limit.
+      replace : "透過消除硬編碼 ID 限制，允許使用自訂 3D 怪物（奶奶）。"
+
+    - find : Load custom Quest Lua/Lub files
+      replace : "載入自訂 Quest Lua/Lub 檔案"
+
+    - find : Enables loading of custom lua files used for quests. You need to specify the list of files via a YAML file. All the files need to be inside 'lua files\quest' folder.
+      replace : "允許載入用於任務的自訂 lua 檔案。您需要透過 YAML 檔案指定檔案清單。所有檔案都需要位於「lua files\\quest」資料夾中。"
+
+    - find : Increase map quality
+      replace : "提高地圖品質"
+
+    - find : Makes client use 32 bit color maps for Map Textures.
+      replace : "使使用者端使用 32 位元顏色貼圖作為貼圖紋理。"
+
+    - find : Enable effect for all maps
+      replace : "為所有地圖啟用效果"
+
+    - find : Make the client load the corresponding file in EffectTool folder for all maps.
+      replace : "讓使用者端為所有貼圖載入EffectTool資料夾中的對應檔案。"
+
+    - find : Load iteminfo based on char server
+      replace : "基於字元伺服器載入iteminfo"
+
+    - find : Load ItemInfo file and call main function with selected char server name as argument.
+      replace : "載入 ItemInfo 檔案並使用選定的字元伺服器名稱作為參數呼叫 main 函式。"
+
+    - find : Use icons from stateiconimginfo.lub
+      replace : "使用 stateiconimginfo.lub 中的圖標"
+
+    - find : Disable hardcoded status icons and read them only from stateiconimginfo.lub.
+      replace : "停用硬編碼狀態圖示並僅從 stateiconimginfo.lub 讀取它們。"
+
+    - find : Fix act delay
+      replace : "修復動作延遲"
+
+    - find : Fix act delay for act files with big amount of frames.
+      replace : "修正了具有大量畫面的動作檔案的動作延遲。"
+
+    - find : Add custom DLLs
+      replace : "新增自訂 DLL"
+
+    - find : Makes the hexed client load the specified DLL and functions.
+      replace : "使十六進位使用者端載入指定的 DLL 和函式。"
+
+    - find : Hide build info
+      replace : "隱藏建置訊息"
+
+    - find : Hide the actual build info in client by 'NULL' ifying all related values.
+      replace : "透過“NULL”驗證所有相關值來隱藏使用者端中的實際建置資訊。"
+
+    - find : Disable camera lock
+      replace : "停用相機鎖定"
+
+    - find : Disable locking of camera viewpoint rotation using ViewPointTable.txt
+      replace : "使用 ViewPointTable.txt 停用相機視點旋轉鎖定"
+
+    - find : Disable map signs
+      replace : "停用地圖標誌"
+
+    - find : Disable the use of mapInfo lub file to display map signs when player enters map.
+      replace : "禁止使用mapInfo lub檔案在玩家進入地圖時顯示地圖標誌。"
+
+    - find : Translate arrows to English
+      replace : "將箭頭翻譯成英語"
+
+    - find : Translate arrows & menu button texts in hotkey setting UI from korean to english
+      replace : "將熱鍵設定 UI 中的箭頭和選單按鈕文字從韓文翻譯成英語"
+
+    - find : Use 'identified' drops for Boss (MVP) mob
+      replace : "對 Boss (MVP) 生物使用「已辨識」掉落物"
+
+    - find : Enforce MVP to drop item with the identified names.
+      replace : "強制 MVP 丟棄具有已識別名稱的項目。"
+
+    - find : Translate client
+      replace : "翻譯客戶"
+
+    - find : Translates some of the Hard-coded Korean phrases using a user specified mapping file (defaults to <b>Translations_EN.yml</b>).
+      replace : "使用使用者指定的映射檔案（預設為 <b>Translations_EN.yml</b> ）翻譯一些硬編碼韓語短語。"
+
+    - find : Translate taekwon names
+      replace : "翻譯跆拳道名稱"
+
+    - find : Translates the korean names of the Taekwon branch to English.
+      replace : "將 Taekwon 分支的韓文名稱翻譯為英文。"
+
+    - find : Customize Captcha Decomp size
+      replace : "自訂驗證碼分解大小"
+
+    - find : Changes the default zlib max decompression size used for captcha images to user specified value.
+      replace : "將用於驗證碼影像的預設 zlib 最大解壓縮大小變更為使用者指定的值。"
+
+    - find : DISABLE PROTECTION
+      replace : "停用保護"
+
+    - find : Disable HShield
+      replace : "停用 HShield"
+
+    - find : Disables HackShield from clients that use it.
+      replace : "從使用 HackShield 的使用者端停用它。"
+
+    - find : Disable Game Guard
+      replace : "停用遊戲衛士"
+
+    - find : Disables Game Guard from clients that use it (Renewal clients have them).
+      replace : "從使用 Game Guard 的使用者端停用它（續訂使用者端有它們）。"
+
+    - find : Disable Cheat Defender Game Guard
+      replace : "停用 Cheat Defender Game Guard"
+
+    - find : Disables Cheat Defender Game Guard from new clients.
+      replace : "從新使用者端停用 Cheat Defender Game Guard。"
+
+    - find : SKIP LUB
+      replace : "跳過潤滑"
+
+    - find : Skip SignBoard lubs
+      replace : "跳過招牌酒吧"
+
+    - find : Makes the client skip loading SignBoardList related lub files
+      replace : "讓使用者端跳過載入 SignBoardList 相關的 lub 檔案"
+
+    - find : Skip Towninfo lub
+      replace : "跳過 Towninfo 俱樂部"
+
+    - find : Makes the client skip loading Towninfo.lub file
+      replace : "讓使用者端跳過載入 Towninfo.lub 檔案"
+
+    - find : READ .txt FILE
+      replace : "讀取.txt 檔案"
+
+    - find : Always read msgstringtable.txt
+      replace : "一律閱讀 msgstringtable.txt"
+
+    - find : This option will force the client to read all the user interface messages from msgstringtable.txt instead of displaying the Korean messages.
+      replace : "此選項將強制使用者端從 msgstringtable.txt 讀取所有使用者介面訊息，而不是顯示韓語訊息。"
+
+    - find : Always read questid2display.txt
+      replace : "一律閱讀 questid2display.txt"
+
+    - find : Makes the client to load questid2display.txt on all Langtypes (instead of only 0).
+      replace : "使使用者端在所有 Langtypes（而不是僅 0）上載入 questid2display.txt。"
+
+    - find : PATH CUSTOMIZATION
+      replace : "路徑客製"
+
+    - find : Customize Default BGM file
+      replace : "自訂預設 BGM 檔案"
+
+    - find : Make the client load user specified MP3 file as default BGM used upon login to account instead of <b>bgm\01.mp3</b>.
+      replace : "使使用者端載入使用者指定的 MP3 檔案作為登入帳戶時使用的預設 BGM 而不是 <b>bgm\\01.mp3</b> 。"
+
+    - find : Customize Iteminfo lub
+      replace : "自訂 Iteminfo lub"
+
+    - find : Make the client load user specified lua file instead of <b>Iteminfo*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>Iteminfo*.lub</b> 。"
+
+    - find : Customize AchievementList lub
+      replace : "自訂成就清單 lub"
+
+    - find : Make the client load user specified lua file instead of <b>AchievementList*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>AchievementList*.lub</b> 。"
+
+    - find : Customize MonsterSizeEffect lub
+      replace : "自訂 MonsterSizeEffect lub"
+
+    - find : Make the client load user specified lua file instead of <b>MonsterSizeEffect*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>MonsterSizeEffect*.lub</b> 。"
+
+    - find : Customize Towninfo lub
+      replace : "自訂Towninfo lub"
+
+    - find : Make the client load user specified lua file instead of <b>Towninfo*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>Towninfo*.lub</b> 。"
+
+    - find : Customize PetEvolutionCln lub
+      replace : "客製化 PetEvolutionCln lub"
+
+    - find : Make the client load user specified lua file instead of <b>PetEvolutionCln*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>PetEvolutionCln*.lub</b> 。"
+
+    - find : Customize Tipbox lub
+      replace : "客製化 Tipbox 潤滑脂"
+
+    - find : Make the client load user specified lua file instead of <b>Tipbox*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>Tipbox*.lub</b> 。"
+
+    - find : Customize CheckAttendance lub
+      replace : "自訂考勤lub"
+
+    - find : Make the client load user specified lua file instead of <b>CheckAttendance*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>CheckAttendance*.lub</b> 。"
+
+    - find : Customize PrivateAirplane lub
+      replace : "客製化私人飛機俱樂部"
+
+    - find : Make the client load user specified lua file instead of <b>PrivateAirplane*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>PrivateAirplane*.lub</b> 。"
+
+    - find : Customize MapInfo lub
+      replace : "自訂 MapInfo lub"
+
+    - find : Make the client load user specified lua file instead of <b>MapInfo*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>MapInfo*.lub</b> 。"
+
+    - find : Customize OngoingQuestInfoList lub
+      replace : "自訂 OngoingQuestInfoList lub"
+
+    - find : Make the client load user specified lua file instead of <b>OngoingQuestInfoList*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>OngoingQuestInfoList*.lub</b> 。"
+
+    - find : Customize RecommendedQuestInfoList lub
+      replace : "自訂RecommendedQuestInfoList lub"
+
+    - find : Make the client load user specified lua file instead of <b>RecommendedQuestInfoList*.lub</b>.
+      replace : "讓使用者端載入使用者指定的lua檔案而不是 <b>RecommendedQuestInfoList*.lub</b> 。"
+
+    - find : Customize License File
+      replace : "自訂許可證檔案"
+
+    - find : Change the filename used for EULA from <b>..licence.txt</b> to user specified name (Path is relative to Data folder).
+      replace : "將 EULA 使用的檔案名稱從 <b>.. licence.txt</b> 變更為使用者指定的名稱（路徑相對於資料資料夾）。"
+
+    - find : Customize ClientInfo file
+      replace : "自訂ClientInfo檔案"
+
+    - find : Change the clientinfo XML file loaded from *clientinfo.xml to user specified name.
+      replace : "將從 * clientinfo.xml 載入的 clientinfo XML 檔案變更為使用者指定的名稱。"
+
+    - find : SHARED BODY PALETTES
+      replace : "共享身體調色板"
+
+    - find : Enable shared body palettes - Male & Female
+      replace : "啟用共享身體調色板 - 男性和女性"
+
+    - find : Makes the client use a single cloth palette set (body_%s_%d.pal) for all job classes but separate for both genders.
+      replace : "使客戶對所有工作類別使用單一布料調色盤集 (body_%s_%d.pal)，但男女分開。"
+
+    - find : Enable shared body palettes - Unisex
+      replace : "啟用共享身體調色板 - 男女皆宜"
+
+    - find : Makes the client use a single cloth palette set (body_%d.pal) for all job classes & genders.
+      replace : "使顧客對所有工作類別和性別使用單一布料調色盤集 (body_%d.pal)。"
+
+    - find : SHARED HEAD PALETTES
+      replace : "共享頭調色板"
+
+    - find : Enable shared head palettes - Male & Female
+      replace : "啟用共享頭部調色板 - 男性和女性"
+
+    - find : Makes the client use a single hair palette set (head_%s_%d.pal) for all hair styles but separate for both genders.
+      replace : "使客戶對所有髮型使用單一頭髮調色板集 (head_%s_%d.pal)，但對男女分開。"
+
+    - find : Enable shared head palettes - Unisex
+      replace : "啟用共享頭部調色板 - 男女皆宜"
+
+    - find : Makes the client use a single hair palette set (head_%d.pal) for all hair styles and genders.
+      replace : "使客戶對所有髮型和性別使用單一頭髮調色板集 (head_%d.pal)。"
+
+    - find : MULTIPLE GRFS
+      replace : "多重GRFS"
+
+    - find : Enable Multiple GRFs ( INI )
+      replace : "啟用多個 GRFs (INI)"
+
+    - find : Enables the use of multiple grf files by putting them in an INI file in your client folder. You can load upto 10 GRFs in total.
+      replace : "透過將多個 grf 檔案放入使用者端資料夾中的 INI 檔案中，可以使用多個 grf 檔案。您總共最多可以載入 10 個 GRFs。"
+
+    - find : Enable Multiple GRFs ( Embedded )
+      replace : "啟用多個 GRFs（嵌入式）"
+
+    - find : Enables the use of multiple grf files without needing INI file in client folder. Instead you specify the INI file as input to the patch so it can embed the names.
+      replace : "允許使用多個 grf 檔案，而無需使用者端資料夾中的 INI 檔案。相反，您指定 INI 檔案作為修補的輸入，以便它可以嵌入名稱。"
+
+  # ENV
+    - find : ENVIRONMENT CUSTOMIZATION
+      replace : "環境客製化"
+
+    - find : Disable filename check
+      replace : "停用檔案名稱檢查"
+
+    - find : Disables the check that forces the client to quit if not called an official name like ragexe.exe for all Langtypes.
+      replace : "如果沒有為所有 Langtypes 呼叫像 ragexe.exe 這樣的官方名稱，則停用強制使用者端退出的檢查。"
+
+    - find : HKLM To HKCU
+      replace : "HKLM 至 HKCU"
+
+    - find : This makes the client use HK_CURRENT_USER registry entries instead of HK_LOCAL_MACHINE. Necessary for users who have no admin privileges on their computer.
+      replace : "這使得使用者端使用 HK_CURRENT_USER 註冊表項而不是 HK_LOCAL_MACHINE 。對於沒有電腦管理員權限的使用者來說是必需的。"
+
+    - find : Use default browser for &lt;URL&gt;
+      replace : "對 &lt;URL&gt; 使用預設瀏覽器"
+
+    - find : Use default web browser to open &lt;URL&gt; instead of built-in ROWebBrowser.
+      replace : "使用預設網頁瀏覽器開啟 &lt;URL&gt; 而不是內建 ROWebBrowser 。"
+
+    - find : Remove admin privilege requirement
+      replace : "刪除管理員權限要求"
+
+    - find : Removes the explicit requirement for user access elevation (i.e. Admin privileges) from the client
+      replace : "刪除了使用者端對使用者存取權限提升（即管理員權限）的明確要求"
+
+    - find : Always load client plugins [Experimental]
+      replace : "始終載入使用者端插件[實驗]"
+
+    - find : Makes the client load client plug-ins regardless of its sound settings.
+      replace : "使使用者端載入使用者端插件，無論其聲音設定為何。"
+
+    - find : Disable multiple windows
+      replace : "停用多個視窗"
+
+    - find : Prevents the client from creating more than one Client Window on all Langtypes.
+      replace : "防止使用者端在所有 Langtypes 上建立多個 Client 視窗。"
+
+    - find : Customize minimum screen resolution
+      replace : "自訂最小螢幕分辨率"
+
+    - find : Change minimum client resolution (width & height) to user specified values from (default of 1024x768).
+      replace : "將最小使用者端解析度（寬度和高度）變更為使用者指定的值（預設為 1024x768）。"
+
+    - find : Ignore Debugger
+      replace : "忽略除錯工具"
+
+    - find : Skips checking for a debugger using the 'IsDebuggerPresent' function. Not advisable for use on final clients.
+      replace : "使用“IsDebuggerPresent”函式跳過檢查偵錯器。不建議在最終客戶上使用。"
+
+    - find : WINDOW FRAME CUSTOMIZATION
+      replace : "窗框定制"
+
+    - find : Enable title buttons
+      replace : "啟用標題按鈕"
+
+    - find : Enable Title Bar Menu (Reduce, Maximize, Close) buttons and the window icon.
+      replace : "啟用標題列選單（縮小、最大化、關閉）按鈕和視窗圖示。"
+
+    - find : Use Miniature title bar
+      replace : "使用微型標題欄"
+
+    - find : Makes the client window use a small title bar.
+      replace : "使使用者端視窗使用小標題列。"
+
+    - find : Customize Window title
+      replace : "自訂視窗標題"
+
+    - find : Changes the window title to user specified string.
+      replace : "將視窗標題變更為使用者指定的字串。"
+
+    - find : Enable Borderless full screen
+      replace : "啟用無邊框全螢幕"
+
+    - find : Removes borders from the client window when the resolution is set to the screen resolution (commonly known as Borderless Full screen window).
+      replace : "當解析度設定為螢幕解析度時，從使用者端視窗中刪除邊框（通常稱為無邊框全螢幕視窗）。"
+
+    - find : CLIENT ARGUMENTS
+      replace : "客戶的論點"
+
+    - find : Disable '1*1' arguments
+      replace : "停用“1*1”參數"
+
+    - find : Disable all 1*1 arguments such as 1rag1, 1sak1 etc. in order to launch the client directly without launching the patcher.
+      replace : "停用所有 1*1 參數，例如 1rag1、1sak1 等，以便直接啟動使用者端而不啟動修補程式。"
+
+    - find : Ignore '/account:' argument
+      replace : "忽略“/account:”參數"
+
+    - find : Makes the client ignore <b>/account:</b> command line argument to prevent custom clientinfo.xml from being used.
+      replace : "使使用者端忽略 <b>/account:</b> 命令列參數以防止使用自訂 clientinfo.xml。"
+
+    - find : ENABLE ICON
+      replace : "啟用圖示"
+
+    - find : Restore Inbuilt App icon
+      replace : "恢復內建應用程式圖標"
+
+    - find : Makes the client use the inbuilt icon instead of the generic Win32 app icon.
+      replace : "使使用者端使用內建圖示而不是通用 Win32 應用程式圖示。"
+
+    - find : Customize App icon
+      replace : "自訂應用程式圖標"
+
+    - find : Makes the client use the User specified icon (any size and bit depth). For Win7 & higher suggested spec is <b><font color='deepskyblue'>256x256 32bit along with a 16x16 one</b><font>.<br><br>For older clients, you would need to select images from the icon since there is a limit of 3.
+      replace : "使使用者端使用使用者指定的圖示（任何大小和位元深度）。對於 Win7 及更高版本，建議規格為 <b> <font color='deepskyblue'> 256x256 32 位元以及 16x16 一個 </b> <font> 。 <br> <br> 對於較舊的使用者端，您需要從圖示中選擇圖像，因為限制為 3 個。"
+
+    - find : PRIORITY ALTERATION
+      replace : "優先權變更"
+
+    - find : Change Priority (Idle to Normal)
+      replace : "變更優先權（空閒到正常）"
+
+    - find : Change the thread priority of inactive window to normal.
+      replace : "將非活動視窗的執行緒優先權變更為正常。"
+
+    - find : Change Priority (Normal to High)
+      replace : "變更優先權（普通到高）"
+
+    - find : Change the thread priority for active client to high.
+      replace : "將活動使用者端的執行緒優先權變更為高。"
+
+  # NETWORK
+    - find : NETWORK CUSTOMIZATION
+      replace : "網路客製化"
+
+    - find : Enable DNS support
+      replace : "啟用 DNS 支持"
+
+    - find : Enable DNS support for URL specified in <b>clientinfo.xml</b>.
+      replace : "啟用對 <b>clientinfo.xml</b> 中指定的 URL 的 DNS 支援。"
+
+    - find : Send MD5 hash packet
+      replace : "發送 MD5 雜湊包"
+
+    - find : Makes the client send a packet with it's MD5 hash for all LangTypes. Only use if you have enabled it in your server.
+      replace : "使使用者端發送資料包，其中包含所有 LangTypes 的 MD5 雜湊值。僅當您在伺服器中啟用它時才使用。"
+
+    - find : Disable nagle algorithm
+      replace : "停用 nagle 演算法"
+
+    - find : Disables the Nagle Algorithm which queues packets before they are sent in order to minimize protocol overhead. Disabling the algorithm will slightly increase network traffic, but it will decrease latency as well.
+      replace : "停用 Nagle 演算法，該演算法在發送資料包之前會對資料包進行排隊，以最大限度地減少協定開銷。停用該演算法會稍微增加網路流量，但也會減少延遲。"
+
+    - find : Disable OTP login packet
+      replace : "停用 OTP 登入資料包"
+
+    - find : Disable OTP Login Packet, which causes connection issue after disconnect.
+      replace : "停用 OTP 登入資料包，這會導致斷開連線後出現連線問題。"
+
+    - find : Enable proxy support
+      replace : "啟用代理支持"
+
+    - find : Ignores server-provided IP addresses when changing servers.
+      replace : "變更伺服器時忽略伺服器提供的 IP 位址。"
+
+    - find : Remove hardcoded HTTP IP
+      replace : "刪除硬編碼的 HTTP IP"
+
+    - find : Remove hardcoded HTTP service ip address to prevent client from sending HTTP request to official server.
+      replace : "刪除硬編碼的HTTP服務IP位址，以防止使用者端向官方伺服器發送HTTP請求。"
+
+    - find : Remove hardcoded address/port
+      replace : "刪除硬編碼地址/端口"
+
+    - find : Remove hardcoded connection addresses and ports.
+      replace : "刪除硬編碼的連接位址和連接埠。"
+
+    - find : Fix HTTP emblem in client
+      replace : "修復使用者端中的 HTTP 徽章"
+
+    - find : Fix HTTP Emblem on clients with cheat defender (HTTP service is required).
+      replace : "使用作弊防禦者修復使用者端上的 HTTP 徽章（需要 HTTP 服務）。"
+
+    - find : Disable kRO site launch
+      replace : "停用 kRO 網站啟動"
+
+    - find : Disable <b>ro.gnjoy.com</b> and other similar sites launching after in-game settings change.
+      replace : "停用 <b>ro.gnjoy.com</b> 和其他類似網站在遊戲內設定變更後啟動。"
+
+    - find : Customize Merchant store URLs
+      replace : "自訂商家商店 URL"
+
+    - find : Change the hardcoded URL used for MerchantStore save and load (HTTP service required).
+      replace : "變更用於 MerchantStore 儲存和載入的硬編碼 URL（需要 HTTP 服務）。"
+
+    - find : Send client flags
+      replace : "發送使用者端標誌"
+
+    - find : Update the version to send the clients flag to server. Helps to avoid flag incongruency between client & server.
+      replace : "更新版本以將使用者端標誌傳送到伺服器。有助於避免使用者端和伺服器之間的標誌不一致。"
+
+    - find : Hide packets from PEEK & BPE
+      replace : "隱藏來自 PEEK 和 BPE 的資料包"
+
+    - find : Disable PEEK & BPE tools from discovering the essentials needed to track/extract packets.
+      replace : "停用 PEEK 和 BPE 工具來發現追蹤/擷取封包所需的要素。"
+
+    - find : ENCRYPTION KEY CUSTOMIZATION
+      replace : "加密金鑰定制"
+
+    - find : Customize Packet Key (1st)
+      replace : "自訂資料包密鑰（第一）"
+
+    - find : Change the 1st key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : "變更用於資料包加密的第一個密鑰。如果您正在使用此修補，請不要選擇「停用資料包加密」。如果您不知道自己在做什麼，請不要使用它。"
+
+    - find : Customize Packet Key (2nd)
+      replace : "自訂資料包密鑰（第二）"
+
+    - find : Change the 2nd key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : "變更用於資料包加密的第二個密鑰。如果您正在使用此修補，請不要選擇「停用資料包加密」。如果您不知道自己在做什麼，請不要使用它。"
+
+    - find : Customize Packet Key (3rd)
+      replace : "自訂資料包密鑰（第三）"
+
+    - find : Change the 3rd key used for packet encryption. Dont select the patch Disable Packet Encryption if you are using this. Don't use it if you don't know what you are doing.
+      replace : "變更用於資料包加密的第三個密鑰。如果您正在使用此修補，請不要選擇「停用資料包加密」。如果您不知道自己在做什麼，請不要使用它。"
+
+    - find : DISABLE ENCRYPTION
+      replace : "停用加密"
+
+    - find : Disable Login password encryption
+      replace : "停用登入密碼加密"
+
+    - find : Disable encryption in Login Packet 0x2b0 for old clients.
+      replace : "對舊使用者端停用登入資料包 0x2b0 中的加密。"
+
+    - find : Disable Map packet encryption
+      replace : "停用地圖包加密"
+
+    - find : Disable usage of Packet encryption for sending packets to map server.<br> Patch is also known as Skip Packet Obfuscation.
+      replace : "停用使用資料包加密将資料包傳送到地圖伺服器。 <br> 修補也稱為跳過資料包混淆。"
+
+    - find : Disable Login/Char packet encryption
+      replace : "停用登入/字元包加密"
+
+    - find : Disable usage of Packet encryption for sending packets to login & char server.
+      replace : "停用使用資料包加密將資料包傳送到登入和字元伺服器。"
+
+    - find : Disable Login password encryption
+      replace : "停用登入密碼加密"
+
+    - find : Disable encryption of password in login packet 0x64 for langtypes 4 & 7.
+      replace : "對於語言類型 4 和 7，停用登入資料包 0x64 中的密碼加密。"
